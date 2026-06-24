@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "description": "Machine-readable censorship restoration patches for Babylonian Talmud (Bavli). Each patch is applied to a Vilna-shaped base text (default: Sefaria export).",
+  "patches": [
+    "substitutions/avodah_zarah_euphemisms.json",
+    "substitutions/global_euphemisms.json",
+    "insertions/README.json"
+  ]
+}

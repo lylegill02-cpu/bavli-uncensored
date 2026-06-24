@@ -1,0 +1,21 @@
+{
+  "id": "global_commentary_euphemisms",
+  "tractates": ["*"],
+  "scope": ["rashi", "tosafot"],
+  "description": "Conservative global substitutions for commentary layers across Bavli where censored Vilna prints use star-worshipper euphemisms for generic gentile terms.",
+  "rules": [
+    {
+      "id": "ovdei_kochavim_plural",
+      "find": "עובדי כוכבים",
+      "replace": "גוים",
+      "witnesses": ["Munich 95", "Bomberg Venice"],
+      "notes": "Apply to Rashi/Tosafot; gemara often already restored in Sefaria."
+    },
+    {
+      "id": "oved_kochav_singular",
+      "find": "עובד כוכבים",
+      "replace": "גוי",
+      "witnesses": ["Munich 95", "Bomberg Venice"]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build artifacts (regenerate with scripts/build_tractate.py)
+data/base/
+_debug_*
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db

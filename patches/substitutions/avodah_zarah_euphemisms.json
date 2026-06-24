@@ -1,0 +1,46 @@
+{
+  "id": "avodah_zarah_euphemisms",
+  "tractates": ["Avodah Zarah"],
+  "scope": ["gemara", "rashi", "tosafot"],
+  "description": "Restore pre-censorship gentile terms where Christian censors replaced גוים/נכרים with עובדי כוכבים. Applied only when the censored phrase appears; does not alter legitimate idolatry-specific language.",
+  "rules": [
+    {
+      "id": "ovdei_kochavim_to_goyim",
+      "find": "עובדי כוכבים",
+      "replace": "גוים",
+      "witnesses": ["Munich 95", "Bomberg Venice"],
+      "notes": "Documented in Avodah Zarah across Vilna vs early witnesses; see Marvin, Hachi Garsinan; Waxman, Scribal Error."
+    },
+    {
+      "id": "oved_kochav_to_goy",
+      "find": "עובד כוכבים",
+      "replace": "גוי",
+      "witnesses": ["Munich 95", "Bomberg Venice"]
+    },
+    {
+      "id": "akum_expansion",
+      "find": "עכו\"ם",
+      "replace": "גוים",
+      "witnesses": ["Early manuscripts"],
+      "notes": "Acronym introduced by censors; restore only in generic gentile references."
+    },
+    {
+      "id": "nachrim_when_substituted",
+      "find": "עובדי כוכבים",
+      "replace": "נכרים",
+      "witnesses": ["Wikisource Vilna marginal restorations"],
+      "enabled": false,
+      "notes": "Disabled by default — some witnesses use נכרים, others גוים. Enable per-sugya when witness-specific patches are added."
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to Check your Girsa using Hachi Garsinan",
+      "url": "https://trmarvin.org/hachi-garsinan/"
+    },
+    {
+      "title": "Uncensored Printings for Avodah Zarah",
+      "url": "https://scribalerror.substack.com/p/uncensored-printings-for-avodah-zarah"
+    }
+  ]
+}

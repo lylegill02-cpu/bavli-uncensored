@@ -1,0 +1,13 @@
+{
+  "id": "insertions_placeholder",
+  "description": "Whole-passage insertions (e.g. material dropped from Vilna pagination) go here as JSON files. Sefaria gemara already embeds several restorations (Sanhedrin 43a, Gittin 57a, Sanhedrin 67a). Add witness-specific insertions with daf, anchor, lines, and sources.",
+  "examples": [
+    {
+      "tractate": "Sanhedrin",
+      "daf": "43a",
+      "status": "present_in_sefaria_gemara",
+      "notes": "Lines 39-51 on Sefaria include the Munich baraita about Yeshu ha-Notzri."
+    }
+  ],
+  "insertions": []
+}
