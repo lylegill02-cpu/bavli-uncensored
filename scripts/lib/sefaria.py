@@ -4,11 +4,13 @@ from __future__ import annotations
 import json
 import urllib.parse
 import urllib.request
+from pathlib import Path
 from typing import Any
 
 
 API = "https://www.sefaria.org/api"
 EXPORT = "https://storage.googleapis.com/sefaria-export/json"
+CACHE_DIR = Path(__file__).resolve().parents[2] / "data" / "cache" / "gemara"
 
 
 def _get_json(url: str) -> Any:
@@ -79,3 +81,36 @@ def flatten_daf_lines(daf_node: Any) -> list[str]:
                 lines.append(str(item))
         return lines
     return [str(daf_node)]
+
+
+def _cache_path(tractate: str, daf: str) -> Path:
+    safe = tractate.replace(" ", "_")
+    return CACHE_DIR / safe / f"{daf}.json"
+
+
+def api_gemara_lines(tractate: str, daf: str) -> list[str]:
+    data = api_text(f"{tractate}.{daf}")
+    return flatten_daf_lines(data.get("he"))
+
+
+def gemara_lines_for_daf(
+    tractate: str, daf: str, export_fallback: list[str]
+) -> list[str]:
+    """Prefer live Sefaria API gemara (cached); fall back to export if API empty."""
+    path = _cache_path(tractate, daf)
+    if path.exists():
+        cached = json.loads(path.read_text(encoding="utf-8"))
+        if cached.get("lines"):
+            return cached["lines"]
+
+    try:
+        lines = api_gemara_lines(tractate, daf)
+        if lines:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(
+                json.dumps({"lines": lines}, ensure_ascii=False), encoding="utf-8"
+            )
+            return lines
+    except Exception:
+        pass
+    return export_fallback

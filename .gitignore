@@ -4,8 +4,11 @@ __pycache__/
 .venv/
 venv/
 
-# Build artifacts (regenerate with scripts/build_tractate.py)
+# Build artifacts (regenerate with scripts/build_bavli.py)
 data/base/
+data/cache/
+data/output/
+data/bavli.min.json
 _debug_*
 *.tmp
 
