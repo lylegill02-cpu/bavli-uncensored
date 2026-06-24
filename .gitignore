@@ -9,6 +9,7 @@ data/base/
 data/cache/
 data/output/
 data/bavli.min.json
+data/bavli.db
 _debug_*
 *.tmp
 

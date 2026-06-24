@@ -43,6 +43,11 @@ def main() -> None:
         help="Fetch gemara from live Sefaria API (cached; slower first run)",
     )
     parser.add_argument(
+        "--index",
+        action="store_true",
+        help="Also build SQLite search index (data/bavli.db)",
+    )
+    parser.add_argument(
         "--tractate",
         action="append",
         dest="tractates",
@@ -74,6 +79,16 @@ def main() -> None:
         )
         c_mb = COMPACT_OUT.stat().st_size / (1024 * 1024)
         print(f"Wrote {COMPACT_OUT} ({c_mb:.1f} MB)")
+
+    if args.index:
+        from build_index import build_index  # noqa: WPS433
+
+        db_path = ROOT / "data" / "bavli.db"
+        stats = build_index(args.output, db_path)
+        db_mb = db_path.stat().st_size / (1024 * 1024)
+        print(
+            f"Wrote {db_path} — {stats['lines']:,} lines indexed ({db_mb:.1f} MB)"
+        )
 
 
 if __name__ == "__main__":

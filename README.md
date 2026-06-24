@@ -14,6 +14,12 @@ python scripts/build_bavli.py --compact
 python scripts/query.py Sanhedrin.43a
 python scripts/query.py Sanhedrin.43a --layer gemara --json
 
+# Search (build index once)
+python scripts/build_index.py
+python scripts/search.py "יֵשׁוּ"
+python scripts/search.py "גוים" --tractate "Avodah Zarah" --layer rashi
+python scripts/search.py "סטָדָא" --layer gemara --json
+
 # Verify famous uncensored passages landed on the right daf
 python scripts/verify_loci.py
 ```
@@ -42,6 +48,19 @@ python scripts/verify_loci.py
 - Layers are line arrays (same structure Sefaria uses internally)
 
 Compact copy: `data/bavli.min.json` (no whitespace, ~15% smaller).
+
+## Search
+
+`bavli.json` itself is not searchable — load it for ref lookup only. For full-text search, build the SQLite index:
+
+```bash
+python scripts/build_index.py          # → data/bavli.db (~60s first time)
+python scripts/search.py "יֵשׁוּ"        # Hebrew phrase search
+python scripts/search.py "גוים" --tractate "Avodah Zarah" --layer rashi
+python scripts/build_bavli.py --index    # rebuild source + index together
+```
+
+Each hit returns `ref`, `layer`, line number, and a text snippet. Use `--json` for programmatic use.
 
 ## What “uncensored” means here
 
