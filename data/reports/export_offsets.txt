@@ -1,0 +1,37 @@
+Arakhin: offset=2, export_len=67
+Avodah Zarah: offset=2, export_len=152
+Bava Batra: offset=2, export_len=352
+Bava Kamma: offset=2, export_len=238
+Bava Metzia: offset=2, export_len=237
+Beitzah: offset=2, export_len=80
+Bekhorot: offset=2, export_len=121
+Berakhot: offset=2, export_len=127
+Chagigah: offset=2, export_len=53
+Chullin: offset=2, export_len=283
+Eruvin: offset=2, export_len=209
+Gittin: offset=2, export_len=180
+Horayot: offset=2, export_len=27
+Keritot: offset=2, export_len=56
+Ketubot: offset=2, export_len=224
+Kiddushin: offset=2, export_len=164
+Makkot: offset=2, export_len=48
+Megillah: offset=2, export_len=63
+Meilah: offset=2, export_len=43
+Menachot: offset=2, export_len=219
+Moed Katan: offset=2, export_len=57
+Nazir: offset=2, export_len=132
+Nedarim: offset=2, export_len=182
+Niddah: offset=2, export_len=145
+Pesachim: offset=2, export_len=242
+Rosh Hashanah: offset=2, export_len=69
+Sanhedrin: offset=2, export_len=226
+Shabbat: offset=2, export_len=314
+Shevuot: offset=2, export_len=98
+Sotah: offset=2, export_len=98
+Sukkah: offset=2, export_len=112
+Taanit: offset=2, export_len=61
+Tamid: offset=0, export_len=66
+Temurah: offset=2, export_len=67
+Yevamot: offset=2, export_len=244
+Yoma: offset=2, export_len=175
+Zevachim: offset=2, export_len=240

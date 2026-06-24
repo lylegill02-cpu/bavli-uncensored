@@ -1,0 +1,18 @@
+export[48]: EMPTY
+export[49] -> Tamid.25b
+export[50] -> Tamid.26a
+export[51] -> Tamid.26b
+export[52] -> Tamid.27a
+export[53] -> Tamid.27b
+export[54] -> Tamid.28a
+export[55] -> Tamid.28b
+export[56] -> Tamid.29a
+export[57] -> Tamid.29b
+export[58] -> Tamid.30a
+export[59] -> Tamid.30b
+export[60] -> Tamid.31a
+export[61] -> Tamid.31b
+export[62] -> Tamid.32a
+export[63] -> Tamid.32b
+export[64] -> Tamid.33a
+export[65] -> Tamid.33b

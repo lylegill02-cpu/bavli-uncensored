@@ -57,16 +57,25 @@ Default substitution (commentary + gemara where needed):
 
 **Not** a diplomatic edition of Munich — it is **Vilna layout + selective uncensoring** with patch metadata on every daf.
 
-## Included tractates (builder support)
+## Included tractates
 
-| Tractate | Seder | Status |
-|----------|-------|--------|
-| Avodah Zarah | Nezikin | Full sample in `data/output/` |
-| Sanhedrin | Nezikin | Builder ready |
-| Gittin | Nashim | Builder ready |
-| Shabbat | Moed | Builder ready |
+All **37 Bavli tractates** in `data/tractates.json` are supported. Run:
 
-Contributions welcome: add tractates in `scripts/build_tractate.py` → `TRACTATE_META`, plus witness-specific patches.
+```bash
+python scripts/build_all.py
+```
+
+Built JSON lands in `data/output/<Tractate>.json`. Re-run a single tractate with `build_tractate.py`.
+
+### Export alignment (important)
+
+Sefaria `merged.json` arrays are **not** index-zero = 2a. Most tractates have **two leading slots** before 2a; **Tamid** has a long empty prefix before 25a. The builder auto-detects this (`scripts/lib/daf.py`, cached in `data/alignments/`) so daf labels match Vilna pagination — e.g. Sanhedrin **43a** correctly includes the Yeshu baraita.
+
+Verify famous uncensored loci after a build:
+
+```bash
+python scripts/verify_loci.py
+```
 
 ## Legal / licensing
 

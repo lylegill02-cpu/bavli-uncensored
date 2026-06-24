@@ -43,7 +43,10 @@ def export_rashi_hebrew(seder: str, tractate: str) -> dict:
     path = _quote_path(
         f"Talmud/Bavli/Rishonim on Talmud/Rashi/{seder}/Rashi on {tractate}/Hebrew/Vilna Edition.json"
     )
-    return _get_json(f"{EXPORT}/{path}")
+    try:
+        return _get_json(f"{EXPORT}/{path}")
+    except Exception:
+        return {"text": []}
 
 
 def export_tosafot_hebrew(seder: str, tractate: str) -> dict:

@@ -1,0 +1,12 @@
+export length: 226
+export[2] == API Sanhedrin.2a
+export[3] == API Sanhedrin.2b
+export[4] == API Sanhedrin.3a
+export[5] == API Sanhedrin.3b
+export[6] == API Sanhedrin.4a
+export[7] == API Sanhedrin.4b
+export[8] == API Sanhedrin.5a
+export[9] == API Sanhedrin.5b
+
+export[82] start: וְתַרְוַיְיהוּ כְּרַבִּי יוֹחָנָן סְבִירָא לְהוּ: הָא לְמִיהְוֵי כִּי יִתְרָא, הָא לְמִיהְוֵי כִּי נָפְיָא. אֲמַר לֵיהּ 
+export[82] matches Sanhedrin.42a
