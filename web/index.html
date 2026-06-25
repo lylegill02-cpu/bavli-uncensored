@@ -123,8 +123,8 @@
 <body>
   <header>
     <h1>בבלי — Bavli Uncensored</h1>
-    <p>Full Shas search · gemara, Rashi, Tosafot · pre-censorship readings restored</p>
-    <nav style="margin-top:0.6rem;font-size:0.9rem"><a href="loci.html" style="color:var(--accent)">Loci map →</a></nav>
+    <p>Search the full Bavli by Hebrew word or phrase — or start from the <a href="loci.html" style="color:var(--accent)">loci map</a> if you want a guided list.</p>
+    <nav style="margin-top:0.6rem;font-size:0.9rem"><a href="loci.html" style="color:var(--accent)">← Loci map (start here)</a></nav>
     <p id="mode-hint" class="hidden" style="margin:0.4rem 0 0;font-size:0.82rem;color:var(--muted)"></p>
   </header>
   <main>
@@ -202,9 +202,9 @@
     }
 
     async function showDaf(ref) {
-      $("status").textContent = `Loading ${ref}…`;
+      $("status").textContent = `Loading ${ref}… (first visit may download ~53 MB)`;
       try {
-        const daf = await openDaf(ref);
+        const daf = await openDaf(ref, (msg) => { $("status").textContent = msg; });
         if (!daf) {
           $("status").textContent = "Daf not found";
           return;
@@ -244,7 +244,9 @@
       $("q").value = params.get("q");
       doSearch();
     }
-    if (params.get("ref")) showDaf(params.get("ref"));
+    if (params.get("ref")) {
+      location.replace("daf.html?ref=" + encodeURIComponent(params.get("ref")));
+    }
   </script>
 </body>
 </html>

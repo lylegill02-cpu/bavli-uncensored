@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Read daf — Bavli Uncensored</title>
+  <style>
+    :root {
+      --bg: #f4f0e8;
+      --ink: #1a1510;
+      --muted: #5c5348;
+      --accent: #8b2500;
+      --card: #fffdf8;
+      --border: #d4cbb8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, "David Libre", "Noto Serif Hebrew", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    header {
+      padding: 1rem;
+      border-bottom: 2px solid var(--ink);
+      background: var(--card);
+      direction: ltr;
+    }
+    header h1 { margin: 0; font-size: 1.15rem; }
+    header p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.88rem; }
+    nav { margin-top: 0.5rem; font-size: 0.88rem; }
+    nav a { color: var(--accent); margin-right: 1rem; }
+    main { max-width: 52rem; margin: 0 auto; padding: 1rem 1rem 3rem; }
+    .loading {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.25rem;
+      direction: ltr;
+      text-align: left;
+    }
+    .loading strong { display: block; margin-bottom: 0.35rem; }
+    .progress { color: var(--muted); font-size: 0.9rem; margin-top: 0.5rem; }
+    .daf-view {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+    .daf-view h2 { margin: 0 0 0.75rem; font-size: 1.25rem; }
+    .daf-view h3 {
+      margin: 1rem 0 0.35rem;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      direction: ltr;
+      text-align: left;
+    }
+    .line { margin: 0.25rem 0; font-size: 1.08rem; }
+    .hidden { display: none; }
+    .error { color: var(--accent); direction: ltr; text-align: left; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="title">Loading…</h1>
+    <p>Full daf — gemara, Rashi, Tosafot (uncensored build)</p>
+    <nav>
+      <a href="loci.html">← Back to loci map</a>
+      <a href="index.html">Search</a>
+    </nav>
+  </header>
+  <main>
+    <div id="loading" class="loading">
+      <strong>Preparing text…</strong>
+      <span>First visit downloads a search index (~53 MB) once. After that, pages open quickly.</span>
+      <div class="progress" id="progress">Starting…</div>
+    </div>
+    <div id="error" class="error hidden"></div>
+    <div id="daf-panel" class="daf-view hidden"></div>
+  </main>
+  <script type="module">
+    import { openDaf } from "./js/app.js";
+
+    const params = new URLSearchParams(location.search);
+    const ref = params.get("ref");
+    const title = document.getElementById("title");
+    const loading = document.getElementById("loading");
+    const progress = document.getElementById("progress");
+    const errorEl = document.getElementById("error");
+    const panel = document.getElementById("daf-panel");
+
+    if (!ref) {
+      title.textContent = "No page selected";
+      loading.innerHTML = "<strong>Pick a passage from the loci map</strong>";
+      progress.textContent = "";
+    } else {
+      title.textContent = ref;
+      document.title = ref + " — Bavli Uncensored";
+
+      try {
+        const daf = await openDaf(ref, (msg) => {
+          progress.textContent = msg;
+        });
+        loading.classList.add("hidden");
+        if (!daf) {
+          errorEl.textContent = "Could not find " + ref;
+          errorEl.classList.remove("hidden");
+        } else {
+          panel.classList.remove("hidden");
+          panel.innerHTML = `<h2>${daf.ref}</h2>`;
+          for (const layer of ["gemara", "rashi", "tosafot"]) {
+            const lines = daf[layer] || [];
+            if (!lines.length) continue;
+            const h = document.createElement("h3");
+            h.textContent = layer;
+            panel.appendChild(h);
+            for (const line of lines) {
+              const p = document.createElement("div");
+              p.className = "line";
+              p.textContent = line;
+              panel.appendChild(p);
+            }
+          }
+        }
+      } catch (err) {
+        loading.classList.add("hidden");
+        errorEl.textContent = err.message || "Failed to load";
+        errorEl.classList.remove("hidden");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -36,9 +36,9 @@ export async function search(query, opts) {
   return data.results || [];
 }
 
-export async function openDaf(ref) {
+export async function openDaf(ref, onProgress) {
   if (useClientMode() || !(await apiHealth())) {
-    await ensureClientIndex();
+    await ensureClientIndex(onProgress);
     return client.getDaf(ref);
   }
   const r = await fetch(`${basePath()}/ref/${encodeURIComponent(ref)}`);

@@ -34,20 +34,32 @@
     nav { margin-top: 0.75rem; font-size: 0.9rem; }
     nav a { color: var(--accent); margin-right: 1rem; }
     main { max-width: 72rem; margin: 0 auto; padding: 1rem 1rem 3rem; }
+    .help {
+      background: #ebe4d8;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+    .help strong { display: block; margin-bottom: 0.25rem; }
     .filters {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
       margin-bottom: 1rem;
     }
-    select, button {
+    select, button, .btn {
       font: inherit;
       padding: 0.45rem 0.65rem;
       border: 1px solid var(--border);
       border-radius: 4px;
       background: var(--card);
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
     }
-    button { background: var(--ink); color: var(--card); border: none; cursor: pointer; }
+    button, .btn-primary { background: var(--ink); color: var(--card); border: none; cursor: pointer; }
     .legend {
       display: flex;
       flex-wrap: wrap;
@@ -70,7 +82,30 @@
       vertical-align: top;
     }
     th { background: #ebe4d8; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
-    tr:hover td { background: #faf7f0; }
+    tr.locus-row { cursor: pointer; }
+    tr.locus-row:hover td { background: #faf7f0; }
+    tr.locus-row.open td { background: #f5f0e6; }
+    tr.detail-row td { background: #faf7f0; padding: 0; border-bottom: 2px solid var(--border); }
+    tr.detail-row.hidden { display: none; }
+    .detail {
+      padding: 0.85rem 1rem 1rem;
+      font-size: 0.9rem;
+    }
+    .detail h4 { margin: 0 0 0.35rem; font-size: 0.75rem; text-transform: uppercase; color: var(--muted); }
+    .detail p { margin: 0 0 0.65rem; max-width: 42rem; }
+    .snippet-box {
+      direction: rtl;
+      font-family: "David Libre", "Noto Serif Hebrew", serif;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.65rem 0.75rem;
+      margin: 0.5rem 0 0.75rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .detail ul { margin: 0.25rem 0 0.65rem; padding-left: 1.2rem; }
+    .detail-actions { margin-top: 0.75rem; }
     .he { direction: rtl; font-family: "David Libre", "Noto Serif Hebrew", serif; }
     .tag {
       display: inline-block;
@@ -97,14 +132,19 @@
 <body>
   <header>
     <h1>Loci map</h1>
-    <p>Witness-backed passages · suppression in print vs ikkar / machloket / maaseh / aggadah</p>
+    <p>Important passages — what was censored in print vs what is on the record</p>
     <nav>
-      <a href="index.html">← Search</a>
-      <a href="/api/loci">JSON API</a>
-      <a href="data/loci_chart.json">JSON (static)</a>
+      <a href="index.html">Search (advanced)</a>
+      <a href="data/loci_chart.json">Download data (JSON)</a>
     </nav>
   </header>
   <main>
+    <div class="help">
+      <strong>How to use this page</strong>
+      Click any row to expand — you'll see a summary, a Hebrew excerpt, and witness notes.
+      Then click <strong>Read full daf</strong> for the complete gemara / Rashi / Tosafot on that page.
+      (First time only: your browser downloads ~53 MB of text; wait for the progress bar, then it opens.)
+    </div>
     <div class="filters">
       <select id="filter-status">
         <option value="">All tradition types</option>
@@ -128,8 +168,8 @@
       <button type="button" id="reload">Refresh</button>
     </div>
     <div class="legend">
-      <span><strong>Suppression 0–3:</strong> 0 = present · 3 = removed/censored in print</span>
-      <span><strong>Columns:</strong> Print · Commentary · Modern · In build</span>
+      <span><strong>Suppression 0–3:</strong> 0 = present in witnesses · 3 = removed in Vilna print</span>
+      <span><strong>Tradition:</strong> ikkar = settled · machloket = dispute · maaseh/aggadah = narrative</span>
     </div>
     <table>
       <thead>
@@ -138,53 +178,98 @@
           <th>Topic</th>
           <th>Tradition</th>
           <th>Print</th>
-          <th>Rashi/Tos.</th>
-          <th>Modern</th>
           <th>Now</th>
-          <th>Tags</th>
         </tr>
       </thead>
       <tbody id="rows"></tbody>
     </table>
   </main>
   <script type="module">
-    import { basePath, lociChartUrl } from "./js/config.js";
+    import { lociChartUrl } from "./js/config.js";
 
     let all = [];
+    let openId = null;
 
     function scoreClass(n) {
       return `score score-${n}`;
+    }
+
+    function esc(s) {
+      return String(s || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function renderDetail(loc) {
+      const v = loc.verified || {};
+      const w = loc.witnesses || {};
+      const sources = (loc.sources || [])
+        .map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`)
+        .join("");
+      const related = (loc.related_refs || [])
+        .map((r) => `<a class="ref" href="daf.html?ref=${encodeURIComponent(r)}">${esc(r)}</a>`)
+        .join(" · ");
+      const tags = (loc.tags || loc.controversy_tags || [])
+        .map((t) => `<span class="tag">${esc(t)}</span>`)
+        .join("");
+      const readBtn = loc.ref
+        ? `<a class="btn btn-primary" href="daf.html?ref=${encodeURIComponent(loc.ref)}">Read full daf →</a>`
+        : "";
+
+      return `
+        <div class="detail">
+          <p>${esc(loc.tradition_note)}</p>
+          ${v.snippet ? `<h4>Excerpt (${esc(loc.layer || "text")})</h4><div class="snippet-box">${esc(v.snippet)}…</div>` : ""}
+          ${w.uncensored?.length ? `<h4>Uncensored witnesses</h4><ul>${w.uncensored.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+          ${w.censored?.length ? `<h4>Censored / Vilna print</h4><ul>${w.censored.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+          ${sources ? `<h4>Further reading</h4><ul>${sources}</ul>` : ""}
+          ${related ? `<h4>Related</h4><p>${related}</p>` : ""}
+          ${tags ? `<p>${tags}</p>` : ""}
+          <div class="detail-actions">${readBtn}</div>
+        </div>
+      `;
     }
 
     function renderRows(items) {
       const tbody = document.getElementById("rows");
       tbody.innerHTML = "";
       for (const loc of items) {
-        const tr = document.createElement("tr");
-        tr.className = `status-${loc.tradition_status}`;
         const d = loc.denial || {};
+        const tr = document.createElement("tr");
+        tr.className = `locus-row status-${loc.tradition_status}${openId === loc.id ? " open" : ""}`;
+        tr.dataset.id = loc.id;
         const ref = loc.ref
-          ? `<a class="ref" href="index.html?ref=${encodeURIComponent(loc.ref)}">${loc.ref}</a>`
-          : `<em>pattern</em>`;
-        const tags = (loc.tags || loc.controversy_tags || [])
-          .map((t) => `<span class="tag">${t}</span>`)
-          .join("");
+          ? `<span class="ref">${esc(loc.ref)}</span>`
+          : `<em>corpus pattern</em>`;
         tr.innerHTML = `
-          <td>${ref}<br><small>${loc.layer || ""}</small></td>
+          <td>${ref}<br><small>${esc(loc.layer || "")}</small></td>
           <td>
-            <div>${loc.topic?.en || ""}</div>
-            <div class="he">${loc.topic?.he || ""}</div>
-            <div class="note">${loc.tradition_note || ""}</div>
+            <div>${esc(loc.topic?.en)}</div>
+            <div class="he">${esc(loc.topic?.he)}</div>
           </td>
-          <td><strong>${loc.tradition_status}</strong></td>
+          <td><strong>${esc(loc.tradition_status)}</strong></td>
           <td class="${scoreClass(d.print_historical)}">${d.print_historical ?? "—"}</td>
-          <td class="${scoreClass(d.commentary_residue)}">${d.commentary_residue ?? "—"}</td>
-          <td class="${scoreClass(d.modern_digital)}">${d.modern_digital ?? "—"}</td>
           <td class="${scoreClass(d.in_build)}">${d.in_build ?? "—"}</td>
-          <td>${tags}</td>
         `;
+        tr.addEventListener("click", () => toggleRow(loc));
         tbody.appendChild(tr);
+
+        const detailTr = document.createElement("tr");
+        detailTr.className = `detail-row${openId === loc.id ? "" : " hidden"}`;
+        detailTr.dataset.detailFor = loc.id;
+        const detailTd = document.createElement("td");
+        detailTd.colSpan = 5;
+        detailTd.innerHTML = renderDetail(loc);
+        detailTr.appendChild(detailTd);
+        tbody.appendChild(detailTr);
       }
+    }
+
+    function toggleRow(loc) {
+      openId = openId === loc.id ? null : loc.id;
+      applyFilters();
     }
 
     function applyFilters() {
@@ -204,18 +289,9 @@
     }
 
     async function load() {
-      const urls = [`${basePath()}/api/loci`, lociChartUrl()];
-      let data = null;
-      for (const url of urls) {
-        try {
-          const r = await fetch(url);
-          if (r.ok) {
-            data = await r.json();
-            break;
-          }
-        } catch (_) {}
-      }
-      if (!data) return;
+      const r = await fetch(lociChartUrl());
+      if (!r.ok) return;
+      const data = await r.json();
       all = data.loci || [];
       applyFilters();
     }
