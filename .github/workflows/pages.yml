@@ -27,6 +27,7 @@ jobs:
         run: |
           mkdir -p web/data
           cp data/loci_chart.json web/data/loci_chart.json
+          cp data/audit_witness_deltas.json web/data/audit_witness_deltas.json
           cp data/english_glossary.json web/data/english_glossary.json
           cp data/english_lexicon.json web/data/english_lexicon.json
 

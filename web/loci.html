@@ -171,6 +171,7 @@
     <p>Important passages — what was censored in print vs what is on the record</p>
     <nav>
       <a href="index.html">English search</a>
+      <a href="audit.html">Commentary audit (100)</a>
       <a href="data/loci_chart.json">Download data (JSON)</a>
     </nav>
   </header>
@@ -254,7 +255,9 @@
         .join("");
       const readBtn = loc.ref
         ? `<a class="btn btn-primary" href="daf.html?ref=${encodeURIComponent(loc.ref)}">Read full daf →</a>`
-        : "";
+        : loc.audit_ref
+          ? `<a class="btn btn-primary" href="audit.html">Browse 100 audit hits →</a>`
+          : "";
       const extLinks = loc.ref ? externalLinksHtml(loc.ref, { compact: true }) : "";
 
       return `

@@ -97,6 +97,14 @@ python scripts/audit_censorship.py
 
 Reports: `data/reports/censorship_audit.json` + `.md`
 
+English witness notes for all 100 likely-censorship hits:
+
+```bash
+python scripts/build_audit_witness_deltas.py
+```
+
+Browse on site: **Commentary audit** (`web/audit.html`) — per-daf inline notes on `daf.html`.
+
 Latest run: **0** remaining `עובדי כוכבים` in built text (substitution patches working). Remaining review queue is mainly **עכו"ם** acronym in Rashi/Tosafot (~100 likely censorship hits). Verify each against Munich/Bomberg before adding patches.
 
 ## Publish release (maintainers)

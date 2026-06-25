@@ -53,3 +53,42 @@ export function locusForRef(loci, ref) {
   if (!ref || !loci?.length) return null;
   return loci.find((x) => x.ref === ref) || null;
 }
+
+/** Audit hits (akum commentary) for one daf ref. */
+export function hitsForRef(auditData, ref) {
+  if (!auditData?.hits || !ref) return [];
+  return auditData.hits.filter((h) => h.ref === ref);
+}
+
+/** Map layer+line → audit hit for inline daf notes. */
+export function auditHitMap(hits) {
+  const map = new Map();
+  for (const h of hits || []) {
+    map.set(`${h.layer}:${h.line_no}`, h);
+  }
+  return map;
+}
+
+export function renderAuditHitBlock(hit, { compact = false } = {}) {
+  const layerLabel = hit.layer === "rashi" ? "Rashi" : "Tosafot";
+  const meta = `${layerLabel} line ${hit.line_no} · censored acronym (×${hit.count})`;
+  const deltaHtml = renderWitnessDelta({ witness_delta: hit.witness_delta }, { compact });
+  return (
+    `<div class="audit-hit" data-layer="${hit.layer}" data-line="${hit.line_no}">` +
+    `<p class="audit-meta"><strong>${escapeHtml(meta)}</strong></p>` +
+    deltaHtml +
+    `</div>`
+  );
+}
+
+export function renderAuditSummaryStrip(hits) {
+  if (!hits?.length) return "";
+  const n = hits.length;
+  const label = n === 1 ? "1 commentary censorship note" : `${n} commentary censorship notes`;
+  return (
+    `<div class="audit-summary">` +
+    `<p><strong>${escapeHtml(label)}</strong> on this daf — akum acronym where witnesses read “gentiles.” ` +
+    `<a href="audit.html?ref=${encodeURIComponent(hits[0].ref)}">View in audit list</a></p>` +
+    `</div>`
+  );
+}

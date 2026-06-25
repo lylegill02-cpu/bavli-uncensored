@@ -24,6 +24,10 @@ export function lociChartUrl() {
   return assetUrl("/data/loci_chart.json");
 }
 
+export function auditWitnessDeltasUrl() {
+  return assetUrl("/data/audit_witness_deltas.json");
+}
+
 /**
  * Tier 3 AI query expansion (Cloudflare Worker).
  * Deploy: workers/query-expand — then paste URL here.

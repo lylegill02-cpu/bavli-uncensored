@@ -104,6 +104,29 @@
     .trust-high { background: #e8f0e4; }
     .trust-medium { background: #f5f0e0; }
     .trust-low { background: #f5e8e4; }
+    .audit-summary {
+      background: #f5e8e4;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.65rem 0.85rem;
+      margin-bottom: 1rem;
+      direction: ltr;
+      text-align: left;
+      font-size: 0.88rem;
+    }
+    .audit-summary p { margin: 0; line-height: 1.45; }
+    .audit-summary a { color: var(--accent); }
+    .audit-hit {
+      background: #faf7f0;
+      border-left: 3px solid var(--accent);
+      padding: 0.55rem 0.65rem;
+      margin: 0.35rem 0 0.65rem;
+      direction: ltr;
+      text-align: left;
+      font-size: 0.84rem;
+    }
+    .audit-hit .audit-meta { margin: 0 0 0.35rem; color: var(--muted); font-size: 0.78rem; }
+    .audit-hit .witness-delta { margin: 0; padding: 0; border: none; background: transparent; }
   </style>
 </head>
 <body>
@@ -112,6 +135,7 @@
     <p>Full daf — gemara, Rashi, Tosafot (uncensored build)</p>
     <nav>
       <a href="loci.html">← Back to loci map</a>
+      <a href="audit.html">Commentary audit</a>
       <a href="index.html">Search</a>
     </nav>
   </header>
@@ -127,8 +151,15 @@
   <script type="module">
     import { openDaf } from "./js/app.js";
     import { externalLinksHtml } from "./js/external-links.js";
-    import { lociChartUrl } from "./js/config.js";
-    import { renderWitnessDelta, locusForRef } from "./js/witness-delta.js";
+    import { lociChartUrl, auditWitnessDeltasUrl } from "./js/config.js";
+    import {
+      renderWitnessDelta,
+      locusForRef,
+      hitsForRef,
+      auditHitMap,
+      renderAuditHitBlock,
+      renderAuditSummaryStrip,
+    } from "./js/witness-delta.js";
 
     const params = new URLSearchParams(location.search);
     const ref = params.get("ref");
@@ -148,12 +179,20 @@
 
       try {
         let locusHtml = "";
+        let auditHits = [];
         try {
-          const chart = await fetch(lociChartUrl());
+          const [chart, audit] = await Promise.all([
+            fetch(lociChartUrl()),
+            fetch(auditWitnessDeltasUrl()),
+          ]);
           if (chart.ok) {
             const data = await chart.json();
             const loc = locusForRef(data.loci, ref);
             if (loc) locusHtml = renderWitnessDelta(loc);
+          }
+          if (audit.ok) {
+            const auditData = await audit.json();
+            auditHits = hitsForRef(auditData, ref);
           }
         } catch (_) {}
 
@@ -170,21 +209,34 @@
             const w = document.createElement("div");
             w.innerHTML = locusHtml;
             panel.before(w);
+          } else if (auditHits.length) {
+            const s = document.createElement("div");
+            s.innerHTML = renderAuditSummaryStrip(auditHits);
+            panel.before(s);
           }
           const ext = document.createElement("div");
+          ext.className = "ext-panel";
           ext.innerHTML = externalLinksHtml(daf.ref);
           panel.before(ext);
           panel.innerHTML = `<h2>${daf.ref}</h2>`;
+          const hitMap = auditHitMap(auditHits);
           for (const layer of ["gemara", "rashi", "tosafot"]) {
             const lines = daf[layer] || [];
             if (!lines.length) continue;
             const h = document.createElement("h3");
             h.textContent = layer;
             panel.appendChild(h);
-            for (const line of lines) {
+            for (let i = 0; i < lines.length; i++) {
+              const lineNo = i + 1;
+              const hit = hitMap.get(`${layer}:${lineNo}`);
+              if (hit) {
+                const note = document.createElement("div");
+                note.innerHTML = renderAuditHitBlock(hit, { compact: true });
+                panel.appendChild(note);
+              }
               const p = document.createElement("div");
               p.className = "line";
-              p.textContent = line;
+              p.textContent = lines[i];
               panel.appendChild(p);
             }
           }

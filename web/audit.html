@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Commentary audit — Bavli Uncensored</title>
+  <style>
+    :root {
+      --bg: #f4f0e8;
+      --ink: #1a1510;
+      --muted: #5c5348;
+      --accent: #8b2500;
+      --card: #fffdf8;
+      --border: #d4cbb8;
+      --ok: #2d5016;
+      --warn: #8b6914;
+      --bad: #8b2500;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    header {
+      padding: 1.25rem 1rem;
+      border-bottom: 2px solid var(--ink);
+      background: var(--card);
+    }
+    header h1 { margin: 0; font-size: 1.35rem; }
+    header p { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.9rem; }
+    nav { margin-top: 0.75rem; font-size: 0.9rem; }
+    nav a { color: var(--accent); margin-right: 1rem; }
+    main { max-width: 72rem; margin: 0 auto; padding: 1rem 1rem 3rem; }
+    .help {
+      background: #ebe4d8;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    select, input, button {
+      font: inherit;
+      padding: 0.45rem 0.65rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: var(--card);
+    }
+    input { min-width: 12rem; }
+    button { background: var(--ink); color: var(--card); border: none; cursor: pointer; }
+    .stats { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.75rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      border: 1px solid var(--border);
+      font-size: 0.88rem;
+    }
+    th, td {
+      border-bottom: 1px solid var(--border);
+      padding: 0.55rem 0.5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #ebe4d8;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    tr.audit-row { cursor: pointer; }
+    tr.audit-row:hover td { background: #faf7f0; }
+    tr.audit-row.open td { background: #f5f0e6; }
+    tr.detail-row td { background: #faf7f0; padding: 0; border-bottom: 2px solid var(--border); }
+    tr.detail-row.hidden { display: none; }
+    .detail { padding: 0.85rem 1rem 1rem; }
+    .snippet-box {
+      direction: rtl;
+      font-family: "David Libre", "Noto Serif Hebrew", serif;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.65rem 0.75rem;
+      margin: 0.5rem 0 0.75rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .detail-actions { margin-top: 0.75rem; }
+    .btn {
+      display: inline-block;
+      padding: 0.45rem 0.75rem;
+      background: var(--ink);
+      color: var(--card);
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.88rem;
+    }
+    a.ref { color: var(--accent); font-weight: 600; text-decoration: none; }
+    a.ref:hover { text-decoration: underline; }
+    .witness-delta {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.75rem 0.85rem;
+      margin: 0 0 0.85rem;
+    }
+    .witness-delta h4 {
+      margin: 0 0 0.5rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+    .witness-delta .plain { margin: 0 0 0.65rem; font-size: 0.95rem; line-height: 1.5; }
+    .witness-delta dl { margin: 0 0 0.65rem; }
+    .witness-delta dt {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      margin-top: 0.45rem;
+    }
+    .witness-delta dd { margin: 0.15rem 0 0; font-size: 0.9rem; line-height: 1.45; }
+    .witness-delta .trust {
+      margin: 0;
+      font-size: 0.85rem;
+      padding: 0.45rem 0.55rem;
+      border-radius: 4px;
+    }
+    .trust-high { background: #e8f0e4; color: var(--ok); }
+    .trust-medium { background: #f5f0e0; color: var(--warn); }
+    .trust-low { background: #f5e8e4; color: var(--bad); }
+    .layer-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      background: #ebe4d8;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Commentary censorship audit</h1>
+    <p>100 Rashi/Tosafot lines where Vilna prints עכו&quot;ם (akum) — English witness notes for each hit</p>
+    <nav>
+      <a href="loci.html">← Loci map</a>
+      <a href="index.html">Search</a>
+      <a href="data/audit_witness_deltas.json">Download JSON</a>
+    </nav>
+  </header>
+  <main>
+    <div class="help">
+      <strong>What this list is</strong>
+      Systematic scan of the built corpus for the Christian censor acronym <em>akum</em> in commentary layers.
+      Each row explains in English what Vilna hid vs what manuscripts typically read — you do not need Hebrew to use it.
+      Click a row for the full witness note; open the daf for Hebrew text with inline flags.
+    </div>
+    <div class="filters">
+      <input type="search" id="filter-q" placeholder="Filter ref (e.g. Eruvin.62)" />
+      <select id="filter-tractate">
+        <option value="">All tractates</option>
+      </select>
+      <select id="filter-layer">
+        <option value="">Rashi + Tosafot</option>
+        <option value="rashi">Rashi only</option>
+        <option value="tosafot">Tosafot only</option>
+      </select>
+      <button type="button" id="reload">Refresh</button>
+    </div>
+    <p class="stats" id="stats"></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Ref</th>
+          <th>Layer</th>
+          <th>Line</th>
+          <th>In plain English (preview)</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </main>
+  <script type="module">
+    import { auditWitnessDeltasUrl } from "./js/config.js";
+    import { renderWitnessDelta } from "./js/witness-delta.js";
+
+    let all = [];
+    let openId = null;
+
+    function esc(s) {
+      return String(s || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function tractateOf(ref) {
+      return ref?.includes(".") ? ref.split(".")[0] : "";
+    }
+
+    function previewPlain(hit) {
+      const p = hit.witness_delta?.plain_english || "";
+      return p.length > 140 ? p.slice(0, 140).replace(/\s+\S*$/, "") + "…" : p;
+    }
+
+    function renderDetail(hit) {
+      const loc = { witness_delta: hit.witness_delta };
+      return `
+        <div class="detail">
+          ${renderWitnessDelta(loc)}
+          <h4 style="margin:0 0 0.35rem;font-size:0.75rem;text-transform:uppercase;color:var(--muted)">Hebrew excerpt (Vilna base)</h4>
+          <div class="snippet-box">${esc(hit.snippet)}…</div>
+          <div class="detail-actions">
+            <a class="btn" href="daf.html?ref=${encodeURIComponent(hit.ref)}">Read full daf →</a>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderRows(items) {
+      const tbody = document.getElementById("rows");
+      tbody.innerHTML = "";
+      for (const hit of items) {
+        const tr = document.createElement("tr");
+        tr.className = `audit-row${openId === hit.id ? " open" : ""}`;
+        tr.dataset.id = hit.id;
+        tr.innerHTML = `
+          <td><a class="ref" href="daf.html?ref=${encodeURIComponent(hit.ref)}">${esc(hit.ref)}</a></td>
+          <td><span class="layer-tag">${esc(hit.layer)}</span></td>
+          <td>${hit.line_no}</td>
+          <td>${esc(previewPlain(hit))}</td>
+        `;
+        tr.addEventListener("click", (e) => {
+          if (e.target.closest("a.ref")) return;
+          openId = openId === hit.id ? null : hit.id;
+          applyFilters();
+        });
+        tbody.appendChild(tr);
+
+        const detailTr = document.createElement("tr");
+        detailTr.className = `detail-row${openId === hit.id ? "" : " hidden"}`;
+        const td = document.createElement("td");
+        td.colSpan = 4;
+        td.innerHTML = renderDetail(hit);
+        detailTr.appendChild(td);
+        tbody.appendChild(detailTr);
+      }
+      document.getElementById("stats").textContent =
+        `Showing ${items.length} of ${all.length} audit hits · ${new Set(items.map((h) => h.ref)).size} dapim`;
+    }
+
+    function applyFilters() {
+      const q = document.getElementById("filter-q").value.trim().toLowerCase();
+      const tractate = document.getElementById("filter-tractate").value;
+      const layer = document.getElementById("filter-layer").value;
+      let items = all;
+      if (q) items = items.filter((h) => h.ref.toLowerCase().includes(q));
+      if (tractate) items = items.filter((h) => tractateOf(h.ref) === tractate);
+      if (layer) items = items.filter((h) => h.layer === layer);
+      renderRows(items);
+    }
+
+    function fillTractates() {
+      const sel = document.getElementById("filter-tractate");
+      const tracts = [...new Set(all.map((h) => tractateOf(h.ref)))].sort();
+      for (const t of tracts) {
+        const opt = document.createElement("option");
+        opt.value = t;
+        opt.textContent = t;
+        sel.appendChild(opt);
+      }
+    }
+
+    async function load() {
+      const r = await fetch(auditWitnessDeltasUrl());
+      if (!r.ok) return;
+      const data = await r.json();
+      all = data.hits || [];
+      fillTractates();
+      const params = new URLSearchParams(location.search);
+      const refFilter = params.get("ref");
+      if (refFilter) document.getElementById("filter-q").value = refFilter;
+      applyFilters();
+    }
+
+    document.getElementById("filter-q").addEventListener("input", applyFilters);
+    document.getElementById("filter-tractate").addEventListener("change", applyFilters);
+    document.getElementById("filter-layer").addEventListener("change", applyFilters);
+    document.getElementById("reload").addEventListener("click", load);
+    load();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1839 @@
+{
+  "schema_version": 1,
+  "source": "data/reports/censorship_audit.json",
+  "pattern": "akum commentary censorship",
+  "generated_from": "2026-06-25T03:34:44.717003+00:00",
+  "count": 100,
+  "hits": [
+    {
+      "id": "berakhot-12a-rashi-4",
+      "ref": "Berakhot.12a",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "בקשו – לקבוע עשרת הדברות בקריאת שמע: מפני תרעומת המינין – שלא יאמרו לעמי הארץ אין שאר תורה אמת ותדעו שאין קורין אלא מה שאמר הקדוש ב\"ה ושמעו מפיו בסיני: המינין – עכו\"ם:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Berakhot.12a (line 4) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: sectarians (minim) (Berakhot).",
+        "plain_english": "Rashi/Tosafot discuss sectarians in a halachic or polemical context; Vilna hides the term behind the censor acronym akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “בקשו – לקבוע עשרת הדברות בקריאת שמע: מפני תרעומת המינין – שלא יאמרו לעמי הארץ אין שאר תורה אמת ותדעו שאין קורין אלא מה…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "berakhot-32b-rashi-15",
+      "ref": "Berakhot.32b",
+      "layer": "rashi",
+      "line_no": 15,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "אבל למלכי עכו\"ם פוסק – שלא יהרגנו:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Berakhot.32b (line 15) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: gentile rulers (Berakhot).",
+        "plain_english": "Rules involving gentile kings or rulers (tax, oaths, capital cases) — political/legal context, not theological creed. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אבל למלכי עכו\"ם פוסק – שלא יהרגנו:”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "berakhot-33a-rashi-10",
+      "ref": "Berakhot.33a",
+      "layer": "rashi",
+      "line_no": 10,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "במילתה מיהא גדולה היא – במקום שצריכה נקמה דבר גדול הוא: שתי נקמות הללו למה – אחת לרעה להנקם מן העכו\"ם שלא קבלו את התורה: ואחת לטובה – כדאמרינן בב\"ק (דף לח.) מפארן הופיע והפקיר ממונן לישראל שור של ישרא",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Berakhot.33a (line 10) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: gentiles and Torah acceptance (Berakhot).",
+        "plain_english": "Aggadic or legal rhetoric about gentiles not accepting Torah — polemical tone in commentary; censored vocabulary. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “במילתה מיהא גדולה היא – במקום שצריכה נקמה דבר גדול הוא: שתי נקמות הללו למה – אחת לרעה להנקם מן העכו\"ם שלא קבלו את…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "berakhot-33b-rashi-13",
+      "ref": "Berakhot.33b",
+      "layer": "rashi",
+      "line_no": 13,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "גמ' שמטיל קנאה – לומר על אלה חס ולא על שאר בריותיו: מדותיו – מצותיו והוא לא לרחמים עשה אלא להטיל על ישראל חקי גזרותיו להודיע שהם עבדיו ושומרי מצותיו וגזרות חקותיו אף בדברי' שיש לשטן ולעכו\"ם להשיב עליה",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Berakhot.33b (line 13) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Berakhot).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “גמ' שמטיל קנאה – לומר על אלה חס ולא על שאר בריותיו: מדותיו – מצותיו והוא לא לרחמים עשה אלא להטיל על ישראל חקי גזרותיו…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "berakhot-51b-rashi-11",
+      "ref": "Berakhot.51b",
+      "layer": "rashi",
+      "line_no": 11,
+      "pattern_id": "akum_hebrew",
+      "count": 1,
+      "snippet": "אין מברכים על הנר ועל הבשמים של עכו״ם ושל מתים – טעם דכולהו מפרש בגמרא: שיאותו – שיהו נהנים ממנו:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Berakhot.51b (line 11) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: blessings (Berakhot).",
+        "plain_english": "Which blessings apply to gentile-owned objects or events — ritual law, not a polemic about Christianity. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אין מברכים על הנר ועל הבשמים של עכו״ם ושל מתים – טעם דכולהו מפרש בגמרא: שיאותו – שיהו נהנים ממנו:”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "berakhot-54a-tosafot-1",
+      "ref": "Berakhot.54a",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "הרואה וכו' אומר ברוך שעשה נסים לאבותינו וכו' – פירש רבי' שמעיה דכל הני ברכות צריכות להזכרת שם ומלכות ברוך אתה ה' אלהינו מלך העולם וכן כתב רבינו שמשון מקוצי כי הר\"י היה רגיל לברך על הברקים ברוך אתה ה' ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Berakhot.54a (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Berakhot).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “הרואה וכו' אומר ברוך שעשה נסים לאבותינו וכו' – פירש רבי' שמעיה דכל הני ברכות צריכות להזכרת שם ומלכות ברוך אתה ה' אלהינו…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "berakhot-57b-tosafot-1",
+      "ref": "Berakhot.57b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 5,
+      "snippet": "הרואה מרקוליס - בתוספתא תנן במקום מרקוליס דהכא עבודת כוכבים וא\"כ לאו דוקא מרקוליס אלא לפי שבמקומו של תנא היו עובדים לה ועתה אין אנו רגילים לברך לפי שאנו רואים אותה בכל יום וכל הנך הרואים אמרו לעיל דהו",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Berakhot.57b (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: idolatry references (Berakhot).",
+        "plain_english": "Commentary touching idol-worship or pagan practice. Even here Vilna often used akum where witnesses still read goyim in generic gentile references. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “הרואה מרקוליס - בתוספתא תנן במקום מרקוליס דהכא עבודת כוכבים וא\"כ לאו דוקא מרקוליס אלא לפי שבמקומו של תנא היו עובדים לה…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "shabbat-15b-tosafot-2",
+      "ref": "Shabbat.15b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "ואאוירא לתלות - תימה דתנן במסכת אהלות (כ\"ב מ\"ג) אלו מטמאין במגע ובמשא ולא באהל עצם כשעורה וארץ העמים וי\"ל דהתם מיירי כגון שהביא עפר מארץ העמים לארץ ישראל אי נמי כר' שמעון דאמר קברי עכו\"ם אין מטמאין בא",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Shabbat.15b (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Shabbat).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “ואאוירא לתלות - תימה דתנן במסכת אהלות (כ\"ב מ\"ג) אלו מטמאין במגע ובמשא ולא באהל עצם כשעורה וארץ העמים וי\"ל דהתם מיירי…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "shabbat-16b-tosafot-5",
+      "ref": "Shabbat.16b",
+      "layer": "tosafot",
+      "line_no": 5,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "אף בנות כותים - תימה לר\"י דבריש בנות כותים (נדה דל\"ב. ושם) מוקי לה כר\"מ דחייש למיעוטא והאי טעמא לא שייך אלא למ\"ד כותים גרי אמת הן ואם ראתה טמאה מדאורייתא אבל למ\"ד כותים גרי אריות הן לא שייך האי טעמא ד",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Shabbat.16b (line 5) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Shabbat).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אף בנות כותים - תימה לר\"י דבריש בנות כותים (נדה דל\"ב. ושם) מוקי לה כר\"מ דחייש למיעוטא והאי טעמא לא שייך אלא למ\"ד כותים…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "shabbat-42b-tosafot-1",
+      "ref": "Shabbat.42b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "אבל נותן הוא לתוך הקערה כו' - מהכא ליכא למידק דעירוי ככלי שני מדקתני לא יתן לתוכה תבלין ולא אשמעינן רבותא אפילו שלא יערה על הקערה שתבלין בתוכה דאדרבה דוק מסיפא דקתני אבל נותן הוא לתוך הקערה ולא קתני מ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Shabbat.42b (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Shabbat).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אבל נותן הוא לתוך הקערה כו' - מהכא ליכא למידק דעירוי ככלי שני מדקתני לא יתן לתוכה תבלין ולא אשמעינן רבותא אפילו שלא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "shabbat-72b-rashi-4",
+      "ref": "Shabbat.72b",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "דרבי אמי - במסכת סנהדרין בפרק ד' מיתות יליף למילתיה מקרא דאין חילוק חטאות לעכו\"ם:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Shabbat.72b (line 4) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: capital jurisdiction (Shabbat).",
+        "plain_english": "Who falls under which court or death penalty — procedural law about gentiles vs Israel. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “דרבי אמי - במסכת סנהדרין בפרק ד' מיתות יליף למילתיה מקרא דאין חילוק חטאות לעכו\"ם:”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "shabbat-72b-tosafot-3",
+      "ref": "Shabbat.72b",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "עד כאן לא בעא מיניה רבא מרב נחמן כו' - וא\"ת אמאי לא מייתי מתני' דהשוכח עיקר שבת דאינו חייב אלא אחת ולא הוי פטור לגמרי וי\"ל דניחא ליה לאתויי מרבא דמספקא ליה בהעלם זה וזה דדילמא אפי' תרתי מיחייב דכי אוק",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Shabbat.72b (line 3) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Shabbat).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “עד כאן לא בעא מיניה רבא מרב נחמן כו' - וא\"ת אמאי לא מייתי מתני' דהשוכח עיקר שבת דאינו חייב אלא אחת ולא הוי פטור לגמרי…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "shabbat-88b-rashi-4",
+      "ref": "Shabbat.88b",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "למיימינים - עסוקים בכל כחם וטרודים לדעת סודה כאדם המשתמש ביד ימינו שהיא עיקר: קושרים לו שני כתרים - לדבור שהיה בו ממש ונראה כדכתיב רואים את הקולות (שמות כ׳:ט״ו): אע\"פ שמיצר ומימר לי דודי - בעגל שאמר ה",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Shabbat.88b (line 4) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Shabbat).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “למיימינים - עסוקים בכל כחם וטרודים לדעת סודה כאדם המשתמש ביד ימינו שהיא עיקר: קושרים לו שני כתרים - לדבור שהיה בו ממש…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "shabbat-89a-rashi-6",
+      "ref": "Shabbat.89a",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "שנאה לעכו\"ם - שלא קבלו בו תורה:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Shabbat.89a (line 6) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: gentiles and Torah acceptance (Shabbat).",
+        "plain_english": "Aggadic or legal rhetoric about gentiles not accepting Torah — polemical tone in commentary; censored vocabulary. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “שנאה לעכו\"ם - שלא קבלו בו תורה:”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "shabbat-150a-rashi-7",
+      "ref": "Shabbat.150a",
+      "layer": "rashi",
+      "line_no": 7,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "ערות דבר - אלמא לא אסיר ליה אלא בשעת דבור: ההיא כדרב יהודה - כלומר לעולם והיה מחניך קדוש משום הרהור תורה ואפי' אין דבור ולא יראה בך ערות דבר במילתא אחריתי מיירי דאסור בשעת הדבור ולא בשעת הרהור כגון לה",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Shabbat.150a (line 7) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Shabbat).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “ערות דבר - אלמא לא אסיר ליה אלא בשעת דבור: ההיא כדרב יהודה - כלומר לעולם והיה מחניך קדוש משום הרהור תורה ואפי' אין דבור…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-61b-rashi-10",
+      "ref": "Eruvin.61b",
+      "layer": "rashi",
+      "line_no": 10,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "מתני' הדר עם העכו\"ם או עם מי שאינו מודה בעירוב - כותי כדאמר בפרק בכל מערבין (עירובין דף לא:): אוסר עליו - לטלטל מביתו לחצר עד שישכור הימנו רשות שיש לו בחצר:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.61b (line 10) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: eruv and shared courtyards (Eruvin).",
+        "plain_english": "Eruv law: whether a gentile neighbor’s courtyard affects carrying on Shabbat. Halacha turns on ‘gentile’ residency — not idol-worship as such. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מתני' הדר עם העכו\"ם או עם מי שאינו מודה בעירוב - כותי כדאמר בפרק בכל מערבין (עירובין דף לא:): אוסר עליו - לטלטל מביתו…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-61b-rashi-12",
+      "ref": "Eruvin.61b",
+      "layer": "rashi",
+      "line_no": 12,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "מעשה בצדוקי אחד - קסבר ר\"ג צדוקי אינו כעכו\"ם ולא דמי לכותי דגרי אריות הן ואינם גרים גמורים אבל צדוקי ישראל הוא ונהפך למינות ואינו מודה בתורה שבעל פה כיון דישראל הוא יכול לבטל רשותו בלא שום שכירות: מעש",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.61b (line 12) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: eruv and shared courtyards (Eruvin).",
+        "plain_english": "Eruv law: whether a gentile neighbor’s courtyard affects carrying on Shabbat. Halacha turns on ‘gentile’ residency — not idol-worship as such. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מעשה בצדוקי אחד - קסבר ר\"ג צדוקי אינו כעכו\"ם ולא דמי לכותי דגרי אריות הן ואינם גרים גמורים אבל צדוקי ישראל הוא ונהפך…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-61b-tosafot-2",
+      "ref": "Eruvin.61b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 7,
+      "snippet": "מתני' הדר. ר' אליעזר בן יעקב אומר עד שיהו ב' ישראלים אוסרים כו' - משמע דאתרוייהו קאי ר\"א בן יעקב אעכו\"ם ואכותי ובגמ' מפרש דטעמא דראב\"י דכיון דעכו\"ם חשוד אשפיכות דמים בתרי דשכיחי דדיירי גזרו בהו רבנן ש",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Eruvin.61b (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Eruvin).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מתני' הדר. ר' אליעזר בן יעקב אומר עד שיהו ב' ישראלים אוסרים כו' - משמע דאתרוייהו קאי ר\"א בן יעקב אעכו\"ם ואכותי ובגמ'…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-61b-tosafot-3",
+      "ref": "Eruvin.61b",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "count": 10,
+      "snippet": "אמר רבן גמליאל מעשה בצדוקי א' כו' - קסבר צדוקי אינו כעכו\"ם כדמפרש בגמ' ופי' בקונטרס אבל בכותי מודה דהרי הוא כעכו\"ם משום דגרי אריות הן ואע\"ג דת\"ק דאסר כותי היינו רבי מאיר כדאמר בגמ' ושמעינן ליה דקסבר ג",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Eruvin.61b (line 3) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Eruvin).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אמר רבן גמליאל מעשה בצדוקי א' כו' - קסבר צדוקי אינו כעכו\"ם כדמפרש בגמ' ופי' בקונטרס אבל בכותי מודה דהרי הוא כעכו\"ם משום…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62a-rashi-3",
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "הרי הוא כדיר של בהמה - ואין לו כח לאסור ור\"מ קאמר לה לקמן בברייתא בשמעתין ורמינן מתני' עלה ומוקמינן בדליתיה וישראל אפי' כי ליתיה אוסר אלמא דירת עכו\"ם לאו שמה דירה:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.62a (line 3) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Eruvin).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “הרי הוא כדיר של בהמה - ואין לו כח לאסור ור\"מ קאמר לה לקמן בברייתא בשמעתין ורמינן מתני' עלה ומוקמינן בדליתיה וישראל אפי'…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62a-rashi-4",
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "אלא דכ\"ע לאו שמה דירה - אלא משום גזרה שמא ילמוד ישראל מעשיו של עכו\"ם הטריחוהו והפסידוהו חכמים לישראל הדר עמו כדי שיקשה בעיניו ליתן שכר בכל שבת ושבת ויצא משם ובההיא גזרה פליגי ר\"מ ור\"א בן יעקב אי גזרינ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.62a (line 4) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shabbat practice (Eruvin).",
+        "plain_english": "Shabbat restrictions involving gentile agents or property — technical Shabbat law. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אלא דכ\"ע לאו שמה דירה - אלא משום גזרה שמא ילמוד ישראל מעשיו של עכו\"ם הטריחוהו והפסידוהו חכמים לישראל הדר עמו כדי שיקשה…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62a-rashi-5",
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 5,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "ר\"א סבר כיון דעכו\"ם חשוד על שפיכות דמים - לא שכיח יחידי דדייר בהדיה ומילתא דלא שכיחא לא גזור בה רבנן ור\"מ סבר יחידי נמי זימנין דדייר ומש\"ה אמור רבנן אין עירוב מועיל כו': ועכו\"ם לא מוגר - לא יהא רוצה ל",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.62a (line 5) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: eruv and shared courtyards (Eruvin).",
+        "plain_english": "Eruv law: whether a gentile neighbor’s courtyard affects carrying on Shabbat. Halacha turns on ‘gentile’ residency — not idol-worship as such. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “ר\"א סבר כיון דעכו\"ם חשוד על שפיכות דמים - לא שכיח יחידי דדייר בהדיה ומילתא דלא שכיחא לא גזור בה רבנן ור\"מ סבר יחידי נמי…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62a-rashi-6",
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "מאי טעמא - לא מוגר עכו\"ם: בריאה - חזקה שיתנה ישראל עמו למלאות כל המבוי כלים אם ירצה:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.62a (line 6) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: eruv and shared courtyards (Eruvin).",
+        "plain_english": "Eruv law: whether a gentile neighbor’s courtyard affects carrying on Shabbat. Halacha turns on ‘gentile’ residency — not idol-worship as such. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מאי טעמא - לא מוגר עכו\"ם: בריאה - חזקה שיתנה ישראל עמו למלאות כל המבוי כלים אם ירצה:”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62a-rashi-7",
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 7,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "בן נח נהרג על הגזל - דהיא מז' מצות כדאמר בד' מיתות בסנהדרין (דף נו.) ואמר אזהרה שלהן זו היא מיתתן ואשמועינן ר' יוחנן דעכו\"ם לא מחיל אפילו אפחות משוה פרוטה והוי גזל לדידהו: לא ניתן להישבון - דגבי ישראל",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.62a (line 7) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: theft and restitution (Eruvin).",
+        "plain_english": "Monetary law: theft from or by gentiles, Noahide rules, and whether restitution applies. The sugya is civil law; akum is a vocabulary swap only. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “בן נח נהרג על הגזל - דהיא מז' מצות כדאמר בד' מיתות בסנהדרין (דף נו.) ואמר אזהרה שלהן זו היא מיתתן ואשמועינן ר' יוחנן…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62a-rashi-9",
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 9,
+      "pattern_id": "akum_ascii",
+      "count": 3,
+      "snippet": "חצירו של עכו\"ם - אע\"ג שסתם חצירות פתוחין לתוכן בתים הרבה אין רשות נכרי חלוקה להיחשב רשות לכל אחד ואחד לבדו דדירת עכו\"ם לא שמה דירה וישראל שאינו דר עמהן שנכנס לאחד מן הבתים בשבת מותר להוציא מן הבתים לח",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.62a (line 9) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: eruv and shared courtyards (Eruvin).",
+        "plain_english": "Eruv law: whether a gentile neighbor’s courtyard affects carrying on Shabbat. Halacha turns on ‘gentile’ residency — not idol-worship as such. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “חצירו של עכו\"ם - אע\"ג שסתם חצירות פתוחין לתוכן בתים הרבה אין רשות נכרי חלוקה להיחשב רשות לכל אחד ואחד לבדו דדירת עכו\"ם…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62a-rashi-11",
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 11,
+      "pattern_id": "akum_ascii",
+      "count": 6,
+      "snippet": "ר\"א בן יעקב אומר עד שיהו שני ישראלים - דרין בשני בתים ואוסרין זה על זה רשות העכו\"ם חלוקה מהן ואוסר העכו\"ם על בתיהם והן אוסרין על בתי העכו\"ם מלהוציא לחצר דשויוה רבנן לדירת עכו\"ם דירה כדאמר לעיל אבל ביש",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.62a (line 11) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: eruv and shared courtyards (Eruvin).",
+        "plain_english": "Eruv law: whether a gentile neighbor’s courtyard affects carrying on Shabbat. Halacha turns on ‘gentile’ residency — not idol-worship as such. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “ר\"א בן יעקב אומר עד שיהו שני ישראלים - דרין בשני בתים ואוסרין זה על זה רשות העכו\"ם חלוקה מהן ואוסר העכו\"ם על בתיהם והן…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62a-tosafot-1",
+      "ref": "Eruvin.62a",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "חצירו של עכו\"ם הרי הוא כדיר של בהמה - ואם יש בתים הרבה של עכו\"ם פתוחין בחצר מותר לישראל להכניס ולהוציא לשם מאחר שאין ישראל דר שם:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Eruvin.62a (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: eruv and shared courtyards (Eruvin).",
+        "plain_english": "Eruv law: whether a gentile neighbor’s courtyard affects carrying on Shabbat. Halacha turns on ‘gentile’ residency — not idol-worship as such. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “חצירו של עכו\"ם הרי הוא כדיר של בהמה - ואם יש בתים הרבה של עכו\"ם פתוחין בחצר מותר לישראל להכניס ולהוציא לשם מאחר שאין…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62a-tosafot-2",
+      "ref": "Eruvin.62a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 3,
+      "snippet": "ועכו\"ם לא מוגר - וא\"ת ומעיקרא דס\"ד דטעמא משום דדירת עכו\"ם שמה דירה מ\"ט דעירוב לא מהני ושכירות מהני וי\"ל דעירוב וביטול בדין הוא דלא מהני שאין העכו\"ם מכיר בהן אבל יודע הוא שישראל קונה רשותו בשכירות אבל ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Eruvin.62a (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: eruv and shared courtyards (Eruvin).",
+        "plain_english": "Eruv law: whether a gentile neighbor’s courtyard affects carrying on Shabbat. Halacha turns on ‘gentile’ residency — not idol-worship as such. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “ועכו\"ם לא מוגר - וא\"ת ומעיקרא דס\"ד דטעמא משום דדירת עכו\"ם שמה דירה מ\"ט דעירוב לא מהני ושכירות מהני וי\"ל דעירוב וביטול…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62a-tosafot-3",
+      "ref": "Eruvin.62a",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "count": 10,
+      "snippet": "בן נח נהרג על פחות משוה פרוטה ולא ניתן להשבון - פירש בקונטרס דגבי ישראל כתיב והשיב את הגזלה אשר גזל אבל בגוי לא כתיב הלכך כיון שעבר נהרג ואין משלם משמע מתוך פירושו דאפילו בגזל מעכו\"ם חבירו לא מיחייב ב",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Eruvin.62a (line 3) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Eruvin).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “בן נח נהרג על פחות משוה פרוטה ולא ניתן להשבון - פירש בקונטרס דגבי ישראל כתיב והשיב את הגזלה אשר גזל אבל בגוי לא כתיב…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62b-rashi-1",
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "אמר מר הרי הוא כדיר של בהמה - דנכרי לא אסר מידי וכי דייר ישראל גביה קאמר ר' מאיר דישראל אוסר על ביתו של עכו\"ם אבל עכו\"ם אינו אוסר על ביתו של ישראל והתנן כו':",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.62b (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Eruvin).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אמר מר הרי הוא כדיר של בהמה - דנכרי לא אסר מידי וכי דייר ישראל גביה קאמר ר' מאיר דישראל אוסר על ביתו של עכו\"ם אבל עכו\"ם…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62b-rashi-2",
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "הא דליתיה - לעכו\"ם לא אסר ואם יש שם ישראל אחר אוסר על ביתו של עכו\"ם ואפי' ליתא לישראל:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.62b (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Eruvin).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “הא דליתיה - לעכו\"ם לא אסר ואם יש שם ישראל אחר אוסר על ביתו של עכו\"ם ואפי' ליתא לישראל:”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62b-rashi-3",
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "ה\"ג לעולם קסבר דירה בלא בעלים לאו שמה דירה: וישראל דכי איתיה אסר - משום דירה דדירת ישראל שמה דירה: כי ליתיה גזרו רבנן - משום כי איתיה אבל עכו\"ם דאפילו כי איתיה לאו שמה דירה אלא משום שמא ילמד כו':",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.62b (line 3) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Eruvin).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “ה\"ג לעולם קסבר דירה בלא בעלים לאו שמה דירה: וישראל דכי איתיה אסר - משום דירה דדירת ישראל שמה דירה: כי ליתיה גזרו רבנן -…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-62b-rashi-4",
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "count": 3,
+      "snippet": "דאתי ביומיה - שהלך למקום קרוב ויבא בו ביום ואי שרית להו קודם שיבא מטלטלי נמי אחר שיבא ולא מסקי אדעתייהו: ל\"א הכי גרסינן ואם יש שם ישראל אחר שדר ישראל עם ישראל אחר בבית אחד הרי זה העכו\"ם אוסר עליו דהכי",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Eruvin.62b (line 4) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Eruvin).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “דאתי ביומיה - שהלך למקום קרוב ויבא בו ביום ואי שרית להו קודם שיבא מטלטלי נמי אחר שיבא ולא מסקי אדעתייהו: ל\"א הכי גרסינן…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "eruvin-64b-tosafot-2",
+      "ref": "Eruvin.64b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 7,
+      "snippet": "שהולכין אחר רוב עוברי דרכים - כדפירש בקונטרס מדלא שרי ליה לר' אלעאי למכלינהו דאחזקינהו בחזקת פתן של נכרים שרוב עוברי דרכים נכרים הם דאם היינו תולין בשל ישראל היה מותר אף על פי שאחר הפסח היה בסמוך דביש",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Eruvin.64b (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Eruvin).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “שהולכין אחר רוב עוברי דרכים - כדפירש בקונטרס מדלא שרי ליה לר' אלעאי למכלינהו דאחזקינהו בחזקת פתן של נכרים שרוב עוברי…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "pesachim-9a-rashi-3",
+      "ref": "Pesachim.9a",
+      "layer": "rashi",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "מי לא תנן - במסכת אהלות מדורות הגוים טמאין מפני שקוברין נפליהם בבתיהם והעכו\"ם מטמאין במיתתן אף באהל לרבנן ולר\"ש בן יוחי נמי דאמר קברי הגוים אינם מטמאין במגע ומשא מודה הוא דלא אימעוט אלא מטומאת אהל דלא",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Pesachim.9a (line 3) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Pesachim).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מי לא תנן - במסכת אהלות מדורות הגוים טמאין מפני שקוברין נפליהם בבתיהם והעכו\"ם מטמאין במיתתן אף באהל לרבנן ולר\"ש בן יוחי…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "pesachim-21b-rashi-9",
+      "ref": "Pesachim.21b",
+      "layer": "rashi",
+      "line_no": 9,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "להקדים נתינה דגר למכירה דנכרי - אם יש גר ליתנה לו נתינתו קודמת למכירתה לנכרי והאי גר בגר תושב קאמר שקיבל עליו שלא לעבוד עכו\"ם ואוכל נבלות: גר אתה מצווה להחיותו - דכתיב (ויקרא כ״ה:ל״ה) גר ותושב וחי עמך",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Pesachim.21b (line 9) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: idolatry references (Pesachim).",
+        "plain_english": "Commentary touching idol-worship or pagan practice. Even here Vilna often used akum where witnesses still read goyim in generic gentile references. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “להקדים נתינה דגר למכירה דנכרי - אם יש גר ליתנה לו נתינתו קודמת למכירתה לנכרי והאי גר בגר תושב קאמר שקיבל עליו שלא לעבוד…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "pesachim-22b-tosafot-1",
+      "ref": "Pesachim.22b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "ואבר מן החי לבני נח - תימה כיון דבאבר מן החי של נכרי מיירי כדאמר בפ\"ק דמסכת ע\"ג (דף ו: ושם) מדקתני לא יושיט ולא קתני לא יתן א\"כ היכי דייק דשרי בהנאה אי לאו לפני עור וי\"ל דכיון דבשכר היה אסור להושיט דא",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Pesachim.22b (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Pesachim).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “ואבר מן החי לבני נח - תימה כיון דבאבר מן החי של נכרי מיירי כדאמר בפ\"ק דמסכת ע\"ג (דף ו: ושם) מדקתני לא יושיט ולא קתני לא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "pesachim-87b-rashi-8",
+      "ref": "Pesachim.87b",
+      "layer": "rashi",
+      "line_no": 8,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "כהן בית אל - כומר לעכו\"ם:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Pesachim.87b (line 8) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Pesachim).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “כהן בית אל - כומר לעכו\"ם:”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "pesachim-91a-tosafot-2",
+      "ref": "Pesachim.91a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "לא שנו אלא בבית האסורין של עכו\"ם - בירושלמי מוקי לה רבי יוסי בר בון בשם רבי יוחנן כשחבשוהו ישראל אבל חבשוהו עכו\"ם אין שוחטין עליו אפי' עם אחרים אשר פיהם דבר שוא והיינו איפכא משמעתין:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Pesachim.91a (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Pesachim).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “לא שנו אלא בבית האסורין של עכו\"ם - בירושלמי מוקי לה רבי יוסי בר בון בשם רבי יוחנן כשחבשוהו ישראל אבל חבשוהו עכו\"ם אין…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "yoma-82a-tosafot-2",
+      "ref": "Yoma.82a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 14,
+      "snippet": "מה רוצח יהרג ואל יעבור אף נערה המאורסה יהרג ואל יעבור - פירש רש\"י דלא גרס תיהרג דאיהי לא מחייבא למימסר נפשיה דקרקע עולם היא ובהא ניחא הא דבסוף פ' בן סורר (סנהדרין עד:) פריך והא אסתר פרהסיא הואי ואמאי ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Yoma.82a (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Yoma).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מה רוצח יהרג ואל יעבור אף נערה המאורסה יהרג ואל יעבור - פירש רש\"י דלא גרס תיהרג דאיהי לא מחייבא למימסר נפשיה דקרקע עולם…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sukkah-30a-rashi-6",
+      "ref": "Sukkah.30a",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "אוונכרי - תגרי כל דבר להשתכר בו כגון כלים קטנים מחטין ומסריקות ולולבין וקורין מרני\"ש: כי זבניתו אסא מנכרים - כשתקנו הדס מן הנכרים לאגוד בהן להושענא: ליגזזו אינהו - הם יחתכוהו מן המחובר ויתנוהו לכם: מא",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Sukkah.30a (line 6) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: converts and resident strangers (Sukkah).",
+        "plain_english": "Ger / resident-alien status vs gentile — who has which obligations. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אוונכרי - תגרי כל דבר להשתכר בו כגון כלים קטנים מחטין ומסריקות ולולבין וקורין מרני\"ש: כי זבניתו אסא מנכרים - כשתקנו הדס…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "rosh-hashanah-3b-tosafot-2",
+      "ref": "Rosh Hashanah.3b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "שנת עשרים לארתחשסתא המלך יין לפניו. פשטיה דקרא משמע דהאי עובדא דנחמיה בפני ארתחשסתא המלך היה דהוא דריוש בן אסתר שנבנה הבית בימיו אבל אי אפשר לומר כן דהא בשנת שיתא למלכות דריוש נבנה הבית כדכתיב ושיציא ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Rosh Hashanah.3b (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Rosh Hashanah).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “שנת עשרים לארתחשסתא המלך יין לפניו. פשטיה דקרא משמע דהאי עובדא דנחמיה בפני ארתחשסתא המלך היה דהוא דריוש בן אסתר שנבנה…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "taanit-16a-rashi-7",
+      "ref": "Taanit.16a",
+      "layer": "rashi",
+      "line_no": 7,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "קברי עכו\"ם – במקום שאין קברי ישראל לבקש רחמים אפי' על עצמן ליכא כל שכן עלינו:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Taanit.16a (line 7) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Taanit).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “קברי עכו\"ם – במקום שאין קברי ישראל לבקש רחמים אפי' על עצמן ליכא כל שכן עלינו:”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "moed-katan-11a-rashi-1",
+      "ref": "Moed Katan.11a",
+      "layer": "rashi",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "יריד של עכו\"ם - יומא דשוקא: ומעלה בערכאות - לקיימן בחתימתן דכיון דהשתא הוא דמשכח להו וליומא אחרינא לא שרי:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Moed Katan.11a (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Moed Katan).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “יריד של עכו\"ם - יומא דשוקא: ומעלה בערכאות - לקיימן בחתימתן דכיון דהשתא הוא דמשכח להו וליומא אחרינא לא שרי:”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "yevamot-61a-rashi-9",
+      "ref": "Yevamot.61a",
+      "layer": "rashi",
+      "line_no": 9,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "מתני' אלא אם כן יש לו בנים - משום דמצווה על פריה ורביה וה\"ה לישראל ובגמרא מפרש אמאי נקט כהן: שהיא זונה האמורה בתורה - ובגמרא מפרש לה: אלא הגיורת והמשוחררת - דביאת עכו\"ם ועבד פסלה: ושנבעלה בעילת זנות -",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Yevamot.61a (line 9) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Yevamot).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מתני' אלא אם כן יש לו בנים - משום דמצווה על פריה ורביה וה\"ה לישראל ובגמרא מפרש אמאי נקט כהן: שהיא זונה האמורה בתורה -…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "yevamot-61a-tosafot-1",
+      "ref": "Yevamot.61a",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "קברי גוים אינן מטמאין באהל - תימה למה ליה לרבי בנאה לציוני מערתא דאברהם אבינו ואדם הראשון (ב\"ב נח.) אף דאיקרו אדם אדם ואברהם או אפי' לרבנן דאמרי קברי גוים מטמאין באהל הא לא מטמא באהל אפילו קברי ישראל ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Yevamot.61a (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Yevamot).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “קברי גוים אינן מטמאין באהל - תימה למה ליה לרבי בנאה לציוני מערתא דאברהם אבינו ואדם הראשון (ב\"ב נח.) אף דאיקרו אדם אדם…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "ketubot-98b-tosafot-2",
+      "ref": "Ketubot.98b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "אמר רב פפא כו' - הכי גריס רבינו חננאל הלכתא דבר שיש לו קצבה חולקין דבר שאין לו קצבה הכל לבעל המעות ותימה לפי גירסא זו אדפריך ליה מאי קמ\"ל הוה ליה למיפרך ולימא הלכה כר' יוסי ויש לפרש בדוחק דה\"נ קאמר מא",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Ketubot.98b (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: converts and resident strangers (Ketubot).",
+        "plain_english": "Ger / resident-alien status vs gentile — who has which obligations. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אמר רב פפא כו' - הכי גריס רבינו חננאל הלכתא דבר שיש לו קצבה חולקין דבר שאין לו קצבה הכל לבעל המעות ותימה לפי גירסא זו…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "gittin-62a-tosafot-3",
+      "ref": "Gittin.62a",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "count": 3,
+      "snippet": "אין עודרין עם העכו\"ם בשביעית - והא דקאמר בפרק זה בורר (סנהדרין דף כו.) גבי כהן וחורש יכול לומר לו אגיסטון אני בתוכה לא כמו שפי' בקונטרס שכיר לנכרי דהא משמע הכא דאסור ולא מסתבר לחלק בין חנם לבשכר אלא מ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Gittin.62a (line 3) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Gittin).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אין עודרין עם העכו\"ם בשביעית - והא דקאמר בפרק זה בורר (סנהדרין דף כו.) גבי כהן וחורש יכול לומר לו אגיסטון אני בתוכה לא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-kamma-23a-tosafot-5",
+      "ref": "Bava Kamma.23a",
+      "layer": "tosafot",
+      "line_no": 5,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "תפשוט דפי פרה כחצר הניזק דמי - תימה דאמאי לא פשיט משאר בבי דמתני' דתנן השן מועדת לאכול הראוי לה ומההיא דאכלה מצידי הרחבה ומתוך החנות ועוד אותם שהיו מדקדקין משיסה בו את הכלב למה לא הביאו מתניתין כלב שנ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Kamma.23a (line 5) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: eruv and shared courtyards (Bava Kamma).",
+        "plain_english": "Eruv law: whether a gentile neighbor’s courtyard affects carrying on Shabbat. Halacha turns on ‘gentile’ residency — not idol-worship as such. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “תפשוט דפי פרה כחצר הניזק דמי - תימה דאמאי לא פשיט משאר בבי דמתני' דתנן השן מועדת לאכול הראוי לה ומההיא דאכלה מצידי…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-kamma-58a-tosafot-1",
+      "ref": "Bava Kamma.58a",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 5,
+      "snippet": "א\"נ מבריח ארי מנכסי חבירו לית ליה פסידא - וא\"ת והרי פורע חובו דחשבינן ליה מבריח ארי בריש אין בין המודר (נדרים ד' לג.) אע\"ג דאית ליה פסידא וי\"ל דהכי פי' מבריח ארי מנכסי חבירו מדעתו וכיון דמדעתו אפי' אי",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Kamma.58a (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Kamma).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “א\"נ מבריח ארי מנכסי חבירו לית ליה פסידא - וא\"ת והרי פורע חובו דחשבינן ליה מבריח ארי בריש אין בין המודר (נדרים ד' לג.)…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-kamma-102a-rashi-7",
+      "ref": "Bava Kamma.102a",
+      "layer": "rashi",
+      "line_no": 7,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "מלוה בשטר אין נפרעין מהן - לפני אידיהן מפני ששמחה היא לו ואזיל ומודה לעכו\"ם ביום חגם ורבנן סברי אסור לפורען וליפרע מהן כלל:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Kamma.102a (line 7) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: gentile rulers (Bava Kamma).",
+        "plain_english": "Rules involving gentile kings or rulers (tax, oaths, capital cases) — political/legal context, not theological creed. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מלוה בשטר אין נפרעין מהן - לפני אידיהן מפני ששמחה היא לו ואזיל ומודה לעכו\"ם ביום חגם ורבנן סברי אסור לפורען וליפרע מהן…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-kamma-113b-rashi-15",
+      "ref": "Bava Kamma.113b",
+      "layer": "rashi",
+      "line_no": 15,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "דדיירי דרי - עכו\"ם שיש להם בהמות ומזבלין מהן שדות בשכר: אסור ליקח מהן - בהמה שמא נתחברה עם בהמותיהם של ישראל ושל בני ישראל הוא:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Kamma.113b (line 15) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Kamma).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “דדיירי דרי - עכו\"ם שיש להם בהמות ומזבלין מהן שדות בשכר: אסור ליקח מהן - בהמה שמא נתחברה עם בהמותיהם של ישראל ושל בני…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-kamma-114a-rashi-2",
+      "ref": "Bava Kamma.114a",
+      "layer": "rashi",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "והאמר מר זבין מעכו\"ם כו' - בבבא מציעא בהמקבל:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Kamma.114a (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Kamma).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “והאמר מר זבין מעכו\"ם כו' - בבבא מציעא בהמקבל:”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-kamma-114a-rashi-4",
+      "ref": "Bava Kamma.114a",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "מתני' הרי אלו שלו - דמסתמא נתייאשו הבעלים מיד וקננהו היאך ביאוש ושינוי רשות: אם נתייאשו - הבעלים דשמעינן דאייאוש דאמר ווי לחסרון כיס אבל סתמא לא וקשיא לסטים דסיפא אלסטים דרישא ובגמרא פריך ומשני לה חדא",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Kamma.114a (line 4) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Bava Kamma).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מתני' הרי אלו שלו - דמסתמא נתייאשו הבעלים מיד וקננהו היאך ביאוש ושינוי רשות: אם נתייאשו - הבעלים דשמעינן דאייאוש דאמר…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-kamma-114a-tosafot-3",
+      "ref": "Bava Kamma.114a",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "עד דמקבל עילויה כו' - אומר ר\"ת דהיינו דוקא כשישראל רוצה ליתן לו כמו שנותן לו העכו\"ם אבל אם העכו\"ם רוצה ליתן לו יותר אין להפסיד בשביל כן:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Kamma.114a (line 3) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Kamma).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “עד דמקבל עילויה כו' - אומר ר\"ת דהיינו דוקא כשישראל רוצה ליתן לו כמו שנותן לו העכו\"ם אבל אם העכו\"ם רוצה ליתן לו יותר אין…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-kamma-117a-rashi-12",
+      "ref": "Bava Kamma.117a",
+      "layer": "rashi",
+      "line_no": 12,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "פקיע - קשר: חייב - ואע\"ג דקאי עכו\"ם ע\"ג הממון הואיל ונשא ונתן ביד חייב:\n בתרי עיברי נהרא - עכו\"ם מצד זה והעמיר מצד זה דאי לא יהביה נהליה לא מצי אנס למשקליה:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Kamma.117a (line 12) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Kamma).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “פקיע - קשר: חייב - ואע\"ג דקאי עכו\"ם ע\"ג הממון הואיל ונשא ונתן ביד חייב: בתרי עיברי נהרא - עכו\"ם מצד זה והעמיר מצד זה…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-15a-rashi-1",
+      "ref": "Bava Metzia.15a",
+      "layer": "rashi",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "שנטלוה מסיקין - אנסים עכו\"ם נטלוה מן הגזלן ומחמתו ותנן בבבא קמא (דף קטז:) הגוזל שדה מחבירו ונטלוה מסיקין אם מחמת הגזלן חייב להעמיד לו שדה אחר והרי היא יוצאה מתחת ידו דקתני בנטילת מסיקין הוא:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Metzia.15a (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: theft and restitution (Bava Metzia).",
+        "plain_english": "Monetary law: theft from or by gentiles, Noahide rules, and whether restitution applies. The sugya is civil law; akum is a vocabulary swap only. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “שנטלוה מסיקין - אנסים עכו\"ם נטלוה מן הגזלן ומחמתו ותנן בבבא קמא (דף קטז:) הגוזל שדה מחבירו ונטלוה מסיקין אם מחמת הגזלן…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-23a-rashi-10",
+      "ref": "Bava Metzia.23a",
+      "layer": "rashi",
+      "line_no": 10,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "הלכתא כריכות ברה\"ר כו' - כדמוקי לה בשאין בו סימן: ברשות היחיד אי דרך נפילה הרי אלו שלו - דליכא למימר מקום הוי סימן דהא לא ידע היכא נפיל מיניה: אי דרך הינוח נוטל ומכריז - מקום ולא יניחם שם שמא ימצאם עכ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Metzia.23a (line 10) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: eruv and shared courtyards (Bava Metzia).",
+        "plain_english": "Eruv law: whether a gentile neighbor’s courtyard affects carrying on Shabbat. Halacha turns on ‘gentile’ residency — not idol-worship as such. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “הלכתא כריכות ברה\"ר כו' - כדמוקי לה בשאין בו סימן: ברשות היחיד אי דרך נפילה הרי אלו שלו - דליכא למימר מקום הוי סימן דהא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-26b-tosafot-5",
+      "ref": "Bava Metzia.26b",
+      "layer": "tosafot",
+      "line_no": 5,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "אפילו צרורין - רש\"י ל\"ג צרורין דאם היה בו סימן מכריז וי\"ל דגריס ליה ומיירי דאיכא רוב עכו\"ם מצויים שם והם שלו ואע\"ג דאיכא סימן דהלכה כר' שמעון בן אלעזר בהא:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Metzia.26b (line 5) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Bava Metzia).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אפילו צרורין - רש\"י ל\"ג צרורין דאם היה בו סימן מכריז וי\"ל דגריס ליה ומיירי דאיכא רוב עכו\"ם מצויים שם והם שלו ואע\"ג…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-70b-rashi-1",
+      "ref": "Bava Metzia.70b",
+      "layer": "rashi",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "מתני' אין מקבלין צאן ברזל - כל אחריות הנכסים על המקבל ושם אותם עליו במעות וכל זמן שאין נותן לו מעותיו חולקין השכר ואע\"ג דמשנה יתירא היא דהא תנא ליה (לעיל בבא מציעא דף סח.) אין מושיבין חנווני למחצית שכ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Metzia.70b (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Bava Metzia).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מתני' אין מקבלין צאן ברזל - כל אחריות הנכסים על המקבל ושם אותם עליו במעות וכל זמן שאין נותן לו מעותיו חולקין השכר ואע\"ג…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-70b-rashi-2",
+      "ref": "Bava Metzia.70b",
+      "layer": "rashi",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "מדעת העכו\"ם - מפרש בגמרא:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Metzia.70b (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Metzia).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מדעת העכו\"ם - מפרש בגמרא:”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-70b-rashi-6",
+      "ref": "Bava Metzia.70b",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "ועוד - אי איתא דהיכא דקביל עליה אונסא וזולא קרית ליה צאן ברזל: אדתני סיפא - דמתני' אבל מקבלין צאן ברזל מן העכו\"ם: לפלוג וליתני בדידיה - בישראל:\n",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Metzia.70b (line 6) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Bava Metzia).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “ועוד - אי איתא דהיכא דקביל עליה אונסא וזולא קרית ליה צאן ברזל: אדתני סיפא - דמתני' אבל מקבלין צאן ברזל מן העכו\"ם: לפלוג…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-70b-tosafot-1",
+      "ref": "Bava Metzia.70b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 3,
+      "snippet": "אין מקבלין צאן ברזל מישראל מפני שהוא רבית - פי' בקונטרס כל האחריות נכסים על המקבל ושם אותם במעות עליו וכל זמן שאין נותן לו מעותיו חולקים השכר ואע\"ג דמשנה יתירא היא דהא תנא ליה (לעיל בבא מציעא דף סח.) ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Metzia.70b (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Metzia).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אין מקבלין צאן ברזל מישראל מפני שהוא רבית - פי' בקונטרס כל האחריות נכסים על המקבל ושם אותם במעות עליו וכל זמן שאין נותן…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-70b-tosafot-3",
+      "ref": "Bava Metzia.70b",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "תשיך לא סגי דלאו הכי - אבל אי תשוך ניחא דלא סגי דלא תשוך דאסור להלוות לו בחנם כדאמר קרא (דברים ז׳:ב׳) לא תחנם ועוד שאמר הכתוב להלוות להם ברבית וא\"ת ומאי פריך מהאי קרא הא לא אסור אלא מדרבנן גזירה שמא י",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Metzia.70b (line 3) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Metzia).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “תשיך לא סגי דלאו הכי - אבל אי תשוך ניחא דלא סגי דלא תשוך דאסור להלוות לו בחנם כדאמר קרא (דברים ז׳:ב׳) לא תחנם ועוד שאמר…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-108a-rashi-1",
+      "ref": "Bava Metzia.108a",
+      "layer": "rashi",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "ואם לאו לא מסתגי להו - אין להם מהלך בעבר זה והולכין על כרחן דרך שפתו השנית שהרי על כרחן כשהולכין כנגד היער של עכו\"ם ילכו בשפתו השניה ולכשיגיעו כנגד שלי למה יטריחו לעבור את רוחב המים והרי הן צריכין לחז",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Metzia.108a (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Metzia).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “ואם לאו לא מסתגי להו - אין להם מהלך בעבר זה והולכין על כרחן דרך שפתו השנית שהרי על כרחן כשהולכין כנגד היער של עכו\"ם…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-108a-rashi-2",
+      "ref": "Bava Metzia.108a",
+      "layer": "rashi",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "חזא ההוא אבא - יער שהניח רבה בר רב הונא לפי שאין העליונים והתחתונים קוצצין ורבה בר רב נחמן לא היה יודע שכן היה שיהא עליון ותחתון של עכו\"ם המושל: יד השרים והסגנים - פסוק הוא בספר עזרא:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Metzia.108a (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Metzia).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “חזא ההוא אבא - יער שהניח רבה בר רב הונא לפי שאין העליונים והתחתונים קוצצין ורבה בר רב נחמן לא היה יודע שכן היה שיהא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-108a-tosafot-2",
+      "ref": "Bava Metzia.108a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "האי מאן דאחזיק ברקתא דנהרא - קיבל בטסקא מן המלך כדפי' בקונטרס ולהכי קאמר דאחזיק ולא קאמר דזבין כדאמרינן לקמן זבין במאתים זבין מעכו\"ם וכן האי מאן דאחזיק ביני אחי דבסמוך מפר\"ת דוקא באחזיק שהיתה קרקע הפק",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Metzia.108a (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Metzia).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “האי מאן דאחזיק ברקתא דנהרא - קיבל בטסקא מן המלך כדפי' בקונטרס ולהכי קאמר דאחזיק ולא קאמר דזבין כדאמרינן לקמן זבין…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-108b-rashi-4",
+      "ref": "Bava Metzia.108b",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "אריא אברחי לך - ואין לך ישר וטוב מזה: עכו\"ם לאו בר ועשית וכו' - ואין לנו לומר על דינא דבר מצרא ועשית הישר והטוב אלא ללוקח שהמוכר אומר לו מה עשיתי לך אם ארצה לא אמכרנה לך ותהא בידי אבל ללוקח נאמר משוך ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Metzia.108b (line 4) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: capital jurisdiction (Bava Metzia).",
+        "plain_english": "Who falls under which court or death penalty — procedural law about gentiles vs Israel. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אריא אברחי לך - ואין לך ישר וטוב מזה: עכו\"ם לאו בר ועשית וכו' - ואין לנו לומר על דינא דבר מצרא ועשית הישר והטוב אלא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-108b-rashi-8",
+      "ref": "Bava Metzia.108b",
+      "layer": "rashi",
+      "line_no": 8,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "שכיני העיר ושכיני השדה שכיני העיר קודמין - נראה בעיני דלאו בדינא דבר מצרא איירי אלא להשיא עצה דרך ישר וטוב למוכר שאם יש לו שדה למכור ובאו עליה ללוקח שכינים הדרים אצלו בדירה ושכן שיש לו בשדה ששדותיהן ס",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Metzia.108b (line 8) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: sectarians (minim) (Bava Metzia).",
+        "plain_english": "Rashi/Tosafot discuss sectarians in a halachic or polemical context; Vilna hides the term behind the censor acronym akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “שכיני העיר ושכיני השדה שכיני העיר קודמין - נראה בעיני דלאו בדינא דבר מצרא איירי אלא להשיא עצה דרך ישר וטוב למוכר שאם יש…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-108b-tosafot-1",
+      "ref": "Bava Metzia.108b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "משמתינן ליה עד דמקבל כו' - דוקא שישראל רוצה ליקח בדמים שנתן העכו\"ם:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Metzia.108b (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Bava Metzia).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “משמתינן ליה עד דמקבל כו' - דוקא שישראל רוצה ליקח בדמים שנתן העכו\"ם:”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-metzia-111b-tosafot-1",
+      "ref": "Bava Metzia.111b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "מאחיך פרט לאחרים - תימה אמאי איצטריך מאחיך למעוטי עכו\"ם מגר תושב נפקא דדוקא גר תושב ולא עכו\"ם ועוד תימה אמאי איצטריך למיכתב גר צדק מגר תושב נפקא דכ\"ש גר צדק וליכא למימר דאי לאו דכתיב גר צדק הוה מוקמינ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Metzia.111b (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: converts and resident strangers (Bava Metzia).",
+        "plain_english": "Ger / resident-alien status vs gentile — who has which obligations. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מאחיך פרט לאחרים - תימה אמאי איצטריך מאחיך למעוטי עכו\"ם מגר תושב נפקא דדוקא גר תושב ולא עכו\"ם ועוד תימה אמאי איצטריך…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-batra-8a-tosafot-4",
+      "ref": "Bava Batra.8a",
+      "layer": "tosafot",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "איפרא הורמיז. פר\"ח דמשמעות הלשון חן מאת המקום איפרא כמו אפריון נמטייה לר\"ש (ב\"מ דף קיט.) הורמיז שם שכינה כי ההיא דס\"פ אחד דיני ממונות (סנהדרין דף לט. ושם ד\"ה דהורמיז) מפלגא דידך ולעיל דהורמיז בזיי\"ן מ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Batra.8a (line 4) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Bava Batra).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “איפרא הורמיז. פר\"ח דמשמעות הלשון חן מאת המקום איפרא כמו אפריון נמטייה לר\"ש (ב\"מ דף קיט.) הורמיז שם שכינה כי ההיא דס\"פ…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-batra-10b-rashi-6",
+      "ref": "Bava Batra.10b",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "ה\"ז צדיק גמור - על דבר זה ומחשבה זו: כאן בישראל וכאן בגוי - ישראל דעתן לשמים בין יחיה בין לא יחיה אינו מהרהר אחר מדת הדין אבל עכו\"ם אינו נותן אלא ע\"מ כן ואם לאו מתחרט:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Bava Batra.10b (line 6) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Bava Batra).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “ה\"ז צדיק גמור - על דבר זה ומחשבה זו: כאן בישראל וכאן בגוי - ישראל דעתן לשמים בין יחיה בין לא יחיה אינו מהרהר אחר מדת…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-batra-45a-tosafot-2",
+      "ref": "Bava Batra.45a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 3,
+      "snippet": "דינא הוא דמפצי ליה. תימה לרשב\"א דלימא ליה אייתי ראיה דבדין טרפה ואשלם לך דאפילו לגבי ישראל מצי למימר הכי כל שכן לגבי עכו\"ם ויש לומר דמיירי כגון שבדיני עכו\"ם דן עמו ובדיניהם הויא דעכו\"ם הלכך חייב לפצות",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Batra.45a (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: capital jurisdiction (Bava Batra).",
+        "plain_english": "Who falls under which court or death penalty — procedural law about gentiles vs Israel. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “דינא הוא דמפצי ליה. תימה לרשב\"א דלימא ליה אייתי ראיה דבדין טרפה ואשלם לך דאפילו לגבי ישראל מצי למימר הכי כל שכן לגבי…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-batra-48a-tosafot-3",
+      "ref": "Bava Batra.48a",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "count": 13,
+      "snippet": "גט מעושה בישראל כשר בעכו\"ם פסול. בסיפא מסיים ובעכו\"ם חובטין אותו ואומרים לו עשה מה שישראל אומר לך ויש מפרשים דהוי פירושא דרישא כיצד בעכו\"ם פסול חובטין אותו ואומרים לו כו' ואין נראה דא\"כ אדפריך ליה הכא",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Batra.48a (line 3) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Batra).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “גט מעושה בישראל כשר בעכו\"ם פסול. בסיפא מסיים ובעכו\"ם חובטין אותו ואומרים לו עשה מה שישראל אומר לך ויש מפרשים דהוי…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-batra-48a-tosafot-4",
+      "ref": "Bava Batra.48a",
+      "layer": "tosafot",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "count": 8,
+      "snippet": "דבר תורה אפילו בעכו\"ם כשר. דכיון דבדין מעשים כאותן שכופין אותו להוציא דבישראל נמי אי שלא כדין מעשה פסול כדאמר שמואל בהמגרש (גיטין דף פח: ושם) וא\"ת ומאי נפקא מינה אם תולה בעכו\"ם ומפקעת עצמה מיד בעלה דכ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Batra.48a (line 4) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Batra).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “דבר תורה אפילו בעכו\"ם כשר. דכיון דבדין מעשים כאותן שכופין אותו להוציא דבישראל נמי אי שלא כדין מעשה פסול כדאמר שמואל…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-batra-55b-tosafot-2",
+      "ref": "Bava Batra.55b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 8,
+      "snippet": "רבי אליעזר מטהר. רשב\"ם פירש דפליגי דרבי אליעזר חשיב ליה ספק ספיקא ורבנן לא חשיבי ליה אלא ספיקא אחת ורש\"י פירש בפרק בתרא דע\"ז (דף ע. ושם) דאיירי בשדה מלאה טומאה ופליגי דר\"א סבר אע\"ג דליכא אלא חדא ספיקא",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Batra.55b (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Batra).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “רבי אליעזר מטהר. רשב\"ם פירש דפליגי דרבי אליעזר חשיב ליה ספק ספיקא ורבנן לא חשיבי ליה אלא ספיקא אחת ורש\"י פירש בפרק בתרא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-batra-81a-tosafot-4",
+      "ref": "Bava Batra.81a",
+      "layer": "tosafot",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "count": 5,
+      "snippet": "למעוטי אדמת עכו\"ם. רשב\"ם גרס והא תרי אדמתך כתיבי ולפי שקשה לו אידך אדמתך למה לי מגיה הספרים והא כתיבי תרי אדמתך חד למעוטי אדמת עכו\"ם וחד למעוטי אדמת גר ובחנם דחק עצמו דחד אדמתך דרשינן בפ\"ק דבכורים הנו",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Batra.81a (line 4) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Bava Batra).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “למעוטי אדמת עכו\"ם. רשב\"ם גרס והא תרי אדמתך כתיבי ולפי שקשה לו אידך אדמתך למה לי מגיה הספרים והא כתיבי תרי אדמתך חד…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-batra-92b-tosafot-1",
+      "ref": "Bava Batra.92b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 3,
+      "snippet": "אי דליכא לאישתלומי מיניה. אומר ר\"י דשפיר גרס אי דליתנהו להנהו זוזי ומה שהקשה ר\"ש מההיא דבבא קמא (דף ט.) לאו פירכא היא דמצינא למימר דקיימא לן כרב פפא וכרב הונא בריה דרב יהושע דאית להו התם (דף ז:) דכל מ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Batra.92b (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Batra).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אי דליכא לאישתלומי מיניה. אומר ר\"י דשפיר גרס אי דליתנהו להנהו זוזי ומה שהקשה ר\"ש מההיא דבבא קמא (דף ט.) לאו פירכא היא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-batra-97a-tosafot-2",
+      "ref": "Bava Batra.97a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "מי סברת חמרא הוא קיוהא בעלמא הוא. מכאן הורה ר\"ת בדיעבד אם רחץ עכו\"ם חבית של שמרי יין דשרי דלאו חמרא הוא אלא קיוהא בעלמא הוא:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Batra.97a (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Bava Batra).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מי סברת חמרא הוא קיוהא בעלמא הוא. מכאן הורה ר\"ת בדיעבד אם רחץ עכו\"ם חבית של שמרי יין דשרי דלאו חמרא הוא אלא קיוהא בעלמא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "bava-batra-148a-tosafot-2",
+      "ref": "Bava Batra.148a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "תנהו לפלוני במעמד שלשתן קנה. ומה שמפרש רבינו תם שמועיל בעל כרחו של נפקד פי' לעיל בפ' המוכר את הספינה (בבא בתרא דף פה. ד\"ה ה\"ג) וגם מה שמפרש שמעמד שלשתן אין בעכו\"ם פירשנו בפרק שני דקדושין (דף מח.):",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Bava Batra.148a (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Bava Batra).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “תנהו לפלוני במעמד שלשתן קנה. ומה שמפרש רבינו תם שמועיל בעל כרחו של נפקד פי' לעיל בפ' המוכר את הספינה (בבא בתרא דף פה.…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-2b-tosafot-3",
+      "ref": "Sanhedrin.2b",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "אי קסבר עירוב פרשיות כתוב כאן ליבעי נמי מומחין - מפורש בהגוזל קמא (ב\"ק דף קז.): ליבעי נמי מומחין - תימה דמשמע הכא דממעטינן הדיוטות מדכתיב אלהים ובפרק המגרש (גיטין דף פח:) ממעט להו מדכתיב לפניהם ולא לפ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Sanhedrin.2b (line 3) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Sanhedrin).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אי קסבר עירוב פרשיות כתוב כאן ליבעי נמי מומחין - מפורש בהגוזל קמא (ב\"ק דף קז.): ליבעי נמי מומחין - תימה דמשמע הכא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-46a-rashi-1",
+      "ref": "Sanhedrin.46a",
+      "layer": "rashi",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "אהני לרבויי עכו\"ם - הך הרחקה שהרחיקם זה מזה למימרא דאין דנין אותו בכלל ופרט אהני לרבויי עכו\"ם הואיל ודמיא לפרטא בכל מילי שכופר בעיקר כמותו:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Sanhedrin.46a (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Sanhedrin).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אהני לרבויי עכו\"ם - הך הרחקה שהרחיקם זה מזה למימרא דאין דנין אותו בכלל ופרט אהני לרבויי עכו\"ם הואיל ודמיא לפרטא בכל…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-46a-tosafot-1",
+      "ref": "Sanhedrin.46a",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "השתא דמרחקי מהדדי. והא דאמרי' מנחות (נה:) כלל ופרט המרוחקין זה מזה אין דנין אותו בכלל ופרט לאו דאין דנין כלל אלא דנין בכלל ופרט ואהני לרבויי מידי כי הכא דאהני לרבויי עכו\"ם:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Sanhedrin.46a (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Sanhedrin).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “השתא דמרחקי מהדדי. והא דאמרי' מנחות (נה:) כלל ופרט המרוחקין זה מזה אין דנין אותו בכלל ופרט לאו דאין דנין כלל אלא דנין…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-46b-rashi-10",
+      "ref": "Sanhedrin.46b",
+      "layer": "rashi",
+      "line_no": 10,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "דליעביד ליה ארון - אבל קבורת הארץ לא משתמע ליה מיניה ולהכי לא אמר ליה מהאי ופרכינן לימא ליה מרבויא דתקברנו ומשני לא משמע ליה לעכו\"ם למהוי דרשה מרבויא:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Sanhedrin.46b (line 10) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Sanhedrin).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “דליעביד ליה ארון - אבל קבורת הארץ לא משתמע ליה מיניה ולהכי לא אמר ליה מהאי ופרכינן לימא ליה מרבויא דתקברנו ומשני לא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-56a-rashi-14",
+      "ref": "Sanhedrin.56a",
+      "layer": "rashi",
+      "line_no": 14,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "והא מהכא נפקא - דעכו\"ם מוזהרין על ברכת השם: ה' זו ברכת השם - לקמיה דרשינן ויצו ה' אלהים וגו':",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Sanhedrin.56a (line 14) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: blessings (Sanhedrin).",
+        "plain_english": "Which blessings apply to gentile-owned objects or events — ritual law, not a polemic about Christianity. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “והא מהכא נפקא - דעכו\"ם מוזהרין על ברכת השם: ה' זו ברכת השם - לקמיה דרשינן ויצו ה' אלהים וגו':”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-56a-rashi-15",
+      "ref": "Sanhedrin.56a",
+      "layer": "rashi",
+      "line_no": 15,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "לא נצרכא - האי איש איש אלא לרבות את הכנויים שיהו העכו\"ם מוזהרים על ברכתו כישראל דאי מהתם הוה אמינא שם המיוחד דוקא דכתיב ה' דהאי אלהים דבההוא קרא לאזהרת ע\"ז דרשינן ליה לקמן: ואליבא דרבי מאיר - מתוקמא ד",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Sanhedrin.56a (line 15) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: blessings (Sanhedrin).",
+        "plain_english": "Which blessings apply to gentile-owned objects or events — ritual law, not a polemic about Christianity. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “לא נצרכא - האי איש איש אלא לרבות את הכנויים שיהו העכו\"ם מוזהרים על ברכתו כישראל דאי מהתם הוה אמינא שם המיוחד דוקא דכתיב…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-56b-rashi-9",
+      "ref": "Sanhedrin.56b",
+      "layer": "rashi",
+      "line_no": 9,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "לעדה ועדים והתראה - וכן נצטוו ישראל במרה להיות דנין בסנהדרין של כ\"ג כדאמרי' (לעיל סנהדרין ב.) עדה שופטת ועדה מצלת דעכו\"ם לא איפקוד בהכי כדילפינן לקמן (סנהדרין דף נז:) מקראי דבן נח נהרג בעד א' ובדיין א",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Sanhedrin.56b (line 9) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: theft and restitution (Sanhedrin).",
+        "plain_english": "Monetary law: theft from or by gentiles, Noahide rules, and whether restitution applies. The sugya is civil law; akum is a vocabulary swap only. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “לעדה ועדים והתראה - וכן נצטוו ישראל במרה להיות דנין בסנהדרין של כ\"ג כדאמרי' (לעיל סנהדרין ב.) עדה שופטת ועדה מצלת…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-56b-rashi-12",
+      "ref": "Sanhedrin.56b",
+      "layer": "rashi",
+      "line_no": 12,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "כל פלך - מדינה: ישראל נצטוו להושיב - דיינין בכל עיר ועיר כדכתיב (דברים ט״ז:י״ח) תתן לך בכל שעריך: כך נצטוו עכו\"ם - דהא משפט כתיב ביה והכא נמי כתיב (שם) ושפטו את העם משפט צדק:",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Sanhedrin.56b (line 12) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: capital jurisdiction (Sanhedrin).",
+        "plain_english": "Who falls under which court or death penalty — procedural law about gentiles vs Israel. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “כל פלך - מדינה: ישראל נצטוו להושיב - דיינין בכל עיר ועיר כדכתיב (דברים ט״ז:י״ח) תתן לך בכל שעריך: כך נצטוו עכו\"ם - דהא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-74b-rashi-5",
+      "ref": "Sanhedrin.74b",
+      "layer": "rashi",
+      "line_no": 5,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "הני קוואקי ודימוניקי - כלי נחשת שנותנין בהם גחלים גבוהין הן ועומדין לפני שולחן מלכים להתחמם כנגדן: היכי יהבינן להו - יום חג היה לפרסיים שנוטלין משרתי עבודת כוכבים אור מכל בית ובית ומעמידין בבית עבודת ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Sanhedrin.74b (line 5) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: idolatry references (Sanhedrin).",
+        "plain_english": "Commentary touching idol-worship or pagan practice. Even here Vilna often used akum where witnesses still read goyim in generic gentile references. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “הני קוואקי ודימוניקי - כלי נחשת שנותנין בהם גחלים גבוהין הן ועומדין לפני שולחן מלכים להתחמם כנגדן: היכי יהבינן להו -…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-74b-rashi-6",
+      "ref": "Sanhedrin.74b",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "קטיל אספסתא - קצור עשב מאכל בהמה: לקטול - האספסתא ולא לקטליה העכו\"ם דכיון דאינו מתכוין להעבירו אלא לצורכי עצמו אין כאן חילול השם: שדי לנהרא - להעבירו הוא מתכוין ואי פרהסיא הוא או שעת גזרת המלכות לקטלי",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Sanhedrin.74b (line 6) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: ritual impurity and burial (Sanhedrin).",
+        "plain_english": "Impurity rules for gentile dwellings, corpses, or lands — purity law vocabulary censored to akum. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “קטיל אספסתא - קצור עשב מאכל בהמה: לקטול - האספסתא ולא לקטליה העכו\"ם דכיון דאינו מתכוין להעבירו אלא לצורכי עצמו אין כאן…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-74b-tosafot-1",
+      "ref": "Sanhedrin.74b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 3,
+      "snippet": "אפילו לשנויי ערקתא דמסאנא - לכאורה משמע דמנעליהם משונין משל עכו\"ם כדאמר נמי בפרק הכונס (ב\"ק נט: ושם) גבי אלעזר זעירא דהוה סיים מסאני אוכמי וקאמר שהיה מתאבל על ירושלים וכך משמע במסכת תענית (דף כב.) גבי",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Sanhedrin.74b (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Sanhedrin).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אפילו לשנויי ערקתא דמסאנא - לכאורה משמע דמנעליהם משונין משל עכו\"ם כדאמר נמי בפרק הכונס (ב\"ק נט: ושם) גבי אלעזר זעירא…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-74b-tosafot-2",
+      "ref": "Sanhedrin.74b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 4,
+      "snippet": "והא אסתר פרהסיא הואי - תימה דה\"ל לאקשויי עריות הואי דרוצח ונערה המאורסה לכולי עלמא יהרג ואל יעבור וכמו כן קשה בריש כתובות (דף ג: ושם) דאמר דאיכא צנועות דמסרו נפשייהו ופריך ולידרוש להו דאונס שרי ומאי ק",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Sanhedrin.74b (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Sanhedrin).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “והא אסתר פרהסיא הואי - תימה דה\"ל לאקשויי עריות הואי דרוצח ונערה המאורסה לכולי עלמא יהרג ואל יעבור וכמו כן קשה בריש…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-74b-tosafot-3",
+      "ref": "Sanhedrin.74b",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "count": 2,
+      "snippet": "קטול אספסתא ושדי לחיותא כו' - ההוא עובדא דשלהי יבמות (ד' קכא: ושם) דאמר ליה עכו\"ם לישראל קטיל אספסתא ואי לא קטילנא לך כדקטילנא לפלניא בר ישראל דאמרי ליה בשל לי קדירה בשבתא ולא בשיל וקטילתיה שמא לא היה",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Sanhedrin.74b (line 3) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shabbat practice (Sanhedrin).",
+        "plain_english": "Shabbat restrictions involving gentile agents or property — technical Shabbat law. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “קטול אספסתא ושדי לחיותא כו' - ההוא עובדא דשלהי יבמות (ד' קכא: ושם) דאמר ליה עכו\"ם לישראל קטיל אספסתא ואי לא קטילנא לך…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "sanhedrin-92a-rashi-7",
+      "ref": "Sanhedrin.92a",
+      "layer": "rashi",
+      "line_no": 7,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "למילתיה הכי נמי - דגדולה היא וכדעולא: שתי הופעיות - דכתיב אל נקמות ה' אל נקמות הופיע ואיכא תרי נקמות וחדא הופעה בתרוייהו ודמי כמאן דאיכא אכל נקמה ונקמה חדא הופעה: חדא לטובה - של ישראל שסילק שכינתו מאו",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Sanhedrin.92a (line 7) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: gentiles and Torah acceptance (Sanhedrin).",
+        "plain_english": "Aggadic or legal rhetoric about gentiles not accepting Torah — polemical tone in commentary; censored vocabulary. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “למילתיה הכי נמי - דגדולה היא וכדעולא: שתי הופעיות - דכתיב אל נקמות ה' אל נקמות הופיע ואיכא תרי נקמות וחדא הופעה…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "makkot-23b-rashi-6",
+      "ref": "Makkot.23b",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "מקרא מגילה - דחייבין על מקרא מגילה: ושאילת שלום בשם - דמותר לאדם לשאול בשלום חבירו בשם כגון ישים ה' עליך שלום ואין בו משום מוציא שם שמים לבטלה. מרבי. ל\"א שאילת שלום בשם דחייב אדם לשאול בשלום חבירו בשם",
+      "witness_delta": {
+        "vilna_standard": "Vilna Rashi on Makkot.23b (line 6) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Rashi for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Makkot).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מקרא מגילה - דחייבין על מקרא מגילה: ושאילת שלום בשם - דמותר לאדם לשאול בשלום חבירו בשם כגון ישים ה' עליך שלום ואין בו…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "shevuot-44a-tosafot-4",
+      "ref": "Shevuot.44a",
+      "layer": "tosafot",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "count": 5,
+      "snippet": "שומר אבידה רב יוסף אמר כו' ורבה אמר כו'. פסק ר\"ח דהלכה כרב יוסף דאמר בפרק אין בין המודר (נדרים דף לג:) דכ\"ע אית להו פרוטה דרב יוסף ואין נראה ראיה משם כלל דרבה נמי מודה דאי אתי עניא דלא בעי למיתב ליה ד",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Shevuot.44a (line 4) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: theft and restitution (Shevuot).",
+        "plain_english": "Monetary law: theft from or by gentiles, Noahide rules, and whether restitution applies. The sugya is civil law; akum is a vocabulary swap only. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “שומר אבידה רב יוסף אמר כו' ורבה אמר כו'. פסק ר\"ח דהלכה כרב יוסף דאמר בפרק אין בין המודר (נדרים דף לג:) דכ\"ע אית להו…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "zevachim-73b-tosafot-1",
+      "ref": "Zevachim.73b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "ונכבשינהו דניניידן ונימא דכל דפריש מרובא פריש - וכגון שלא בפנינו פירשו ממקום קבוע דאי היתה הפרישה בפנינו היו אסורין כאילו לקחן במקום קביעות וכן מוכח בפרק קמא דפסחים (דף ט:) דתשע צבורין של חמץ ואחת של ",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Zevachim.73b (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Zevachim).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “ונכבשינהו דניניידן ונימא דכל דפריש מרובא פריש - וכגון שלא בפנינו פירשו ממקום קבוע דאי היתה הפרישה בפנינו היו אסורין…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "zevachim-73b-tosafot-2",
+      "ref": "Zevachim.73b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "אלא אמר רבא משום קבוע - מדגזור משום קבוע היה נראה דאי שקיל חד מן הקבוע אסור מדאורייתא ולא אמרי' מרובא פריש דכיון דדבר חשוב הוא ולא בטל היכא דה\"ל קבוע כמחצה על מחצה דמי אבל א\"א לומר כן מדאמר רב בסמוך ט",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Zevachim.73b (line 2) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: commentary vocabulary (Zevachim).",
+        "plain_english": "A routine Rashi/Tosafot gloss where Vilna prints the censor acronym akum instead of the plain word for gentiles that early manuscripts preserve. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “אלא אמר רבא משום קבוע - מדגזור משום קבוע היה נראה דאי שקיל חד מן הקבוע אסור מדאורייתא ולא אמרי' מרובא פריש דכיון דדבר…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    },
+    {
+      "id": "zevachim-98b-tosafot-1",
+      "ref": "Zevachim.98b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "count": 1,
+      "snippet": "מתני' טבול יום ומחוסר כיפורים אינם חולקים בקדשים לאכול לערב - משמע הכא דמחוסרי כיפורים שהביאו כפרתן בעו עדיין טבילה והערב שמש וכן משמע פרק בכל מערבין (עירובין דף לב.) דמייתי הא מתניתא האשה שיש עליה לי",
+      "witness_delta": {
+        "vilna_standard": "Vilna Tosafot on Zevachim.98b (line 1) prints עכו\"ם — the Christian-era acronym for ‘idol-worshippers’ — where pre-censor witnesses had a direct gentile term.",
+        "witness_reading": "Manuscript Tosafot for this gloss typically reads גוים (gentiles) or, in sectarian contexts, מין; not the opaque acronym. Topic: Shema and prayer law (Zevachim).",
+        "plain_english": "Commentary on Shema or prayer readings — the legal point concerns who may read what; akum replaces Rashi’s direct word for gentiles or sectarians. Open the daf for Hebrew; you do not need to read it to know this is a censorship swap, not a new halachic category. Context cue: “מתני' טבול יום ומחוסר כיפורים אינם חולקים בקדשים לאכול לערב - משמע הכא דמחוסרי כיפורים שהביאו כפרתן בעו עדיין טבילה…”",
+        "sefaria_trust": "low",
+        "sefaria_note": "Sefaria commentary English usually follows Vilna — expect ‘idol-worshippers’ or transliterated akum, not ‘gentiles’. Compare this build’s restored wording on the full daf."
+      }
+    }
+  ],
+  "by_ref": {
+    "Berakhot.12a": [
+      "berakhot-12a-rashi-4"
+    ],
+    "Berakhot.32b": [
+      "berakhot-32b-rashi-15"
+    ],
+    "Berakhot.33a": [
+      "berakhot-33a-rashi-10"
+    ],
+    "Berakhot.33b": [
+      "berakhot-33b-rashi-13"
+    ],
+    "Berakhot.51b": [
+      "berakhot-51b-rashi-11"
+    ],
+    "Berakhot.54a": [
+      "berakhot-54a-tosafot-1"
+    ],
+    "Berakhot.57b": [
+      "berakhot-57b-tosafot-1"
+    ],
+    "Shabbat.15b": [
+      "shabbat-15b-tosafot-2"
+    ],
+    "Shabbat.16b": [
+      "shabbat-16b-tosafot-5"
+    ],
+    "Shabbat.42b": [
+      "shabbat-42b-tosafot-1"
+    ],
+    "Shabbat.72b": [
+      "shabbat-72b-rashi-4",
+      "shabbat-72b-tosafot-3"
+    ],
+    "Shabbat.88b": [
+      "shabbat-88b-rashi-4"
+    ],
+    "Shabbat.89a": [
+      "shabbat-89a-rashi-6"
+    ],
+    "Shabbat.150a": [
+      "shabbat-150a-rashi-7"
+    ],
+    "Eruvin.61b": [
+      "eruvin-61b-rashi-10",
+      "eruvin-61b-rashi-12",
+      "eruvin-61b-tosafot-2",
+      "eruvin-61b-tosafot-3"
+    ],
+    "Eruvin.62a": [
+      "eruvin-62a-rashi-3",
+      "eruvin-62a-rashi-4",
+      "eruvin-62a-rashi-5",
+      "eruvin-62a-rashi-6",
+      "eruvin-62a-rashi-7",
+      "eruvin-62a-rashi-9",
+      "eruvin-62a-rashi-11",
+      "eruvin-62a-tosafot-1",
+      "eruvin-62a-tosafot-2",
+      "eruvin-62a-tosafot-3"
+    ],
+    "Eruvin.62b": [
+      "eruvin-62b-rashi-1",
+      "eruvin-62b-rashi-2",
+      "eruvin-62b-rashi-3",
+      "eruvin-62b-rashi-4"
+    ],
+    "Eruvin.64b": [
+      "eruvin-64b-tosafot-2"
+    ],
+    "Pesachim.9a": [
+      "pesachim-9a-rashi-3"
+    ],
+    "Pesachim.21b": [
+      "pesachim-21b-rashi-9"
+    ],
+    "Pesachim.22b": [
+      "pesachim-22b-tosafot-1"
+    ],
+    "Pesachim.87b": [
+      "pesachim-87b-rashi-8"
+    ],
+    "Pesachim.91a": [
+      "pesachim-91a-tosafot-2"
+    ],
+    "Yoma.82a": [
+      "yoma-82a-tosafot-2"
+    ],
+    "Sukkah.30a": [
+      "sukkah-30a-rashi-6"
+    ],
+    "Rosh Hashanah.3b": [
+      "rosh-hashanah-3b-tosafot-2"
+    ],
+    "Taanit.16a": [
+      "taanit-16a-rashi-7"
+    ],
+    "Moed Katan.11a": [
+      "moed-katan-11a-rashi-1"
+    ],
+    "Yevamot.61a": [
+      "yevamot-61a-rashi-9",
+      "yevamot-61a-tosafot-1"
+    ],
+    "Ketubot.98b": [
+      "ketubot-98b-tosafot-2"
+    ],
+    "Gittin.62a": [
+      "gittin-62a-tosafot-3"
+    ],
+    "Bava Kamma.23a": [
+      "bava-kamma-23a-tosafot-5"
+    ],
+    "Bava Kamma.58a": [
+      "bava-kamma-58a-tosafot-1"
+    ],
+    "Bava Kamma.102a": [
+      "bava-kamma-102a-rashi-7"
+    ],
+    "Bava Kamma.113b": [
+      "bava-kamma-113b-rashi-15"
+    ],
+    "Bava Kamma.114a": [
+      "bava-kamma-114a-rashi-2",
+      "bava-kamma-114a-rashi-4",
+      "bava-kamma-114a-tosafot-3"
+    ],
+    "Bava Kamma.117a": [
+      "bava-kamma-117a-rashi-12"
+    ],
+    "Bava Metzia.15a": [
+      "bava-metzia-15a-rashi-1"
+    ],
+    "Bava Metzia.23a": [
+      "bava-metzia-23a-rashi-10"
+    ],
+    "Bava Metzia.26b": [
+      "bava-metzia-26b-tosafot-5"
+    ],
+    "Bava Metzia.70b": [
+      "bava-metzia-70b-rashi-1",
+      "bava-metzia-70b-rashi-2",
+      "bava-metzia-70b-rashi-6",
+      "bava-metzia-70b-tosafot-1",
+      "bava-metzia-70b-tosafot-3"
+    ],
+    "Bava Metzia.108a": [
+      "bava-metzia-108a-rashi-1",
+      "bava-metzia-108a-rashi-2",
+      "bava-metzia-108a-tosafot-2"
+    ],
+    "Bava Metzia.108b": [
+      "bava-metzia-108b-rashi-4",
+      "bava-metzia-108b-rashi-8",
+      "bava-metzia-108b-tosafot-1"
+    ],
+    "Bava Metzia.111b": [
+      "bava-metzia-111b-tosafot-1"
+    ],
+    "Bava Batra.8a": [
+      "bava-batra-8a-tosafot-4"
+    ],
+    "Bava Batra.10b": [
+      "bava-batra-10b-rashi-6"
+    ],
+    "Bava Batra.45a": [
+      "bava-batra-45a-tosafot-2"
+    ],
+    "Bava Batra.48a": [
+      "bava-batra-48a-tosafot-3",
+      "bava-batra-48a-tosafot-4"
+    ],
+    "Bava Batra.55b": [
+      "bava-batra-55b-tosafot-2"
+    ],
+    "Bava Batra.81a": [
+      "bava-batra-81a-tosafot-4"
+    ],
+    "Bava Batra.92b": [
+      "bava-batra-92b-tosafot-1"
+    ],
+    "Bava Batra.97a": [
+      "bava-batra-97a-tosafot-2"
+    ],
+    "Bava Batra.148a": [
+      "bava-batra-148a-tosafot-2"
+    ],
+    "Sanhedrin.2b": [
+      "sanhedrin-2b-tosafot-3"
+    ],
+    "Sanhedrin.46a": [
+      "sanhedrin-46a-rashi-1",
+      "sanhedrin-46a-tosafot-1"
+    ],
+    "Sanhedrin.46b": [
+      "sanhedrin-46b-rashi-10"
+    ],
+    "Sanhedrin.56a": [
+      "sanhedrin-56a-rashi-14",
+      "sanhedrin-56a-rashi-15"
+    ],
+    "Sanhedrin.56b": [
+      "sanhedrin-56b-rashi-9",
+      "sanhedrin-56b-rashi-12"
+    ],
+    "Sanhedrin.74b": [
+      "sanhedrin-74b-rashi-5",
+      "sanhedrin-74b-rashi-6",
+      "sanhedrin-74b-tosafot-1",
+      "sanhedrin-74b-tosafot-2",
+      "sanhedrin-74b-tosafot-3"
+    ],
+    "Sanhedrin.92a": [
+      "sanhedrin-92a-rashi-7"
+    ],
+    "Makkot.23b": [
+      "makkot-23b-rashi-6"
+    ],
+    "Shevuot.44a": [
+      "shevuot-44a-tosafot-4"
+    ],
+    "Zevachim.73b": [
+      "zevachim-73b-tosafot-1",
+      "zevachim-73b-tosafot-2"
+    ],
+    "Zevachim.98b": [
+      "zevachim-98b-tosafot-1"
+    ]
+  }
+}

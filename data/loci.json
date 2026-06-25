@@ -642,9 +642,9 @@
       "witness_delta": {
         "vilna_standard": "Roughly ~100 places in Rashi/Tosafot where Vilna has עכו\"ם instead of גוים or related direct terms.",
         "witness_reading": "Pattern across commentary layers: censor acronym replaces plain ‘gentiles’ in manuscript Rashi/Tosafot.",
-        "plain_english": "Corpus-wide language censorship in commentaries — not one story but a systematic swap you can audit (see censorship_audit.json).",
+        "plain_english": "100 indexed commentary rows now have English witness notes — open the Audit list (audit.html) to browse every hit by tractate and daf, or open any flagged daf for inline notes.",
         "sefaria_trust": "low",
-        "sefaria_note": "Default Sefaria commentary export reflects Vilna; treat English as Vilna-flavored unless you compare per daf."
+        "sefaria_note": "Default Sefaria commentary export reflects Vilna; use audit.html + per-daf notes here instead of trusting English commentary alone."
       }
     }
   ]
