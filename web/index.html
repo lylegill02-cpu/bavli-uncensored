@@ -129,7 +129,7 @@
 <body>
   <header>
     <h1>Bavli Uncensored — Search</h1>
-    <p>Type in <strong>plain English</strong> (e.g. <em>Jesus</em>, <em>Jesus trial</em>, <em>gentiles censorship</em>) or switch to Hebrew.</p>
+    <p>Type in <strong>plain English</strong> — names, topics, even full questions. Fuzzy spelling on ~60+ terms; optional AI for open-ended questions.</p>
     <nav>
       <a href="loci.html">← Loci map (guided list)</a>
     </nav>
@@ -160,7 +160,10 @@
       <button type="button" data-q="Jesus was ok">Jesus was ok</button>
       <button type="button" data-q="Jesus trial">Jesus trial</button>
       <button type="button" data-q="gentiles censorship">gentiles censorship</button>
-      <button type="button" data-q="hell">hell</button>
+      <button type="button" data-q="arch angel Michael">Michael</button>
+      <button type="button" data-q="Melchizadek">Melchizedek</button>
+      <button type="button" data-q="cow dog kosher">cow &amp; dog</button>
+      <button type="button" data-q="is it ok to eat a cow">eat a cow?</button>
     </div>
     <div class="status" id="status"></div>
     <div id="hint-box" class="hint hidden"></div>
@@ -169,13 +172,17 @@
   <script type="module">
     import { search, loadTractates, useClientMode } from "./js/app.js";
     import { searchEnglish, hasHebrew } from "./js/english-search.js";
+    import { AI_EXPAND_URL } from "./js/config.js";
 
     const $ = (id) => document.getElementById(id);
     let mode = "en";
 
     if (useClientMode()) {
+      const aiNote = AI_EXPAND_URL
+        ? " Smart search (AI) is on."
+        : " Lexicon + fuzzy spelling active; deploy workers/query-expand for full-sentence questions.";
       $("status").textContent =
-        "First search downloads the text index once (~53 MB). English matches show explanations; Hebrew terms search the full Bavli.";
+        "First search downloads the text index once (~53 MB)." + aiNote;
     }
 
     function setMode(m) {
@@ -285,13 +292,16 @@
           $("hint-box").classList.remove("hidden");
         }
 
-        const total = data.featured.length + data.corpus.length;
+        const aiTag = data.aiUsed ? " · smart search" : "";
+        const lexTag = data.matchedLexicon?.length
+          ? ` · matched: ${data.matchedLexicon.slice(0, 3).join(", ")}`
+          : "";
         const terms = data.hebrewTerms?.length
-          ? ` (also searched Hebrew: ${data.hebrewTerms.slice(0, 4).join(", ")})`
+          ? ` · Hebrew: ${data.hebrewTerms.slice(0, 4).join(", ")}`
           : "";
         $("status").textContent = total
-          ? `${total} result(s)${terms}`
-          : "No matches — try a shorter word like Jesus, trial, gentiles, or censorship";
+          ? `${total} result(s)${terms}${lexTag}${aiTag}`
+          : "No matches — try Michael, Jesus, cow, kosher, or deploy AI worker for full sentences";
 
         if (data.featured.length) {
           const h = document.createElement("div");

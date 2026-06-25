@@ -1,0 +1,11 @@
+{
+  "name": "bavli-query-expand",
+  "main": "src/index.js",
+  "compatibility_date": "2024-06-01",
+  "ai": {
+    "binding": "AI"
+  },
+  "vars": {
+    "QUERY_MODEL": "@cf/meta/llama-3.1-8b-instruct"
+  }
+}

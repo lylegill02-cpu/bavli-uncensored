@@ -23,3 +23,10 @@ export function dbDownloadUrl() {
 export function lociChartUrl() {
   return assetUrl("/data/loci_chart.json");
 }
+
+/**
+ * Tier 3 AI query expansion (Cloudflare Worker).
+ * Deploy: workers/query-expand — then paste URL here.
+ * Empty string = lexicon + fuzzy spelling only (still works).
+ */
+export const AI_EXPAND_URL = "";
