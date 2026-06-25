@@ -74,6 +74,36 @@
     }
     .ext-note { margin: 0 0 0.5rem; color: var(--muted); line-height: 1.45; }
     .ext-links a { color: var(--accent); margin-right: 0.75rem; }
+    .witness-delta {
+      background: #ebe4d8;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.75rem 0.85rem;
+      margin-bottom: 1rem;
+      direction: ltr;
+      text-align: left;
+      font-size: 0.88rem;
+    }
+    .witness-delta h4 {
+      margin: 0 0 0.5rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+    .witness-delta .plain { margin: 0 0 0.65rem; line-height: 1.45; }
+    .witness-delta dl { margin: 0 0 0.65rem; }
+    .witness-delta dt {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.4rem;
+    }
+    .witness-delta dd { margin: 0.1rem 0 0; line-height: 1.45; }
+    .witness-delta .trust { margin: 0; padding: 0.4rem 0.5rem; border-radius: 4px; font-size: 0.84rem; }
+    .trust-high { background: #e8f0e4; }
+    .trust-medium { background: #f5f0e0; }
+    .trust-low { background: #f5e8e4; }
   </style>
 </head>
 <body>
@@ -97,6 +127,8 @@
   <script type="module">
     import { openDaf } from "./js/app.js";
     import { externalLinksHtml } from "./js/external-links.js";
+    import { lociChartUrl } from "./js/config.js";
+    import { renderWitnessDelta, locusForRef } from "./js/witness-delta.js";
 
     const params = new URLSearchParams(location.search);
     const ref = params.get("ref");
@@ -115,6 +147,16 @@
       document.title = ref + " — Bavli Uncensored";
 
       try {
+        let locusHtml = "";
+        try {
+          const chart = await fetch(lociChartUrl());
+          if (chart.ok) {
+            const data = await chart.json();
+            const loc = locusForRef(data.loci, ref);
+            if (loc) locusHtml = renderWitnessDelta(loc);
+          }
+        } catch (_) {}
+
         const daf = await openDaf(ref, (msg) => {
           progress.textContent = msg;
         });
@@ -124,6 +166,11 @@
           errorEl.classList.remove("hidden");
         } else {
           panel.classList.remove("hidden");
+          if (locusHtml) {
+            const w = document.createElement("div");
+            w.innerHTML = locusHtml;
+            panel.before(w);
+          }
           const ext = document.createElement("div");
           ext.innerHTML = externalLinksHtml(daf.ref);
           panel.before(ext);

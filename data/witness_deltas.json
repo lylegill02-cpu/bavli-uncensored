@@ -1,0 +1,86 @@
+{
+  "sanhedrin-43a-yeshu-trial": {
+    "vilna_standard": "The baraita naming Yeshu ha-Notzri and describing his trial and execution was omitted entirely from the standard Vilna Shas and many pre-modern printings.",
+    "witness_reading": "Munich 95 and Bomberg retain a baraita: Yeshu ha-Notzri was hanged on the eve of Passover; the gemara then asks whether he might have had zechut (legal merit) for acquittal — a procedural question inside the laws of mesis (enticer), not a creed about Christianity.",
+    "plain_english": "The Talmud records a trial-and-execution narrative about a figure called Yeshu the Nazarene, then debates whether the court could have acquitted him on technical grounds. Jewish tradition treats this as a legal-historical report in context, not as normative theology about Jesus.",
+    "sefaria_trust": "medium",
+    "sefaria_note": "Sefaria’s Hebrew gemara often restores this passage; English may paraphrase softly. Compare their text to this build and to Instone-Brewer."
+  },
+  "sanhedrin-67a-ben-stada": {
+    "vilna_standard": "Passage linking ben Stada / ben Pandera to execution for mesis was cut from Vilna-era print.",
+    "witness_reading": "Manuscripts report the execution of ben Stada from Lud; amoraic discussion plays on the names ben Stada and ben Pandera — traditionally cross-read with Yeshu loci.",
+    "plain_english": "A reported capital case for ‘enticing’ (mesis), with wordplay on names later linked in rabbinic literature to the same figure cluster as Sanhedrin 43a.",
+    "sefaria_trust": "medium",
+    "sefaria_note": "Restoration varies by layer; read English alongside Munich-based Hebrew here."
+  },
+  "gittin-57a-yeshu-gehinnom": {
+    "vilna_standard": "Aggadic block naming Yeshu ha-Notzri among those punished in Gehinnom was removed from censored print.",
+    "witness_reading": "Onkelos the convert summons Yeshu ha-Notzri from Gehinnom in an aggadic chain about Roman oppressors — homiletical narrative tied to the destruction era, not a halachic ruling.",
+    "plain_english": "A story-world vignette: a named Yeshu the Nazarene appears in Gehinnom in a polemical aggadah about empire and punishment. It is legend in context, not law.",
+    "sefaria_trust": "medium",
+    "sefaria_note": "English translations may tone down polemical edges; Hebrew witness text is the check."
+  },
+  "sanhedrin-107b-yeshu-student": {
+    "vilna_standard": "Biographical aggadah placing Yeshu as a student of R. Yehoshua ben Perahiah was censored from standard print.",
+    "witness_reading": "Story of a student (named Yeshu in uncensored witnesses) who misunderstood his teacher’s hospitality and was expelled — moralistic aggadah with debated historicity.",
+    "plain_english": "A cautionary tale about a brilliant but misguided student; later tradition names him Yeshu. Read as narrative ethics, not biography.",
+    "sefaria_trust": "medium",
+    "sefaria_note": "Name and details often absent in censored editions; Sefaria may restore Hebrew but English summaries vary."
+  },
+  "sotah-47a-yeshu-student": {
+    "vilna_standard": "Parallel version of the student narrative — same censorship profile as Sanhedrin 107b.",
+    "witness_reading": "Duplicate aggadic tradition; uncensored witnesses preserve the Yeshu naming.",
+    "plain_english": "Same story-line as 107b in a parallel sugya — useful for textual witness comparison.",
+    "sefaria_trust": "medium",
+    "sefaria_note": "Compare both dapim; do not assume English on one replaces the other."
+  },
+  "shabbat-104b-ben-stada": {
+    "vilna_standard": "ben Stada material in the sorcery context was suppressed in Vilna print.",
+    "witness_reading": "Narrative in a magic/sorcery discussion preserving ben Stada / ben Pandera name-play tied to Sanhedrin 67a.",
+    "plain_english": "Legal-aggadic overlap between sorcery law and the ben Stada name traditions.",
+    "sefaria_trust": "low",
+    "sefaria_note": "Among the easier passages to miss in English-only browsing; Hebrew restoration matters."
+  },
+  "avodah-zarah-2a-goyim-euphemism": {
+    "vilna_standard": "Vilna Rashi routinely reads עובדי כוכבים (idol-worshippers) where earlier witnesses have גוים (gentiles/nations).",
+    "witness_reading": "Munich/Bomberg Rashi on the opening mishnah uses גוים — the direct word Rashi wrote before Christian censorship.",
+    "plain_english": "Not a change in halacha but in vocabulary: ‘gentiles’ was replaced by the safer phrase ‘idol-worshippers’ in print. The legal sugya is about commerce before pagan festivals.",
+    "sefaria_trust": "low",
+    "sefaria_note": "Sefaria English often follows Vilna Rashi wording — you may read ‘idol-worshippers’ where witnesses say ‘gentiles’."
+  },
+  "berakhot-12a-akum-rashi": {
+    "vilna_standard": "Vilna Rashi uses עכו\"ם (akum — censor acronym for ‘idol-worshippers’) instead of גוים or מין (sectarians) in Shema commentary.",
+    "witness_reading": "Earlier Rashi witnesses read goyim or minim where Vilna has the opaque acronym עכו\"ם.",
+    "plain_english": "A censorship swap in commentary only: an invented acronym hides who Rashi was talking about in a legal reading of Shema.",
+    "sefaria_trust": "low",
+    "sefaria_note": "English will often say ‘idolaters’ or transliterate akum — it will not flag that Rashi’s word was different."
+  },
+  "bava-metzia-59b-oven-of-achnai": {
+    "vilna_standard": "No meaningful censorship — standard Vilna text matches witnesses.",
+    "witness_reading": "Same as Vilna: Oven of Akhnai; Rabbi Eliezer vs sages; bat kol rejected — ‘It is not in heaven.’",
+    "plain_english": "Famous dispute: human rabbinic majority outweighs a heavenly voice. Included as a baseline: rich argument preserved everywhere, not a suppression locus.",
+    "sefaria_trust": "high",
+    "sefaria_note": "Sefaria English is a reliable reading aid here."
+  },
+  "eruvin-13b-rabbi-meir": {
+    "vilna_standard": "No censorship — dispute about why halacha does not follow Rabbi Meir is on the record in all prints.",
+    "witness_reading": "Same: peers could not fully grasp Rabbi Meir’s reasoning; meta-machloket on authority.",
+    "plain_english": "Argument about limits of following a genius sage — preserved openly, not suppressed.",
+    "sefaria_trust": "high",
+    "sefaria_note": "Safe to use Sefaria English for overview."
+  },
+  "sanhedrin-37a-adam-single": {
+    "vilna_standard": "Universal dignity teaching (‘Adam was created alone…’) appears in all standard editions.",
+    "witness_reading": "Identical witness stream — teaching on human equality and murder accountability.",
+    "plain_english": "Because God created one Adam, no person may say ‘my lineage is greater than yours’ — classic aggadah, uncensored.",
+    "sefaria_trust": "high",
+    "sefaria_note": "English translations align well; included as non-censorship contrast."
+  },
+  "global-akum-commentary": {
+    "vilna_standard": "Roughly ~100 places in Rashi/Tosafot where Vilna has עכו\"ם instead of גוים or related direct terms.",
+    "witness_reading": "Pattern across commentary layers: censor acronym replaces plain ‘gentiles’ in manuscript Rashi/Tosafot.",
+    "plain_english": "Corpus-wide language censorship in commentaries — not one story but a systematic swap you can audit (see censorship_audit.json).",
+    "sefaria_trust": "low",
+    "sefaria_note": "Default Sefaria commentary export reflects Vilna; treat English as Vilna-flavored unless you compare per daf."
+  }
+}

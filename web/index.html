@@ -115,6 +115,16 @@
     .actions a { margin-right: 1rem; }
     .ext-links { font-size: 0.82rem; color: var(--muted); }
     .ext-links a { color: var(--accent); margin-right: 0.65rem; }
+    .witness-delta {
+      background: #faf7f0;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.75rem 0.85rem;
+      margin: 0.5rem 0 0.65rem;
+      font-size: 0.92rem;
+    }
+    .witness-delta .plain { margin: 0 0 0.4rem; }
+    .witness-delta .trust { margin: 0; font-size: 0.82rem; color: var(--muted); }
     .layer {
       display: inline-block;
       font-size: 0.68rem;
@@ -176,6 +186,7 @@
     import { searchEnglish, hasHebrew } from "./js/english-search.js";
     import { AI_EXPAND_URL } from "./js/config.js";
     import { externalLinksHtml } from "./js/external-links.js";
+    import { renderWitnessDelta } from "./js/witness-delta.js";
 
     const $ = (id) => document.getElementById(id);
     let mode = "en";
@@ -235,6 +246,7 @@
       div.innerHTML = `
         <h3>${esc(loc.topic?.en || ref)}</h3>
         <div class="meta">${esc(ref)} · ${esc(loc.tradition_status)} · ${esc(loc.layer || "")}</div>
+        ${renderWitnessDelta(loc, { compact: true })}
         <div class="summary">${esc(loc.english_summary || loc.tradition_note)}</div>
         ${loc.verified?.snippet ? `<div class="snippet">${esc(loc.verified.snippet)}…</div>` : ""}
         <div class="actions">

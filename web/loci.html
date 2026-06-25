@@ -109,6 +109,39 @@
     .ext-links { font-size: 0.82rem; margin-top: 0.35rem; }
     .ext-links a { color: var(--accent); margin-right: 0.75rem; }
     .ext-note { font-size: 0.82rem; color: var(--muted); margin: 0.5rem 0 0; max-width: 42rem; }
+    .witness-delta {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.75rem 0.85rem;
+      margin: 0 0 0.85rem;
+    }
+    .witness-delta h4 {
+      margin: 0 0 0.5rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+    .witness-delta .plain { margin: 0 0 0.65rem; font-size: 0.95rem; line-height: 1.5; }
+    .witness-delta dl { margin: 0 0 0.65rem; }
+    .witness-delta dt {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      margin-top: 0.45rem;
+    }
+    .witness-delta dd { margin: 0.15rem 0 0; font-size: 0.9rem; line-height: 1.45; }
+    .witness-delta .trust {
+      margin: 0;
+      font-size: 0.85rem;
+      padding: 0.45rem 0.55rem;
+      border-radius: 4px;
+    }
+    .trust-high { background: #e8f0e4; color: var(--ok); }
+    .trust-medium { background: #f5f0e0; color: var(--warn); }
+    .trust-low { background: #f5e8e4; color: var(--bad); }
     .he { direction: rtl; font-family: "David Libre", "Noto Serif Hebrew", serif; }
     .tag {
       display: inline-block;
@@ -144,8 +177,8 @@
   <main>
     <div class="help">
       <strong>How to use this page</strong>
-      Click any row to expand — you'll see a summary, a Hebrew excerpt, and witness notes.
-      Then click <strong>Read full daf</strong> for the complete gemara / Rashi / Tosafot on that page.
+      Click any row — <strong>English witness notes</strong> explain what Vilna censored vs what manuscripts show.
+      Hebrew on “Read full daf” is the evidence; you do not need to read it to understand the delta.
       (First time only: your browser downloads ~53 MB of text; wait for the progress bar, then it opens.)
     </div>
     <div class="filters">
@@ -190,6 +223,7 @@
   <script type="module">
     import { lociChartUrl } from "./js/config.js";
     import { externalLinksHtml, EXTERNAL_NOTE_SHORT } from "./js/external-links.js";
+    import { renderWitnessDelta } from "./js/witness-delta.js";
 
     let all = [];
     let openId = null;
@@ -225,6 +259,7 @@
 
       return `
         <div class="detail">
+          ${renderWitnessDelta(loc)}
           <p>${esc(loc.tradition_note)}</p>
           ${v.snippet ? `<h4>Excerpt (${esc(loc.layer || "text")})</h4><div class="snippet-box">${esc(v.snippet)}…</div>` : ""}
           ${w.uncensored?.length ? `<h4>Uncensored witnesses</h4><ul>${w.uncensored.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
