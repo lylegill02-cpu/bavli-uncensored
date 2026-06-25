@@ -1,24 +1,39 @@
 #!/usr/bin/env python3
-"""Search the Bavli full-text index."""
+"""Search the Bavli full-text index (local SQLite or Supabase)."""
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sqlite3
 import sys
 from pathlib import Path
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from lib.hebrew import normalize_hebrew, query_variants  # noqa: E402
+
 DEFAULT_DB = ROOT / "data" / "bavli.db"
 
 
 def snippet(text: str, query: str, width: int = 120) -> str:
     """Return a short context window around the first match."""
-    if not query.strip():
-        return text[:width]
-    # Try literal match first (Hebrew phrases)
-    pos = text.find(query)
+    needles = query_variants(query)
+    pos = -1
+    for needle in needles:
+        pos = text.find(needle)
+        if pos != -1:
+            break
+    if pos == -1:
+        norm_text = normalize_hebrew(text)
+        for needle in needles:
+            pos = norm_text.find(normalize_hebrew(needle))
+            if pos != -1:
+                break
     if pos == -1:
         return text[:width]
     start = max(0, pos - width // 3)
@@ -31,7 +46,7 @@ def snippet(text: str, query: str, width: int = 120) -> str:
     return out
 
 
-def search(
+def search_local(
     db_path: Path,
     query: str,
     *,
@@ -71,49 +86,71 @@ def search(
         conn.close()
         return hits
 
-    # FTS5 phrase / token search
-    fts_query = query.replace('"', '""')
-    if " " in query.strip():
-        fts_query = f'"{fts_query}"'
+    norm_q = normalize_hebrew(query)
     sql = """
         SELECT ref, tractate, daf, layer, line_no, text
         FROM lines
-        WHERE text MATCH ?
+        WHERE text_norm LIKE ?
     """
-    params: list[str] = [fts_query]
+    params: list[str | int] = [f"%{norm_q}%"]
     if tractate:
         sql += " AND tractate = ?"
         params.append(tractate)
     if layer:
         sql += " AND layer = ?"
         params.append(layer)
-    sql += " LIMIT ?"
-    params.append(str(limit))
+    sql += " ORDER BY ref, line_no LIMIT ?"
+    params.append(limit)
 
-    try:
-        rows = conn.execute(sql, params).fetchall()
-    except sqlite3.OperationalError:
-        # Fallback: substring scan when FTS tokenization misses Hebrew forms
-        sql = "SELECT ref, tractate, daf, layer, line_no, text FROM lines WHERE text LIKE ?"
-        params = [f"%{query}%"]
-        if tractate:
-            sql += " AND tractate = ?"
-            params.append(tractate)
-        if layer:
-            sql += " AND layer = ?"
-            params.append(layer)
-        sql += " LIMIT ?"
-        params.append(limit)
-        rows = conn.execute(sql, params).fetchall()
-
+    rows = conn.execute(sql, params).fetchall()
     conn.close()
     return [dict(r) for r in rows]
+
+
+def search_supabase(
+    query: str,
+    *,
+    tractate: str | None = None,
+    layer: str | None = None,
+    limit: int = 20,
+) -> list[dict]:
+    url = os.environ.get("SUPABASE_URL", "").rstrip("/")
+    key = os.environ.get("SUPABASE_ANON_KEY") or os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
+    if not url or not key:
+        raise SystemExit(
+            "Set SUPABASE_URL and SUPABASE_ANON_KEY (or SUPABASE_SERVICE_ROLE_KEY) "
+            "for --supabase search."
+        )
+
+    rpc_url = f"{url}/rest/v1/rpc/bavli_search"
+    norm_q = normalize_hebrew(query)
+    body = json.dumps(
+        {
+            "q": norm_q,
+            "p_tractate": tractate,
+            "p_layer": layer,
+            "p_limit": limit,
+        }
+    ).encode("utf-8")
+    req = Request(
+        rpc_url,
+        data=body,
+        headers={
+            "apikey": key,
+            "Authorization": f"Bearer {key}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    with urlopen(req, timeout=60) as resp:
+        return json.loads(resp.read().decode("utf-8"))
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Search unified Bavli text")
     parser.add_argument("query", help="Hebrew search term or phrase")
     parser.add_argument("--db", type=Path, default=DEFAULT_DB)
+    parser.add_argument("--supabase", action="store_true", help="Search g10be-overflow via RPC")
     parser.add_argument("--tractate", help='Limit to tractate, e.g. "Sanhedrin"')
     parser.add_argument(
         "--layer",
@@ -121,18 +158,26 @@ def main() -> None:
         help="Limit to one layer",
     )
     parser.add_argument("--limit", type=int, default=20)
-    parser.add_argument("--regex", action="store_true", help="Treat query as regex")
+    parser.add_argument("--regex", action="store_true", help="Treat query as regex (local only)")
     parser.add_argument("--json", action="store_true", help="JSON output")
     args = parser.parse_args()
 
-    hits = search(
-        args.db,
-        args.query,
-        tractate=args.tractate,
-        layer=args.layer,
-        limit=args.limit,
-        regex=args.regex,
-    )
+    if args.supabase:
+        hits = search_supabase(
+            args.query,
+            tractate=args.tractate,
+            layer=args.layer,
+            limit=args.limit,
+        )
+    else:
+        hits = search_local(
+            args.db,
+            args.query,
+            tractate=args.tractate,
+            layer=args.layer,
+            limit=args.limit,
+            regex=args.regex,
+        )
 
     if args.json:
         sys.stdout.buffer.write(

@@ -62,6 +62,32 @@ python scripts/build_bavli.py --index    # rebuild source + index together
 
 Each hit returns `ref`, `layer`, line number, and a text snippet. Use `--json` for programmatic use.
 
+Hebrew search **strips niqqud and normalizes final letters** — so `ישו` matches `יֵשׁוּ`.
+
+### Supabase (g10be-overflow — your second project)
+
+The corpus does **not** live on Supabase yet. To host search there:
+
+```bash
+# 1. Apply migration (once)
+cd C:\Users\lyleg\projects\forge-aop
+supabase link --project-ref galhchvctvmtbykzzqqp
+supabase db push
+
+# 2. Load corpus (from bavli-uncensored)
+pip install "psycopg[binary]"
+set SUPABASE_DB_URL=postgresql://postgres.[ref]:[password]@aws-0-....supabase.co:5432/postgres
+cd C:\Users\lyleg\bavli-uncensored
+python scripts/load_supabase.py
+
+# 3. Search via API
+set SUPABASE_URL=https://galhchvctvmtbykzzqqp.supabase.co
+set SUPABASE_ANON_KEY=your-anon-key
+python scripts/search.py "ישו" --supabase --tractate Sanhedrin
+```
+
+RPCs: `bavli_search(q, p_tractate, p_layer, p_limit)` and `bavli_get_daf(p_ref)`.
+
 ## What “uncensored” means here
 
 | Layer | Source | Restoration |
