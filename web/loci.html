@@ -106,6 +106,9 @@
     }
     .detail ul { margin: 0.25rem 0 0.65rem; padding-left: 1.2rem; }
     .detail-actions { margin-top: 0.75rem; }
+    .ext-links { font-size: 0.82rem; margin-top: 0.35rem; }
+    .ext-links a { color: var(--accent); margin-right: 0.75rem; }
+    .ext-note { font-size: 0.82rem; color: var(--muted); margin: 0.5rem 0 0; max-width: 42rem; }
     .he { direction: rtl; font-family: "David Libre", "Noto Serif Hebrew", serif; }
     .tag {
       display: inline-block;
@@ -186,6 +189,7 @@
   </main>
   <script type="module">
     import { lociChartUrl } from "./js/config.js";
+    import { externalLinksHtml, EXTERNAL_NOTE_SHORT } from "./js/external-links.js";
 
     let all = [];
     let openId = null;
@@ -217,6 +221,7 @@
       const readBtn = loc.ref
         ? `<a class="btn btn-primary" href="daf.html?ref=${encodeURIComponent(loc.ref)}">Read full daf →</a>`
         : "";
+      const extLinks = loc.ref ? externalLinksHtml(loc.ref, { compact: true }) : "";
 
       return `
         <div class="detail">
@@ -228,6 +233,8 @@
           ${related ? `<h4>Related</h4><p>${related}</p>` : ""}
           ${tags ? `<p>${tags}</p>` : ""}
           <div class="detail-actions">${readBtn}</div>
+          ${extLinks ? `<p class="ext-links">${extLinks}</p>` : ""}
+          ${loc.ref ? `<p class="ext-note">${EXTERNAL_NOTE_SHORT}</p>` : ""}
         </div>
       `;
     }

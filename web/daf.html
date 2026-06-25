@@ -62,6 +62,18 @@
     .line { margin: 0.25rem 0; font-size: 1.08rem; }
     .hidden { display: none; }
     .error { color: var(--accent); direction: ltr; text-align: left; }
+    .ext-panel {
+      background: #ebe4d8;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      direction: ltr;
+      text-align: left;
+      font-size: 0.88rem;
+    }
+    .ext-note { margin: 0 0 0.5rem; color: var(--muted); line-height: 1.45; }
+    .ext-links a { color: var(--accent); margin-right: 0.75rem; }
   </style>
 </head>
 <body>
@@ -84,6 +96,7 @@
   </main>
   <script type="module">
     import { openDaf } from "./js/app.js";
+    import { externalLinksHtml } from "./js/external-links.js";
 
     const params = new URLSearchParams(location.search);
     const ref = params.get("ref");
@@ -111,6 +124,9 @@
           errorEl.classList.remove("hidden");
         } else {
           panel.classList.remove("hidden");
+          const ext = document.createElement("div");
+          ext.innerHTML = externalLinksHtml(daf.ref);
+          panel.before(ext);
           panel.innerHTML = `<h2>${daf.ref}</h2>`;
           for (const layer of ["gemara", "rashi", "tosafot"]) {
             const lines = daf[layer] || [];

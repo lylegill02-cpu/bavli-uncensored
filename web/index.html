@@ -113,6 +113,8 @@
     .result a:hover { text-decoration: underline; }
     .actions { margin-top: 0.5rem; font-size: 0.88rem; }
     .actions a { margin-right: 1rem; }
+    .ext-links { font-size: 0.82rem; color: var(--muted); }
+    .ext-links a { color: var(--accent); margin-right: 0.65rem; }
     .layer {
       display: inline-block;
       font-size: 0.68rem;
@@ -173,6 +175,7 @@
     import { search, loadTractates, useClientMode } from "./js/app.js";
     import { searchEnglish, hasHebrew } from "./js/english-search.js";
     import { AI_EXPAND_URL } from "./js/config.js";
+    import { externalLinksHtml } from "./js/external-links.js";
 
     const $ = (id) => document.getElementById(id);
     let mode = "en";
@@ -236,6 +239,7 @@
         ${loc.verified?.snippet ? `<div class="snippet">${esc(loc.verified.snippet)}…</div>` : ""}
         <div class="actions">
           ${loc.ref ? `<a href="daf.html?ref=${encodeURIComponent(loc.ref)}">Read full daf →</a>` : ""}
+          ${loc.ref ? externalLinksHtml(loc.ref, { compact: true }) : ""}
           <a href="loci.html">See in loci map</a>
         </div>
       `;
@@ -249,7 +253,10 @@
         <h3><a href="daf.html?ref=${encodeURIComponent(hit.ref)}">${esc(hit.ref)}</a>
           <span class="layer">${esc(hit.layer)}</span></h3>
         <div class="snippet">${esc(hit.snippet || hit.text)}</div>
-        <div class="actions"><a href="daf.html?ref=${encodeURIComponent(hit.ref)}">Read full daf →</a></div>
+        <div class="actions">
+          <a href="daf.html?ref=${encodeURIComponent(hit.ref)}">Read full daf →</a>
+          ${externalLinksHtml(hit.ref, { compact: true })}
+        </div>
       `;
       return div;
     }
