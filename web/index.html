@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,34 +19,32 @@
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, "David Libre", "Noto Serif Hebrew", serif;
+      font-family: "Segoe UI", system-ui, sans-serif;
       background: var(--bg);
       color: var(--ink);
-      line-height: 1.6;
+      line-height: 1.55;
     }
     header {
-      padding: 1.5rem 1rem 1rem;
+      padding: 1.25rem 1rem 1rem;
       border-bottom: 2px solid var(--ink);
       background: var(--card);
     }
-    header h1 {
-      margin: 0;
-      font-size: 1.4rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-    header p {
-      margin: 0.35rem 0 0;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
+    header h1 { margin: 0; font-size: 1.35rem; }
+    header p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.9rem; }
+    nav { margin-top: 0.6rem; font-size: 0.9rem; }
+    nav a { color: var(--accent); margin-right: 1rem; }
     main { max-width: 52rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
-    form {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
+    .tabs { display: flex; gap: 0.35rem; margin-bottom: 0.75rem; }
+    .tabs button {
+      font: inherit;
+      padding: 0.4rem 0.85rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: var(--card);
+      cursor: pointer;
     }
+    .tabs button.active { background: var(--ink); color: var(--card); border-color: var(--ink); }
+    form { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; }
     input[type="search"], select {
       font: inherit;
       padding: 0.55rem 0.75rem;
@@ -54,12 +52,9 @@
       border-radius: 4px;
       background: var(--card);
     }
-    input[type="search"] {
-      flex: 1 1 14rem;
-      font-size: 1.15rem;
-      direction: rtl;
-    }
-    button {
+    input[type="search"] { flex: 1 1 16rem; font-size: 1.05rem; }
+    input.hebrew { direction: rtl; font-family: "David Libre", "Noto Serif Hebrew", serif; }
+    button[type="submit"] {
       font: inherit;
       padding: 0.55rem 1.1rem;
       background: var(--ink);
@@ -68,8 +63,34 @@
       border-radius: 4px;
       cursor: pointer;
     }
-    button:hover { background: var(--accent); }
-    .status { color: var(--muted); font-size: 0.85rem; min-height: 1.2rem; }
+    .examples { margin-bottom: 0.75rem; font-size: 0.85rem; color: var(--muted); }
+    .examples button {
+      font: inherit;
+      font-size: 0.82rem;
+      margin: 0.15rem 0.25rem 0.15rem 0;
+      padding: 0.2rem 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--card);
+      cursor: pointer;
+    }
+    .examples button:hover { border-color: var(--accent); color: var(--accent); }
+    .status { color: var(--muted); font-size: 0.85rem; min-height: 1.2rem; margin-bottom: 0.5rem; }
+    .hint {
+      background: #ebe4d8;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.92rem;
+    }
+    .section-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin: 1rem 0 0.5rem;
+    }
     .result {
       background: var(--card);
       border: 1px solid var(--border);
@@ -77,84 +98,107 @@
       padding: 0.85rem 1rem;
       margin-bottom: 0.65rem;
     }
-    .result a {
-      color: var(--accent);
-      font-weight: 600;
-      text-decoration: none;
+    .result.featured { border-left: 4px solid var(--accent); }
+    .result h3 { margin: 0 0 0.35rem; font-size: 1rem; }
+    .result .meta { font-size: 0.82rem; color: var(--muted); margin-bottom: 0.35rem; }
+    .result .summary { font-size: 0.92rem; margin: 0.35rem 0; }
+    .result .snippet {
+      margin: 0.45rem 0 0;
+      font-size: 1rem;
+      direction: rtl;
+      font-family: "David Libre", "Noto Serif Hebrew", serif;
+      text-align: right;
     }
+    .result a { color: var(--accent); font-weight: 600; text-decoration: none; }
     .result a:hover { text-decoration: underline; }
+    .actions { margin-top: 0.5rem; font-size: 0.88rem; }
+    .actions a { margin-right: 1rem; }
     .layer {
       display: inline-block;
-      font-size: 0.72rem;
+      font-size: 0.68rem;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
-      padding: 0.1rem 0.4rem;
+      padding: 0.1rem 0.35rem;
       border-radius: 3px;
-      margin-inline-start: 0.4rem;
-      vertical-align: middle;
+      background: #ebe4d8;
+      margin-left: 0.35rem;
     }
-    .layer.gemara { background: #e8f0e4; color: var(--gemara); }
-    .layer.rashi { background: #e4eef5; color: var(--rashi); }
-    .layer.tosafot { background: #f0ebe4; color: var(--tosafot); }
-    .snippet {
-      margin: 0.45rem 0 0;
-      font-size: 1.05rem;
-      direction: rtl;
-    }
-    .daf-view {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 1rem;
-      margin-top: 1.5rem;
-    }
-    .daf-view h2 { margin: 0 0 0.75rem; font-size: 1.2rem; }
-    .daf-view h3 {
-      margin: 1rem 0 0.35rem;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--muted);
-    }
-    .line { margin: 0.2rem 0; font-size: 1.05rem; direction: rtl; }
     .hidden { display: none; }
+    #hebrew-filters.hidden { display: none; }
   </style>
 </head>
 <body>
   <header>
-    <h1>בבלי — Bavli Uncensored</h1>
-    <p>Search the full Bavli by Hebrew word or phrase — or start from the <a href="loci.html" style="color:var(--accent)">loci map</a> if you want a guided list.</p>
-    <nav style="margin-top:0.6rem;font-size:0.9rem"><a href="loci.html" style="color:var(--accent)">← Loci map (start here)</a></nav>
-    <p id="mode-hint" class="hidden" style="margin:0.4rem 0 0;font-size:0.82rem;color:var(--muted)"></p>
+    <h1>Bavli Uncensored — Search</h1>
+    <p>Type in <strong>plain English</strong> (e.g. <em>Jesus</em>, <em>Jesus trial</em>, <em>gentiles censorship</em>) or switch to Hebrew.</p>
+    <nav>
+      <a href="loci.html">← Loci map (guided list)</a>
+    </nav>
   </header>
   <main>
+    <div class="tabs">
+      <button type="button" id="tab-en" class="active">English</button>
+      <button type="button" id="tab-he">Hebrew</button>
+    </div>
     <form id="search-form">
-      <input type="search" id="q" placeholder="חפש… e.g. ישו, גוים, סטada" autocomplete="off" />
-      <select id="tractate">
-        <option value="">כל המסכתות</option>
-      </select>
-      <select id="layer">
-        <option value="">כל השכבות</option>
-        <option value="gemara">גמרא</option>
-        <option value="rashi">רש"י</option>
-        <option value="tosafot">תוספות</option>
-      </select>
+      <input type="search" id="q" placeholder="e.g. Jesus, Jesus was ok, gentiles, censorship…" autocomplete="off" />
       <button type="submit">Search</button>
     </form>
+    <div id="hebrew-filters" class="hidden">
+      <form style="margin-top:0">
+        <select id="tractate"><option value="">All tractates</option></select>
+        <select id="layer">
+          <option value="">All layers</option>
+          <option value="gemara">Gemara</option>
+          <option value="rashi">Rashi</option>
+          <option value="tosafot">Tosafot</option>
+        </select>
+      </form>
+    </div>
+    <div class="examples" id="examples-en">
+      Try:
+      <button type="button" data-q="Jesus">Jesus</button>
+      <button type="button" data-q="Jesus was ok">Jesus was ok</button>
+      <button type="button" data-q="Jesus trial">Jesus trial</button>
+      <button type="button" data-q="gentiles censorship">gentiles censorship</button>
+      <button type="button" data-q="hell">hell</button>
+    </div>
     <div class="status" id="status"></div>
+    <div id="hint-box" class="hint hidden"></div>
     <div id="results"></div>
-    <div id="daf-panel" class="daf-view hidden"></div>
   </main>
   <script type="module">
-    import { search, openDaf, loadTractates, useClientMode } from "./js/app.js";
+    import { search, loadTractates, useClientMode } from "./js/app.js";
+    import { searchEnglish, hasHebrew } from "./js/english-search.js";
 
     const $ = (id) => document.getElementById(id);
+    let mode = "en";
 
     if (useClientMode()) {
-      $("mode-hint").classList.remove("hidden");
-      $("mode-hint").textContent =
-        "Static mode — first search downloads the index (~53 MB) from GitHub Releases, then runs in your browser. No server or database bill.";
+      $("status").textContent =
+        "First search downloads the text index once (~53 MB). English matches show explanations; Hebrew terms search the full Bavli.";
     }
+
+    function setMode(m) {
+      mode = m;
+      $("tab-en").classList.toggle("active", m === "en");
+      $("tab-he").classList.toggle("active", m === "he");
+      $("examples-en").classList.toggle("hidden", m === "he");
+      $("hebrew-filters").classList.toggle("hidden", m === "en");
+      const q = $("q");
+      if (m === "en") {
+        q.placeholder = "e.g. Jesus, Jesus was ok, gentiles, censorship…";
+        q.classList.remove("hebrew");
+      } else {
+        q.placeholder = "חפש… e.g. ישו, גוים";
+        q.classList.add("hebrew");
+      }
+    }
+
+    $("tab-en").addEventListener("click", () => setMode("en"));
+    $("tab-he").addEventListener("click", () => {
+      setMode("he");
+      initTractates();
+    });
 
     async function initTractates() {
       try {
@@ -167,77 +211,118 @@
       } catch (_) {}
     }
 
+    function esc(s) {
+      return String(s || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+    }
+
+    function renderFeatured(loc) {
+      const div = document.createElement("div");
+      div.className = "result featured";
+      const ref = loc.ref || "pattern";
+      div.innerHTML = `
+        <h3>${esc(loc.topic?.en || ref)}</h3>
+        <div class="meta">${esc(ref)} · ${esc(loc.tradition_status)} · ${esc(loc.layer || "")}</div>
+        <div class="summary">${esc(loc.english_summary || loc.tradition_note)}</div>
+        ${loc.verified?.snippet ? `<div class="snippet">${esc(loc.verified.snippet)}…</div>` : ""}
+        <div class="actions">
+          ${loc.ref ? `<a href="daf.html?ref=${encodeURIComponent(loc.ref)}">Read full daf →</a>` : ""}
+          <a href="loci.html">See in loci map</a>
+        </div>
+      `;
+      return div;
+    }
+
+    function renderCorpusHit(hit) {
+      const div = document.createElement("div");
+      div.className = "result";
+      div.innerHTML = `
+        <h3><a href="daf.html?ref=${encodeURIComponent(hit.ref)}">${esc(hit.ref)}</a>
+          <span class="layer">${esc(hit.layer)}</span></h3>
+        <div class="snippet">${esc(hit.snippet || hit.text)}</div>
+        <div class="actions"><a href="daf.html?ref=${encodeURIComponent(hit.ref)}">Read full daf →</a></div>
+      `;
+      return div;
+    }
+
     async function doSearch(ev) {
       ev?.preventDefault();
       const q = $("q").value.trim();
       if (!q) return;
+
+      $("results").innerHTML = "";
+      $("hint-box").classList.add("hidden");
+
+      const useHebrew = mode === "he" || hasHebrew(q);
+      if (useHebrew) setMode("he");
+
       $("status").textContent = "Searching…";
-      $("daf-panel").classList.add("hidden");
+
       try {
-        const results = await search(q, {
+        if (useHebrew) {
+          const results = await search(q, {
+            tractate: $("tractate").value || null,
+            layer: $("layer").value || null,
+            limit: 30,
+            onProgress: (msg) => { $("status").textContent = msg; },
+          });
+          $("status").textContent = results.length ? `${results.length} result(s)` : "No results";
+          for (const hit of results) $("results").appendChild(renderCorpusHit(hit));
+          return;
+        }
+
+        const data = await searchEnglish(q, {
           tractate: $("tractate").value || null,
           layer: $("layer").value || null,
           limit: 30,
           onProgress: (msg) => { $("status").textContent = msg; },
         });
-        $("status").textContent = results.length ? `${results.length} result(s)` : "No results";
-        const box = $("results");
-        box.innerHTML = "";
-        for (const hit of results) {
-          const div = document.createElement("div");
-          div.className = "result";
-          div.innerHTML =
-            `<a href="#" data-ref="${hit.ref}">${hit.ref}</a>` +
-            `<span class="layer ${hit.layer}">${hit.layer}</span>` +
-            `<div class="snippet">${escapeHtml(hit.snippet || hit.text)}</div>`;
-          div.querySelector("a").addEventListener("click", (e) => {
-            e.preventDefault();
-            showDaf(hit.ref);
-          });
-          box.appendChild(div);
+
+        if (data.hint) {
+          $("hint-box").textContent = data.hint;
+          $("hint-box").classList.remove("hidden");
+        }
+
+        const total = data.featured.length + data.corpus.length;
+        const terms = data.hebrewTerms?.length
+          ? ` (also searched Hebrew: ${data.hebrewTerms.slice(0, 4).join(", ")})`
+          : "";
+        $("status").textContent = total
+          ? `${total} result(s)${terms}`
+          : "No matches — try a shorter word like Jesus, trial, gentiles, or censorship";
+
+        if (data.featured.length) {
+          const h = document.createElement("div");
+          h.className = "section-title";
+          h.textContent = "Explained passages";
+          $("results").appendChild(h);
+          for (const loc of data.featured) $("results").appendChild(renderFeatured(loc));
+        }
+
+        if (data.corpus.length) {
+          const h = document.createElement("div");
+          h.className = "section-title";
+          h.textContent = "All text matches in the Bavli";
+          $("results").appendChild(h);
+          for (const hit of data.corpus) $("results").appendChild(renderCorpusHit(hit));
         }
       } catch (err) {
         $("status").textContent = err.message || "Search failed";
       }
     }
 
-    async function showDaf(ref) {
-      $("status").textContent = `Loading ${ref}… (first visit may download ~53 MB)`;
-      try {
-        const daf = await openDaf(ref, (msg) => { $("status").textContent = msg; });
-        if (!daf) {
-          $("status").textContent = "Daf not found";
-          return;
-        }
-        $("status").textContent = "";
-        const panel = $("daf-panel");
-        panel.classList.remove("hidden");
-        panel.innerHTML = `<h2>${daf.ref}</h2>`;
-        for (const layer of ["gemara", "rashi", "tosafot"]) {
-          const lines = daf[layer] || [];
-          if (!lines.length) continue;
-          const h = document.createElement("h3");
-          h.textContent = layer;
-          panel.appendChild(h);
-          for (const line of lines) {
-            const p = document.createElement("div");
-            p.className = "line";
-            p.textContent = line;
-            panel.appendChild(p);
-          }
-        }
-        panel.scrollIntoView({ behavior: "smooth" });
-      } catch (err) {
-        $("status").textContent = err.message || "Load failed";
-      }
-    }
-
-    function escapeHtml(s) {
-      return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    }
-
     $("search-form").addEventListener("submit", doSearch);
-    initTractates();
+    document.querySelectorAll(".examples button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        $("q").value = btn.dataset.q;
+        setMode("en");
+        doSearch();
+      });
+    });
+
+    setMode("en");
 
     const params = new URLSearchParams(location.search);
     if (params.get("q")) {

@@ -57,6 +57,23 @@
         "christian_censorship",
         "historical_narrative",
         "interfaith"
+      ],
+      "english_summary": "Trial and execution of Yeshu (Jesus). The gemara asks whether he might have deserved acquittal (had zechut / merit) — a legal argument inside a mesis case, not church doctrine about whether Jesus was OK.",
+      "english_keywords": [
+        "jesus",
+        "yeshu",
+        "christ",
+        "trial",
+        "execution",
+        "merit",
+        "innocent",
+        "acquittal",
+        "ok",
+        "righteous",
+        "zechut",
+        "mesis",
+        "censored",
+        "notzri"
       ]
     },
     {
@@ -93,6 +110,16 @@
       "tags": [
         "christian_censorship",
         "historical_narrative"
+      ],
+      "english_summary": "Ben Stada / ben Pandera — reported execution of a mesis (enticer). Names linked in tradition to Yeshu passages elsewhere.",
+      "english_keywords": [
+        "jesus",
+        "stada",
+        "pandera",
+        "mesis",
+        "execution",
+        "sorcery",
+        "censored"
       ]
     },
     {
@@ -130,6 +157,16 @@
         "christian_censorship",
         "aggadah",
         "interfaith"
+      ],
+      "english_summary": "Aggadic story: Onkelos summons Yeshu ha-Notzri from Gehinnom. Narrative in destruction-era context, not halacha.",
+      "english_keywords": [
+        "jesus",
+        "yeshu",
+        "hell",
+        "gehinnom",
+        "aggadah",
+        "censored",
+        "destruction"
       ]
     },
     {
@@ -166,6 +203,15 @@
         "christian_censorship",
         "aggadah",
         "interfaith"
+      ],
+      "english_summary": "Aggadah: Yeshu as a student of R. Yehoshua ben Perahiah — biography story, debated historicity.",
+      "english_keywords": [
+        "jesus",
+        "yeshu",
+        "student",
+        "disciple",
+        "aggadah",
+        "censored"
       ]
     },
     {
@@ -202,6 +248,15 @@
         "christian_censorship",
         "aggadah",
         "interfaith"
+      ],
+      "english_summary": "Parallel aggadic tradition to Sanhedrin 107b — Yeshu and R. Yehoshua ben Perahiah.",
+      "english_keywords": [
+        "jesus",
+        "yeshu",
+        "student",
+        "parallel",
+        "aggadah",
+        "censored"
       ]
     },
     {
@@ -237,6 +292,15 @@
       "tags": [
         "christian_censorship",
         "historical_narrative"
+      ],
+      "english_summary": "Ben Stada in a sorcery narrative — linked by tradition to Sanhedrin 67a.",
+      "english_keywords": [
+        "stada",
+        "pandera",
+        "jesus",
+        "sorcery",
+        "magic",
+        "censored"
       ]
     },
     {
@@ -276,6 +340,16 @@
       "tags": [
         "language_censorship",
         "commentary_layer"
+      ],
+      "english_summary": "Rashi restored to read gentiles (goyim) where Vilna print had the censored phrase idol-worshippers.",
+      "english_keywords": [
+        "gentile",
+        "gentiles",
+        "goyim",
+        "censorship",
+        "rashi",
+        "euphemism",
+        "avodah zarah"
       ]
     },
     {
@@ -310,6 +384,15 @@
         "language_censorship",
         "commentary_layer",
         "akum_acronym"
+      ],
+      "english_summary": "Rashi uses the censor acronym akum where manuscripts read goyim or minim — language censorship in commentary.",
+      "english_keywords": [
+        "akum",
+        "censorship",
+        "rashi",
+        "gentile",
+        "commentary",
+        "minim"
       ]
     },
     {
@@ -341,6 +424,16 @@
       "tags": [
         "internal_machloket",
         "meta_halacha"
+      ],
+      "english_summary": "Oven of Akhnai — famous dispute: law is not in heaven; human majority over bat kol. Not censored; shows argument on the record.",
+      "english_keywords": [
+        "dispute",
+        "heaven",
+        "bat kol",
+        "argument",
+        "achnai",
+        "oven",
+        "not censored"
       ]
     },
     {
@@ -372,6 +465,14 @@
       "tags": [
         "internal_machloket",
         "meta_halacha"
+      ],
+      "english_summary": "Why halacha does not follow Rabbi Meir — meta-dispute about a sage peers could not fully follow. Not censored.",
+      "english_keywords": [
+        "dispute",
+        "rabbi meir",
+        "argument",
+        "machloket",
+        "not censored"
       ]
     },
     {
@@ -403,6 +504,15 @@
       "tags": [
         "interfaith",
         "baseline"
+      ],
+      "english_summary": "Adam created alone — teaching on universal human dignity. Widely present; not a censorship locus.",
+      "english_keywords": [
+        "dignity",
+        "humanity",
+        "adam",
+        "equality",
+        "interfaith",
+        "not censored"
       ]
     },
     {
@@ -442,6 +552,15 @@
         "commentary_layer",
         "akum_acronym",
         "pattern"
+      ],
+      "english_summary": "Corpus-wide pattern: akum acronym in Rashi/Tosafot (~100 places) replacing goyim — see censorship audit.",
+      "english_keywords": [
+        "akum",
+        "censorship",
+        "commentary",
+        "gentile",
+        "pattern",
+        "goyim"
       ]
     }
   ]

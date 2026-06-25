@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "description": "Plain-English queries → Hebrew corpus terms + concept keywords for loci matching.",
+  "terms": {
+    "jesus": {
+      "hebrew": ["ישו", "יֵשׁוּ", "יֵשׁוּ הַנּוֹצְרִי"],
+      "aliases": ["yeshu", "yeshua", "christ", "jesus christ", "notzri", "notzri", "nazarene", "ha-notzri"]
+    },
+    "trial": {
+      "hebrew": ["דין", "משפט"],
+      "aliases": ["court", "executed", "execution", "crucifixion", "hanged", "mesis"]
+    },
+    "merit": {
+      "hebrew": ["זכות", "זָכוּת"],
+      "aliases": ["innocent", "acquittal", "acquitted", "righteous", "ok", "zedek", "zechut", "deserved"]
+    },
+    "hell": {
+      "hebrew": ["גיהנם", "גֵּיהִנֹּם"],
+      "aliases": ["gehinnom", "gehenna", "damned"]
+    },
+    "gentile": {
+      "hebrew": ["גוים", "גּוֹי"],
+      "aliases": ["gentiles", "goy", "goyim", "non-jew", "non-jews", "idolater", "idolaters"]
+    },
+    "censorship": {
+      "hebrew": ["עובדי כוכבים", "עכו\"ם"],
+      "aliases": ["censored", "censor", "euphemism", "suppressed", "vilna", "akum"]
+    },
+    "stada": {
+      "hebrew": ["סטada", "סָטָדָא"],
+      "aliases": ["ben stada", "ben-stada"]
+    },
+    "pandera": {
+      "hebrew": ["פndra", "פנדera"],
+      "aliases": ["ben pandera", "pantera"]
+    },
+    "sorcery": {
+      "hebrew": ["כשף", "מכשף"],
+      "aliases": ["magic", "sorcerer", "witchcraft"]
+    },
+    "student": {
+      "hebrew": ["תלמיד"],
+      "aliases": ["disciple", "pupil"]
+    },
+    "dispute": {
+      "hebrew": ["מחלוקת"],
+      "aliases": ["argument", "debate", "machloket", "disagreement"]
+    },
+    "heaven": {
+      "hebrew": ["שמים", "בת קול"],
+      "aliases": ["bat kol", "voice from heaven", "not in heaven"]
+    },
+    "dignity": {
+      "hebrew": ["יחידי", "אדם יחידi"],
+      "aliases": ["human dignity", "single adam", "all humans", "equality"]
+    }
+  },
+  "phrase_hints": [
+    {
+      "words": ["jesus", "ok"],
+      "summary": "Sanhedrin 43a discusses Yeshu's trial and whether he might have had merit (zechut) for acquittal — not a claim that Jesus was 'OK' as doctrine."
+    },
+    {
+      "words": ["jesus", "merit"],
+      "summary": "See Sanhedrin 43a — the gemara asks whether Yeshu had zechut (merit)."
+    },
+    {
+      "words": ["jesus", "innocent"],
+      "summary": "See Sanhedrin 43a — legal discussion of whether the accused had zechut."
+    }
+  ]
+}

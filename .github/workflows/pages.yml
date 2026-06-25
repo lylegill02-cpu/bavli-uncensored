@@ -27,6 +27,7 @@ jobs:
         run: |
           mkdir -p web/data
           cp data/loci_chart.json web/data/loci_chart.json
+          cp data/english_glossary.json web/data/english_glossary.json
 
       - uses: actions/configure-pages@v5
         with:
