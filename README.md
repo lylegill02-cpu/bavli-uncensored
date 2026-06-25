@@ -1,33 +1,36 @@
 # Bavli Uncensored
 
-One file. Full Shas. Pre-censorship readings restored where Vilna print and Christian censorship replaced **גוים** with **עובדי כוכבים**.
+**Try it → [Search the Bavli](https://lylegill02-cpu.github.io/bavli-uncensored/) · [Loci map](https://lylegill02-cpu.github.io/bavli-uncensored/loci.html)**
 
-**Primary source:** [`data/bavli.json`](data/bavli.json) — the entire Babylonian Talmud (gemara + Rashi + Tosafot) keyed by standard refs like `Sanhedrin.43a`.
+Full Vilna Shas (gemara + Rashi + Tosafot) with pre-censorship readings restored where print censorship replaced **גוים** with **עובדי כוכבים**. One JSON corpus, Hebrew search, witness-backed loci index.
 
-## Quick start
+## Live site (no install)
+
+| Page | URL |
+|------|-----|
+| Search | https://lylegill02-cpu.github.io/bavli-uncensored/ |
+| Loci map | https://lylegill02-cpu.github.io/bavli-uncensored/loci.html |
+
+First search downloads the prebuilt index (~53 MB) from [GitHub Releases](https://github.com/lylegill02-cpu/bavli-uncensored/releases), then runs in your browser. No account, no server, no database bill.
+
+## Quick start (local)
 
 ```bash
 pip install -r requirements.txt
 
-# Build the unified source (~2 min)
-python scripts/build_bavli.py --compact --index
+# Download search index (or build: python scripts/build_index.py)
+# Releases → bavli.db.gz → gunzip to data/bavli.db
 
-# Web UI + API (open http://127.0.0.1:8765)
-python scripts/serve.py
-
-# Loci map (local)
-# → http://127.0.0.1:8765/loci
-
-# CLI search
-python scripts/search.py "יֵשׁוּ"
-
-# Censorship audit report
+python scripts/serve.py          # http://127.0.0.1:8765
+python scripts/search.py "יֵשׁוּ"   # CLI
 python scripts/audit_censorship.py
 ```
 
-**No rebuild?** Download prebuilt index from [GitHub Releases](https://github.com/lylegill02-cpu/bavli-uncensored/releases) → `bavli.db.gz` → gunzip to `data/bavli.db`.
+Rebuild from source (~2 min): `python scripts/build_bavli.py --compact --index`
 
-## Web API
+**Primary corpus:** `data/bavli.json` — entire Bavli keyed by refs like `Sanhedrin.43a` (rebuild locally; not stored in git).
+
+## Web API (local server)
 
 | Endpoint | Description |
 |----------|-------------|
@@ -37,6 +40,7 @@ python scripts/audit_censorship.py
 | `GET /tractates` | Tractate list |
 | `GET /loci` | Loci map (suppression vs tradition) |
 | `GET /api/loci` | Loci JSON |
+| `GET /health` | Status |
 
 ```bash
 python scripts/serve.py
@@ -70,7 +74,7 @@ Compact copy: `data/bavli.min.json` (no whitespace, ~15% smaller).
 
 ## Search
 
-`bavli.json` itself is not searchable — load it for ref lookup only. For full-text search, build the SQLite index:
+`bavli.json` itself is not searchable — load it for ref lookup only. For full-text search, build or download the SQLite index:
 
 ```bash
 python scripts/build_index.py          # → data/bavli.db (~60s first time)
@@ -81,26 +85,7 @@ python scripts/build_bavli.py --index    # rebuild source + index together
 
 Each hit returns `ref`, `layer`, line number, and a text snippet. Use `--json` for programmatic use.
 
-| `GET /health` | Status |
-
-### GitHub Pages (no Supabase)
-
-Search + loci map can run entirely on GitHub — UI on Pages, index from [Releases](https://github.com/lylegill02-cpu/bavli-uncensored/releases) (`bavli.db.gz`), search in the browser via sql.js.
-
-1. Push to `main`
-2. Repo **Settings → Pages → Build: GitHub Actions**
-3. Site: `https://lylegill02-cpu.github.io/bavli-uncensored/`
-
-First search downloads ~53 MB once per session; no database hosting cost.
-
-To remove a prior Supabase load (g10be-overflow):
-
-```bash
-set SUPABASE_DB_URL=postgresql://...
-python scripts/clear_supabase.py
-```
-
-Or apply `forge-aop/supabase/migrations/20260625120000_drop_bavli_search.sql` via `supabase db push`.
+Hebrew search **strips niqqud and normalizes final letters** — so `ישו` matches `יֵשׁוּ`.
 
 ## Censorship audit
 
