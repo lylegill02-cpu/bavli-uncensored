@@ -10,6 +10,7 @@ data/cache/
 data/output/
 data/bavli.min.json
 data/bavli.db
+dist/
 _debug_*
 *.tmp
 

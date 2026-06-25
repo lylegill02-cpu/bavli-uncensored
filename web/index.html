@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bavli Uncensored — Search</title>
+  <style>
+    :root {
+      --bg: #f4f0e8;
+      --ink: #1a1510;
+      --muted: #5c5348;
+      --accent: #8b2500;
+      --card: #fffdf8;
+      --border: #d4cbb8;
+      --gemara: #2d5016;
+      --rashi: #1a4a6e;
+      --tosafot: #6b4423;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, "David Libre", "Noto Serif Hebrew", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    header {
+      padding: 1.5rem 1rem 1rem;
+      border-bottom: 2px solid var(--ink);
+      background: var(--card);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      margin: 0.35rem 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    main { max-width: 52rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    input[type="search"], select {
+      font: inherit;
+      padding: 0.55rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: var(--card);
+    }
+    input[type="search"] {
+      flex: 1 1 14rem;
+      font-size: 1.15rem;
+      direction: rtl;
+    }
+    button {
+      font: inherit;
+      padding: 0.55rem 1.1rem;
+      background: var(--ink);
+      color: var(--card);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover { background: var(--accent); }
+    .status { color: var(--muted); font-size: 0.85rem; min-height: 1.2rem; }
+    .result {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      margin-bottom: 0.65rem;
+    }
+    .result a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .result a:hover { text-decoration: underline; }
+    .layer {
+      display: inline-block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      margin-inline-start: 0.4rem;
+      vertical-align: middle;
+    }
+    .layer.gemara { background: #e8f0e4; color: var(--gemara); }
+    .layer.rashi { background: #e4eef5; color: var(--rashi); }
+    .layer.tosafot { background: #f0ebe4; color: var(--tosafot); }
+    .snippet {
+      margin: 0.45rem 0 0;
+      font-size: 1.05rem;
+      direction: rtl;
+    }
+    .daf-view {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      margin-top: 1.5rem;
+    }
+    .daf-view h2 { margin: 0 0 0.75rem; font-size: 1.2rem; }
+    .daf-view h3 {
+      margin: 1rem 0 0.35rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+    .line { margin: 0.2rem 0; font-size: 1.05rem; direction: rtl; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>בבלי — Bavli Uncensored</h1>
+    <p>Full Shas search · gemara, Rashi, Tosafot · pre-censorship readings restored</p>
+  </header>
+  <main>
+    <form id="search-form">
+      <input type="search" id="q" placeholder="חפש… e.g. ישו, גוים, סטada" autocomplete="off" />
+      <select id="tractate">
+        <option value="">כל המסכתות</option>
+      </select>
+      <select id="layer">
+        <option value="">כל השכבות</option>
+        <option value="gemara">גמרא</option>
+        <option value="rashi">רש"י</option>
+        <option value="tosafot">תוספות</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+    <div class="status" id="status"></div>
+    <div id="results"></div>
+    <div id="daf-panel" class="daf-view hidden"></div>
+  </main>
+  <script>
+    const $ = (id) => document.getElementById(id);
+
+    async function loadTractates() {
+      try {
+        const r = await fetch("/tractates");
+        const data = await r.json();
+        for (const t of data.tractates || []) {
+          const opt = document.createElement("option");
+          opt.value = t.tractate;
+          opt.textContent = t.tractate;
+          $("tractate").appendChild(opt);
+        }
+      } catch (_) {}
+    }
+
+    async function search(ev) {
+      ev?.preventDefault();
+      const q = $("q").value.trim();
+      if (!q) return;
+      $("status").textContent = "Searching…";
+      $("daf-panel").classList.add("hidden");
+      const params = new URLSearchParams({ q, limit: "30" });
+      const tractate = $("tractate").value;
+      const layer = $("layer").value;
+      if (tractate) params.set("tractate", tractate);
+      if (layer) params.set("layer", layer);
+      const r = await fetch("/search?" + params);
+      if (!r.ok) {
+        $("status").textContent = "Error — is the server running with bavli.db?";
+        return;
+      }
+      const data = await r.json();
+      $("status").textContent = data.count ? `${data.count} result(s)` : "No results";
+      const box = $("results");
+      box.innerHTML = "";
+      for (const hit of data.results) {
+        const div = document.createElement("div");
+        div.className = "result";
+        div.innerHTML =
+          `<a href="#" data-ref="${hit.ref}">${hit.ref}</a>` +
+          `<span class="layer ${hit.layer}">${hit.layer}</span>` +
+          `<div class="snippet">${escapeHtml(hit.snippet || hit.text)}</div>`;
+        div.querySelector("a").addEventListener("click", (e) => {
+          e.preventDefault();
+          openDaf(hit.ref);
+        });
+        box.appendChild(div);
+      }
+    }
+
+    async function openDaf(ref) {
+      $("status").textContent = `Loading ${ref}…`;
+      const r = await fetch("/ref/" + encodeURIComponent(ref));
+      if (!r.ok) {
+        $("status").textContent = "Daf not found";
+        return;
+      }
+      const daf = await r.json();
+      $("status").textContent = "";
+      const panel = $("daf-panel");
+      panel.classList.remove("hidden");
+      panel.innerHTML = `<h2>${daf.ref}</h2>`;
+      for (const layer of ["gemara", "rashi", "tosafot"]) {
+        const lines = daf[layer] || [];
+        if (!lines.length) continue;
+        const h = document.createElement("h3");
+        h.textContent = layer;
+        panel.appendChild(h);
+        for (const line of lines) {
+          const p = document.createElement("div");
+          p.className = "line";
+          p.textContent = line;
+          panel.appendChild(p);
+        }
+      }
+      panel.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function escapeHtml(s) {
+      return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+    $("search-form").addEventListener("submit", search);
+    loadTractates();
+
+    const params = new URLSearchParams(location.search);
+    if (params.get("q")) {
+      $("q").value = params.get("q");
+      search();
+    }
+    if (params.get("ref")) openDaf(params.get("ref"));
+  </script>
+</body>
+</html>

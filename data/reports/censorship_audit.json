@@ -1,0 +1,2271 @@
+{
+  "audited_at": "2026-06-25T03:34:44.717003+00:00",
+  "source": "bavli.json",
+  "edition": "bavli-uncensored-v2",
+  "summary": {
+    "total_hits": 751,
+    "likely_censorship_hits": 100,
+    "by_pattern": {
+      "akum_ascii": 227,
+      "nokhri_as_euphemism": 1301,
+      "akum_hebrew": 1
+    },
+    "by_tractate_top10": {
+      "Eruvin": 308,
+      "Bava Metzia": 238,
+      "Shabbat": 177,
+      "Pesachim": 161,
+      "Yevamot": 115,
+      "Bava Kamma": 74,
+      "Bava Batra": 63,
+      "Sanhedrin": 60,
+      "Beitzah": 47,
+      "Yoma": 38
+    },
+    "by_layer": {
+      "rashi": 652,
+      "tosafot": 877
+    },
+    "tractates_most_suspicious": [
+      "Eruvin",
+      "Bava Metzia",
+      "Sanhedrin",
+      "Bava Batra",
+      "Shabbat",
+      "Bava Kamma",
+      "Berakhot",
+      "Pesachim",
+      "Zevachim",
+      "Yevamot",
+      "Taanit",
+      "Sukkah",
+      "Gittin",
+      "Ketubot",
+      "Rosh Hashanah"
+    ]
+  },
+  "restored_loci": [
+    {
+      "ref": "Sanhedrin.43a",
+      "label": "Yeshu baraita",
+      "needle": "יֵשׁוּ",
+      "present": true
+    },
+    {
+      "ref": "Sanhedrin.67a",
+      "label": "ben Stada",
+      "needle": "סָטָדָא",
+      "present": true
+    },
+    {
+      "ref": "Gittin.57a",
+      "label": "Yeshu ha-Notzri",
+      "needle": "יֵשׁוּ",
+      "present": true
+    }
+  ],
+  "likely_censorship": [
+    {
+      "ref": "Berakhot.12a",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "בקשו – לקבוע עשרת הדברות בקריאת שמע: מפני תרעומת המינין – שלא יאמרו לעמי הארץ אין שאר תורה אמת ותדעו שאין קורין אלא מה שאמר הקדוש ב\"ה ושמעו מפיו בסיני: המינין – עכו\"ם:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Berakhot.32b",
+      "layer": "rashi",
+      "line_no": 15,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "אבל למלכי עכו\"ם פוסק – שלא יהרגנו:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Berakhot.33a",
+      "layer": "rashi",
+      "line_no": 10,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "במילתה מיהא גדולה היא – במקום שצריכה נקמה דבר גדול הוא: שתי נקמות הללו למה – אחת לרעה להנקם מן העכו\"ם שלא קבלו את התורה: ואחת לטובה – כדאמרינן בב\"ק (דף לח.) מפארן הופיע והפקיר ממונן לישראל שור של ישרא",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Berakhot.33b",
+      "layer": "rashi",
+      "line_no": 13,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "גמ' שמטיל קנאה – לומר על אלה חס ולא על שאר בריותיו: מדותיו – מצותיו והוא לא לרחמים עשה אלא להטיל על ישראל חקי גזרותיו להודיע שהם עבדיו ושומרי מצותיו וגזרות חקותיו אף בדברי' שיש לשטן ולעכו\"ם להשיב עליה",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Berakhot.51b",
+      "layer": "rashi",
+      "line_no": 11,
+      "pattern_id": "akum_hebrew",
+      "pattern": "עכו״ם",
+      "count": 1,
+      "snippet": "אין מברכים על הנר ועל הבשמים של עכו״ם ושל מתים – טעם דכולהו מפרש בגמרא: שיאותו – שיהו נהנים ממנו:",
+      "note": "Censor acronym (Hebrew quotes) — patch candidate"
+    },
+    {
+      "ref": "Berakhot.54a",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "הרואה וכו' אומר ברוך שעשה נסים לאבותינו וכו' – פירש רבי' שמעיה דכל הני ברכות צריכות להזכרת שם ומלכות ברוך אתה ה' אלהינו מלך העולם וכן כתב רבינו שמשון מקוצי כי הר\"י היה רגיל לברך על הברקים ברוך אתה ה' ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Berakhot.57b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 5,
+      "snippet": "הרואה מרקוליס - בתוספתא תנן במקום מרקוליס דהכא עבודת כוכבים וא\"כ לאו דוקא מרקוליס אלא לפי שבמקומו של תנא היו עובדים לה ועתה אין אנו רגילים לברך לפי שאנו רואים אותה בכל יום וכל הנך הרואים אמרו לעיל דהו",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Shabbat.15b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "ואאוירא לתלות - תימה דתנן במסכת אהלות (כ\"ב מ\"ג) אלו מטמאין במגע ובמשא ולא באהל עצם כשעורה וארץ העמים וי\"ל דהתם מיירי כגון שהביא עפר מארץ העמים לארץ ישראל אי נמי כר' שמעון דאמר קברי עכו\"ם אין מטמאין בא",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Shabbat.16b",
+      "layer": "tosafot",
+      "line_no": 5,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "אף בנות כותים - תימה לר\"י דבריש בנות כותים (נדה דל\"ב. ושם) מוקי לה כר\"מ דחייש למיעוטא והאי טעמא לא שייך אלא למ\"ד כותים גרי אמת הן ואם ראתה טמאה מדאורייתא אבל למ\"ד כותים גרי אריות הן לא שייך האי טעמא ד",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Shabbat.42b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "אבל נותן הוא לתוך הקערה כו' - מהכא ליכא למידק דעירוי ככלי שני מדקתני לא יתן לתוכה תבלין ולא אשמעינן רבותא אפילו שלא יערה על הקערה שתבלין בתוכה דאדרבה דוק מסיפא דקתני אבל נותן הוא לתוך הקערה ולא קתני מ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Shabbat.72b",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "דרבי אמי - במסכת סנהדרין בפרק ד' מיתות יליף למילתיה מקרא דאין חילוק חטאות לעכו\"ם:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Shabbat.72b",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "עד כאן לא בעא מיניה רבא מרב נחמן כו' - וא\"ת אמאי לא מייתי מתני' דהשוכח עיקר שבת דאינו חייב אלא אחת ולא הוי פטור לגמרי וי\"ל דניחא ליה לאתויי מרבא דמספקא ליה בהעלם זה וזה דדילמא אפי' תרתי מיחייב דכי אוק",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Shabbat.88b",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "למיימינים - עסוקים בכל כחם וטרודים לדעת סודה כאדם המשתמש ביד ימינו שהיא עיקר: קושרים לו שני כתרים - לדבור שהיה בו ממש ונראה כדכתיב רואים את הקולות (שמות כ׳:ט״ו): אע\"פ שמיצר ומימר לי דודי - בעגל שאמר ה",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Shabbat.89a",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "שנאה לעכו\"ם - שלא קבלו בו תורה:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Shabbat.150a",
+      "layer": "rashi",
+      "line_no": 7,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "ערות דבר - אלמא לא אסיר ליה אלא בשעת דבור: ההיא כדרב יהודה - כלומר לעולם והיה מחניך קדוש משום הרהור תורה ואפי' אין דבור ולא יראה בך ערות דבר במילתא אחריתי מיירי דאסור בשעת הדבור ולא בשעת הרהור כגון לה",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.61b",
+      "layer": "rashi",
+      "line_no": 10,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "מתני' הדר עם העכו\"ם או עם מי שאינו מודה בעירוב - כותי כדאמר בפרק בכל מערבין (עירובין דף לא:): אוסר עליו - לטלטל מביתו לחצר עד שישכור הימנו רשות שיש לו בחצר:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.61b",
+      "layer": "rashi",
+      "line_no": 12,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "מעשה בצדוקי אחד - קסבר ר\"ג צדוקי אינו כעכו\"ם ולא דמי לכותי דגרי אריות הן ואינם גרים גמורים אבל צדוקי ישראל הוא ונהפך למינות ואינו מודה בתורה שבעל פה כיון דישראל הוא יכול לבטל רשותו בלא שום שכירות: מעש",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.61b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 7,
+      "snippet": "מתני' הדר. ר' אליעזר בן יעקב אומר עד שיהו ב' ישראלים אוסרים כו' - משמע דאתרוייהו קאי ר\"א בן יעקב אעכו\"ם ואכותי ובגמ' מפרש דטעמא דראב\"י דכיון דעכו\"ם חשוד אשפיכות דמים בתרי דשכיחי דדיירי גזרו בהו רבנן ש",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.61b",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 10,
+      "snippet": "אמר רבן גמליאל מעשה בצדוקי א' כו' - קסבר צדוקי אינו כעכו\"ם כדמפרש בגמ' ופי' בקונטרס אבל בכותי מודה דהרי הוא כעכו\"ם משום דגרי אריות הן ואע\"ג דת\"ק דאסר כותי היינו רבי מאיר כדאמר בגמ' ושמעינן ליה דקסבר ג",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "הרי הוא כדיר של בהמה - ואין לו כח לאסור ור\"מ קאמר לה לקמן בברייתא בשמעתין ורמינן מתני' עלה ומוקמינן בדליתיה וישראל אפי' כי ליתיה אוסר אלמא דירת עכו\"ם לאו שמה דירה:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "אלא דכ\"ע לאו שמה דירה - אלא משום גזרה שמא ילמוד ישראל מעשיו של עכו\"ם הטריחוהו והפסידוהו חכמים לישראל הדר עמו כדי שיקשה בעיניו ליתן שכר בכל שבת ושבת ויצא משם ובההיא גזרה פליגי ר\"מ ור\"א בן יעקב אי גזרינ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 5,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "ר\"א סבר כיון דעכו\"ם חשוד על שפיכות דמים - לא שכיח יחידי דדייר בהדיה ומילתא דלא שכיחא לא גזור בה רבנן ור\"מ סבר יחידי נמי זימנין דדייר ומש\"ה אמור רבנן אין עירוב מועיל כו': ועכו\"ם לא מוגר - לא יהא רוצה ל",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "מאי טעמא - לא מוגר עכו\"ם: בריאה - חזקה שיתנה ישראל עמו למלאות כל המבוי כלים אם ירצה:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 7,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "בן נח נהרג על הגזל - דהיא מז' מצות כדאמר בד' מיתות בסנהדרין (דף נו.) ואמר אזהרה שלהן זו היא מיתתן ואשמועינן ר' יוחנן דעכו\"ם לא מחיל אפילו אפחות משוה פרוטה והוי גזל לדידהו: לא ניתן להישבון - דגבי ישראל",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 9,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 3,
+      "snippet": "חצירו של עכו\"ם - אע\"ג שסתם חצירות פתוחין לתוכן בתים הרבה אין רשות נכרי חלוקה להיחשב רשות לכל אחד ואחד לבדו דדירת עכו\"ם לא שמה דירה וישראל שאינו דר עמהן שנכנס לאחד מן הבתים בשבת מותר להוציא מן הבתים לח",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "line_no": 11,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 6,
+      "snippet": "ר\"א בן יעקב אומר עד שיהו שני ישראלים - דרין בשני בתים ואוסרין זה על זה רשות העכו\"ם חלוקה מהן ואוסר העכו\"ם על בתיהם והן אוסרין על בתי העכו\"ם מלהוציא לחצר דשויוה רבנן לדירת עכו\"ם דירה כדאמר לעיל אבל ביש",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "חצירו של עכו\"ם הרי הוא כדיר של בהמה - ואם יש בתים הרבה של עכו\"ם פתוחין בחצר מותר לישראל להכניס ולהוציא לשם מאחר שאין ישראל דר שם:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 3,
+      "snippet": "ועכו\"ם לא מוגר - וא\"ת ומעיקרא דס\"ד דטעמא משום דדירת עכו\"ם שמה דירה מ\"ט דעירוב לא מהני ושכירות מהני וי\"ל דעירוב וביטול בדין הוא דלא מהני שאין העכו\"ם מכיר בהן אבל יודע הוא שישראל קונה רשותו בשכירות אבל ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 10,
+      "snippet": "בן נח נהרג על פחות משוה פרוטה ולא ניתן להשבון - פירש בקונטרס דגבי ישראל כתיב והשיב את הגזלה אשר גזל אבל בגוי לא כתיב הלכך כיון שעבר נהרג ואין משלם משמע מתוך פירושו דאפילו בגזל מעכו\"ם חבירו לא מיחייב ב",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "אמר מר הרי הוא כדיר של בהמה - דנכרי לא אסר מידי וכי דייר ישראל גביה קאמר ר' מאיר דישראל אוסר על ביתו של עכו\"ם אבל עכו\"ם אינו אוסר על ביתו של ישראל והתנן כו':",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "הא דליתיה - לעכו\"ם לא אסר ואם יש שם ישראל אחר אוסר על ביתו של עכו\"ם ואפי' ליתא לישראל:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "ה\"ג לעולם קסבר דירה בלא בעלים לאו שמה דירה: וישראל דכי איתיה אסר - משום דירה דדירת ישראל שמה דירה: כי ליתיה גזרו רבנן - משום כי איתיה אבל עכו\"ם דאפילו כי איתיה לאו שמה דירה אלא משום שמא ילמד כו':",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 3,
+      "snippet": "דאתי ביומיה - שהלך למקום קרוב ויבא בו ביום ואי שרית להו קודם שיבא מטלטלי נמי אחר שיבא ולא מסקי אדעתייהו: ל\"א הכי גרסינן ואם יש שם ישראל אחר שדר ישראל עם ישראל אחר בבית אחד הרי זה העכו\"ם אוסר עליו דהכי",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Eruvin.64b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 7,
+      "snippet": "שהולכין אחר רוב עוברי דרכים - כדפירש בקונטרס מדלא שרי ליה לר' אלעאי למכלינהו דאחזקינהו בחזקת פתן של נכרים שרוב עוברי דרכים נכרים הם דאם היינו תולין בשל ישראל היה מותר אף על פי שאחר הפסח היה בסמוך דביש",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Pesachim.9a",
+      "layer": "rashi",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "מי לא תנן - במסכת אהלות מדורות הגוים טמאין מפני שקוברין נפליהם בבתיהם והעכו\"ם מטמאין במיתתן אף באהל לרבנן ולר\"ש בן יוחי נמי דאמר קברי הגוים אינם מטמאין במגע ומשא מודה הוא דלא אימעוט אלא מטומאת אהל דלא",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Pesachim.21b",
+      "layer": "rashi",
+      "line_no": 9,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "להקדים נתינה דגר למכירה דנכרי - אם יש גר ליתנה לו נתינתו קודמת למכירתה לנכרי והאי גר בגר תושב קאמר שקיבל עליו שלא לעבוד עכו\"ם ואוכל נבלות: גר אתה מצווה להחיותו - דכתיב (ויקרא כ״ה:ל״ה) גר ותושב וחי עמך",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Pesachim.22b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "ואבר מן החי לבני נח - תימה כיון דבאבר מן החי של נכרי מיירי כדאמר בפ\"ק דמסכת ע\"ג (דף ו: ושם) מדקתני לא יושיט ולא קתני לא יתן א\"כ היכי דייק דשרי בהנאה אי לאו לפני עור וי\"ל דכיון דבשכר היה אסור להושיט דא",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Pesachim.87b",
+      "layer": "rashi",
+      "line_no": 8,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "כהן בית אל - כומר לעכו\"ם:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Pesachim.91a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "לא שנו אלא בבית האסורין של עכו\"ם - בירושלמי מוקי לה רבי יוסי בר בון בשם רבי יוחנן כשחבשוהו ישראל אבל חבשוהו עכו\"ם אין שוחטין עליו אפי' עם אחרים אשר פיהם דבר שוא והיינו איפכא משמעתין:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Yoma.82a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 14,
+      "snippet": "מה רוצח יהרג ואל יעבור אף נערה המאורסה יהרג ואל יעבור - פירש רש\"י דלא גרס תיהרג דאיהי לא מחייבא למימסר נפשיה דקרקע עולם היא ובהא ניחא הא דבסוף פ' בן סורר (סנהדרין עד:) פריך והא אסתר פרהסיא הואי ואמאי ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sukkah.30a",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "אוונכרי - תגרי כל דבר להשתכר בו כגון כלים קטנים מחטין ומסריקות ולולבין וקורין מרני\"ש: כי זבניתו אסא מנכרים - כשתקנו הדס מן הנכרים לאגוד בהן להושענא: ליגזזו אינהו - הם יחתכוהו מן המחובר ויתנוהו לכם: מא",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Rosh Hashanah.3b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "שנת עשרים לארתחשסתא המלך יין לפניו. פשטיה דקרא משמע דהאי עובדא דנחמיה בפני ארתחשסתא המלך היה דהוא דריוש בן אסתר שנבנה הבית בימיו אבל אי אפשר לומר כן דהא בשנת שיתא למלכות דריוש נבנה הבית כדכתיב ושיציא ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Taanit.16a",
+      "layer": "rashi",
+      "line_no": 7,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "קברי עכו\"ם – במקום שאין קברי ישראל לבקש רחמים אפי' על עצמן ליכא כל שכן עלינו:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Moed Katan.11a",
+      "layer": "rashi",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "יריד של עכו\"ם - יומא דשוקא: ומעלה בערכאות - לקיימן בחתימתן דכיון דהשתא הוא דמשכח להו וליומא אחרינא לא שרי:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Yevamot.61a",
+      "layer": "rashi",
+      "line_no": 9,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "מתני' אלא אם כן יש לו בנים - משום דמצווה על פריה ורביה וה\"ה לישראל ובגמרא מפרש אמאי נקט כהן: שהיא זונה האמורה בתורה - ובגמרא מפרש לה: אלא הגיורת והמשוחררת - דביאת עכו\"ם ועבד פסלה: ושנבעלה בעילת זנות -",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Yevamot.61a",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "קברי גוים אינן מטמאין באהל - תימה למה ליה לרבי בנאה לציוני מערתא דאברהם אבינו ואדם הראשון (ב\"ב נח.) אף דאיקרו אדם אדם ואברהם או אפי' לרבנן דאמרי קברי גוים מטמאין באהל הא לא מטמא באהל אפילו קברי ישראל ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Ketubot.98b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "אמר רב פפא כו' - הכי גריס רבינו חננאל הלכתא דבר שיש לו קצבה חולקין דבר שאין לו קצבה הכל לבעל המעות ותימה לפי גירסא זו אדפריך ליה מאי קמ\"ל הוה ליה למיפרך ולימא הלכה כר' יוסי ויש לפרש בדוחק דה\"נ קאמר מא",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Gittin.62a",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 3,
+      "snippet": "אין עודרין עם העכו\"ם בשביעית - והא דקאמר בפרק זה בורר (סנהדרין דף כו.) גבי כהן וחורש יכול לומר לו אגיסטון אני בתוכה לא כמו שפי' בקונטרס שכיר לנכרי דהא משמע הכא דאסור ולא מסתבר לחלק בין חנם לבשכר אלא מ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Kamma.23a",
+      "layer": "tosafot",
+      "line_no": 5,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "תפשוט דפי פרה כחצר הניזק דמי - תימה דאמאי לא פשיט משאר בבי דמתני' דתנן השן מועדת לאכול הראוי לה ומההיא דאכלה מצידי הרחבה ומתוך החנות ועוד אותם שהיו מדקדקין משיסה בו את הכלב למה לא הביאו מתניתין כלב שנ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Kamma.58a",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 5,
+      "snippet": "א\"נ מבריח ארי מנכסי חבירו לית ליה פסידא - וא\"ת והרי פורע חובו דחשבינן ליה מבריח ארי בריש אין בין המודר (נדרים ד' לג.) אע\"ג דאית ליה פסידא וי\"ל דהכי פי' מבריח ארי מנכסי חבירו מדעתו וכיון דמדעתו אפי' אי",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Kamma.102a",
+      "layer": "rashi",
+      "line_no": 7,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "מלוה בשטר אין נפרעין מהן - לפני אידיהן מפני ששמחה היא לו ואזיל ומודה לעכו\"ם ביום חגם ורבנן סברי אסור לפורען וליפרע מהן כלל:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Kamma.113b",
+      "layer": "rashi",
+      "line_no": 15,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "דדיירי דרי - עכו\"ם שיש להם בהמות ומזבלין מהן שדות בשכר: אסור ליקח מהן - בהמה שמא נתחברה עם בהמותיהם של ישראל ושל בני ישראל הוא:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Kamma.114a",
+      "layer": "rashi",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "והאמר מר זבין מעכו\"ם כו' - בבבא מציעא בהמקבל:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Kamma.114a",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "מתני' הרי אלו שלו - דמסתמא נתייאשו הבעלים מיד וקננהו היאך ביאוש ושינוי רשות: אם נתייאשו - הבעלים דשמעינן דאייאוש דאמר ווי לחסרון כיס אבל סתמא לא וקשיא לסטים דסיפא אלסטים דרישא ובגמרא פריך ומשני לה חדא",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Kamma.114a",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "עד דמקבל עילויה כו' - אומר ר\"ת דהיינו דוקא כשישראל רוצה ליתן לו כמו שנותן לו העכו\"ם אבל אם העכו\"ם רוצה ליתן לו יותר אין להפסיד בשביל כן:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Kamma.117a",
+      "layer": "rashi",
+      "line_no": 12,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "פקיע - קשר: חייב - ואע\"ג דקאי עכו\"ם ע\"ג הממון הואיל ונשא ונתן ביד חייב:\n בתרי עיברי נהרא - עכו\"ם מצד זה והעמיר מצד זה דאי לא יהביה נהליה לא מצי אנס למשקליה:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.15a",
+      "layer": "rashi",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "שנטלוה מסיקין - אנסים עכו\"ם נטלוה מן הגזלן ומחמתו ותנן בבבא קמא (דף קטז:) הגוזל שדה מחבירו ונטלוה מסיקין אם מחמת הגזלן חייב להעמיד לו שדה אחר והרי היא יוצאה מתחת ידו דקתני בנטילת מסיקין הוא:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.23a",
+      "layer": "rashi",
+      "line_no": 10,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "הלכתא כריכות ברה\"ר כו' - כדמוקי לה בשאין בו סימן: ברשות היחיד אי דרך נפילה הרי אלו שלו - דליכא למימר מקום הוי סימן דהא לא ידע היכא נפיל מיניה: אי דרך הינוח נוטל ומכריז - מקום ולא יניחם שם שמא ימצאם עכ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.26b",
+      "layer": "tosafot",
+      "line_no": 5,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "אפילו צרורין - רש\"י ל\"ג צרורין דאם היה בו סימן מכריז וי\"ל דגריס ליה ומיירי דאיכא רוב עכו\"ם מצויים שם והם שלו ואע\"ג דאיכא סימן דהלכה כר' שמעון בן אלעזר בהא:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.70b",
+      "layer": "rashi",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "מתני' אין מקבלין צאן ברזל - כל אחריות הנכסים על המקבל ושם אותם עליו במעות וכל זמן שאין נותן לו מעותיו חולקין השכר ואע\"ג דמשנה יתירא היא דהא תנא ליה (לעיל בבא מציעא דף סח.) אין מושיבין חנווני למחצית שכ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.70b",
+      "layer": "rashi",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "מדעת העכו\"ם - מפרש בגמרא:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.70b",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "ועוד - אי איתא דהיכא דקביל עליה אונסא וזולא קרית ליה צאן ברזל: אדתני סיפא - דמתני' אבל מקבלין צאן ברזל מן העכו\"ם: לפלוג וליתני בדידיה - בישראל:\n",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.70b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 3,
+      "snippet": "אין מקבלין צאן ברזל מישראל מפני שהוא רבית - פי' בקונטרס כל האחריות נכסים על המקבל ושם אותם במעות עליו וכל זמן שאין נותן לו מעותיו חולקים השכר ואע\"ג דמשנה יתירא היא דהא תנא ליה (לעיל בבא מציעא דף סח.) ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.70b",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "תשיך לא סגי דלאו הכי - אבל אי תשוך ניחא דלא סגי דלא תשוך דאסור להלוות לו בחנם כדאמר קרא (דברים ז׳:ב׳) לא תחנם ועוד שאמר הכתוב להלוות להם ברבית וא\"ת ומאי פריך מהאי קרא הא לא אסור אלא מדרבנן גזירה שמא י",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.108a",
+      "layer": "rashi",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "ואם לאו לא מסתגי להו - אין להם מהלך בעבר זה והולכין על כרחן דרך שפתו השנית שהרי על כרחן כשהולכין כנגד היער של עכו\"ם ילכו בשפתו השניה ולכשיגיעו כנגד שלי למה יטריחו לעבור את רוחב המים והרי הן צריכין לחז",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.108a",
+      "layer": "rashi",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "חזא ההוא אבא - יער שהניח רבה בר רב הונא לפי שאין העליונים והתחתונים קוצצין ורבה בר רב נחמן לא היה יודע שכן היה שיהא עליון ותחתון של עכו\"ם המושל: יד השרים והסגנים - פסוק הוא בספר עזרא:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.108a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "האי מאן דאחזיק ברקתא דנהרא - קיבל בטסקא מן המלך כדפי' בקונטרס ולהכי קאמר דאחזיק ולא קאמר דזבין כדאמרינן לקמן זבין במאתים זבין מעכו\"ם וכן האי מאן דאחזיק ביני אחי דבסמוך מפר\"ת דוקא באחזיק שהיתה קרקע הפק",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.108b",
+      "layer": "rashi",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "אריא אברחי לך - ואין לך ישר וטוב מזה: עכו\"ם לאו בר ועשית וכו' - ואין לנו לומר על דינא דבר מצרא ועשית הישר והטוב אלא ללוקח שהמוכר אומר לו מה עשיתי לך אם ארצה לא אמכרנה לך ותהא בידי אבל ללוקח נאמר משוך ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.108b",
+      "layer": "rashi",
+      "line_no": 8,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "שכיני העיר ושכיני השדה שכיני העיר קודמין - נראה בעיני דלאו בדינא דבר מצרא איירי אלא להשיא עצה דרך ישר וטוב למוכר שאם יש לו שדה למכור ובאו עליה ללוקח שכינים הדרים אצלו בדירה ושכן שיש לו בשדה ששדותיהן ס",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.108b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "משמתינן ליה עד דמקבל כו' - דוקא שישראל רוצה ליקח בדמים שנתן העכו\"ם:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Metzia.111b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "מאחיך פרט לאחרים - תימה אמאי איצטריך מאחיך למעוטי עכו\"ם מגר תושב נפקא דדוקא גר תושב ולא עכו\"ם ועוד תימה אמאי איצטריך למיכתב גר צדק מגר תושב נפקא דכ\"ש גר צדק וליכא למימר דאי לאו דכתיב גר צדק הוה מוקמינ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Batra.8a",
+      "layer": "tosafot",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "איפרא הורמיז. פר\"ח דמשמעות הלשון חן מאת המקום איפרא כמו אפריון נמטייה לר\"ש (ב\"מ דף קיט.) הורמיז שם שכינה כי ההיא דס\"פ אחד דיני ממונות (סנהדרין דף לט. ושם ד\"ה דהורמיז) מפלגא דידך ולעיל דהורמיז בזיי\"ן מ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Batra.10b",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "ה\"ז צדיק גמור - על דבר זה ומחשבה זו: כאן בישראל וכאן בגוי - ישראל דעתן לשמים בין יחיה בין לא יחיה אינו מהרהר אחר מדת הדין אבל עכו\"ם אינו נותן אלא ע\"מ כן ואם לאו מתחרט:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Batra.45a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 3,
+      "snippet": "דינא הוא דמפצי ליה. תימה לרשב\"א דלימא ליה אייתי ראיה דבדין טרפה ואשלם לך דאפילו לגבי ישראל מצי למימר הכי כל שכן לגבי עכו\"ם ויש לומר דמיירי כגון שבדיני עכו\"ם דן עמו ובדיניהם הויא דעכו\"ם הלכך חייב לפצות",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Batra.48a",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 13,
+      "snippet": "גט מעושה בישראל כשר בעכו\"ם פסול. בסיפא מסיים ובעכו\"ם חובטין אותו ואומרים לו עשה מה שישראל אומר לך ויש מפרשים דהוי פירושא דרישא כיצד בעכו\"ם פסול חובטין אותו ואומרים לו כו' ואין נראה דא\"כ אדפריך ליה הכא",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Batra.48a",
+      "layer": "tosafot",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 8,
+      "snippet": "דבר תורה אפילו בעכו\"ם כשר. דכיון דבדין מעשים כאותן שכופין אותו להוציא דבישראל נמי אי שלא כדין מעשה פסול כדאמר שמואל בהמגרש (גיטין דף פח: ושם) וא\"ת ומאי נפקא מינה אם תולה בעכו\"ם ומפקעת עצמה מיד בעלה דכ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Batra.55b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 8,
+      "snippet": "רבי אליעזר מטהר. רשב\"ם פירש דפליגי דרבי אליעזר חשיב ליה ספק ספיקא ורבנן לא חשיבי ליה אלא ספיקא אחת ורש\"י פירש בפרק בתרא דע\"ז (דף ע. ושם) דאיירי בשדה מלאה טומאה ופליגי דר\"א סבר אע\"ג דליכא אלא חדא ספיקא",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Batra.81a",
+      "layer": "tosafot",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 5,
+      "snippet": "למעוטי אדמת עכו\"ם. רשב\"ם גרס והא תרי אדמתך כתיבי ולפי שקשה לו אידך אדמתך למה לי מגיה הספרים והא כתיבי תרי אדמתך חד למעוטי אדמת עכו\"ם וחד למעוטי אדמת גר ובחנם דחק עצמו דחד אדמתך דרשינן בפ\"ק דבכורים הנו",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Batra.92b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 3,
+      "snippet": "אי דליכא לאישתלומי מיניה. אומר ר\"י דשפיר גרס אי דליתנהו להנהו זוזי ומה שהקשה ר\"ש מההיא דבבא קמא (דף ט.) לאו פירכא היא דמצינא למימר דקיימא לן כרב פפא וכרב הונא בריה דרב יהושע דאית להו התם (דף ז:) דכל מ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Batra.97a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "מי סברת חמרא הוא קיוהא בעלמא הוא. מכאן הורה ר\"ת בדיעבד אם רחץ עכו\"ם חבית של שמרי יין דשרי דלאו חמרא הוא אלא קיוהא בעלמא הוא:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Bava Batra.148a",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "תנהו לפלוני במעמד שלשתן קנה. ומה שמפרש רבינו תם שמועיל בעל כרחו של נפקד פי' לעיל בפ' המוכר את הספינה (בבא בתרא דף פה. ד\"ה ה\"ג) וגם מה שמפרש שמעמד שלשתן אין בעכו\"ם פירשנו בפרק שני דקדושין (דף מח.):",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.2b",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "אי קסבר עירוב פרשיות כתוב כאן ליבעי נמי מומחין - מפורש בהגוזל קמא (ב\"ק דף קז.): ליבעי נמי מומחין - תימה דמשמע הכא דממעטינן הדיוטות מדכתיב אלהים ובפרק המגרש (גיטין דף פח:) ממעט להו מדכתיב לפניהם ולא לפ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.46a",
+      "layer": "rashi",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "אהני לרבויי עכו\"ם - הך הרחקה שהרחיקם זה מזה למימרא דאין דנין אותו בכלל ופרט אהני לרבויי עכו\"ם הואיל ודמיא לפרטא בכל מילי שכופר בעיקר כמותו:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.46a",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "השתא דמרחקי מהדדי. והא דאמרי' מנחות (נה:) כלל ופרט המרוחקין זה מזה אין דנין אותו בכלל ופרט לאו דאין דנין כלל אלא דנין בכלל ופרט ואהני לרבויי מידי כי הכא דאהני לרבויי עכו\"ם:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.46b",
+      "layer": "rashi",
+      "line_no": 10,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "דליעביד ליה ארון - אבל קבורת הארץ לא משתמע ליה מיניה ולהכי לא אמר ליה מהאי ופרכינן לימא ליה מרבויא דתקברנו ומשני לא משמע ליה לעכו\"ם למהוי דרשה מרבויא:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.56a",
+      "layer": "rashi",
+      "line_no": 14,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "והא מהכא נפקא - דעכו\"ם מוזהרין על ברכת השם: ה' זו ברכת השם - לקמיה דרשינן ויצו ה' אלהים וגו':",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.56a",
+      "layer": "rashi",
+      "line_no": 15,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "לא נצרכא - האי איש איש אלא לרבות את הכנויים שיהו העכו\"ם מוזהרים על ברכתו כישראל דאי מהתם הוה אמינא שם המיוחד דוקא דכתיב ה' דהאי אלהים דבההוא קרא לאזהרת ע\"ז דרשינן ליה לקמן: ואליבא דרבי מאיר - מתוקמא ד",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.56b",
+      "layer": "rashi",
+      "line_no": 9,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "לעדה ועדים והתראה - וכן נצטוו ישראל במרה להיות דנין בסנהדרין של כ\"ג כדאמרי' (לעיל סנהדרין ב.) עדה שופטת ועדה מצלת דעכו\"ם לא איפקוד בהכי כדילפינן לקמן (סנהדרין דף נז:) מקראי דבן נח נהרג בעד א' ובדיין א",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.56b",
+      "layer": "rashi",
+      "line_no": 12,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "כל פלך - מדינה: ישראל נצטוו להושיב - דיינין בכל עיר ועיר כדכתיב (דברים ט״ז:י״ח) תתן לך בכל שעריך: כך נצטוו עכו\"ם - דהא משפט כתיב ביה והכא נמי כתיב (שם) ושפטו את העם משפט צדק:",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.74b",
+      "layer": "rashi",
+      "line_no": 5,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "הני קוואקי ודימוניקי - כלי נחשת שנותנין בהם גחלים גבוהין הן ועומדין לפני שולחן מלכים להתחמם כנגדן: היכי יהבינן להו - יום חג היה לפרסיים שנוטלין משרתי עבודת כוכבים אור מכל בית ובית ומעמידין בבית עבודת ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.74b",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "קטיל אספסתא - קצור עשב מאכל בהמה: לקטול - האספסתא ולא לקטליה העכו\"ם דכיון דאינו מתכוין להעבירו אלא לצורכי עצמו אין כאן חילול השם: שדי לנהרא - להעבירו הוא מתכוין ואי פרהסיא הוא או שעת גזרת המלכות לקטלי",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.74b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 3,
+      "snippet": "אפילו לשנויי ערקתא דמסאנא - לכאורה משמע דמנעליהם משונין משל עכו\"ם כדאמר נמי בפרק הכונס (ב\"ק נט: ושם) גבי אלעזר זעירא דהוה סיים מסאני אוכמי וקאמר שהיה מתאבל על ירושלים וכך משמע במסכת תענית (דף כב.) גבי",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.74b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 4,
+      "snippet": "והא אסתר פרהסיא הואי - תימה דה\"ל לאקשויי עריות הואי דרוצח ונערה המאורסה לכולי עלמא יהרג ואל יעבור וכמו כן קשה בריש כתובות (דף ג: ושם) דאמר דאיכא צנועות דמסרו נפשייהו ופריך ולידרוש להו דאונס שרי ומאי ק",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.74b",
+      "layer": "tosafot",
+      "line_no": 3,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 2,
+      "snippet": "קטול אספסתא ושדי לחיותא כו' - ההוא עובדא דשלהי יבמות (ד' קכא: ושם) דאמר ליה עכו\"ם לישראל קטיל אספסתא ואי לא קטילנא לך כדקטילנא לפלניא בר ישראל דאמרי ליה בשל לי קדירה בשבתא ולא בשיל וקטילתיה שמא לא היה",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Sanhedrin.92a",
+      "layer": "rashi",
+      "line_no": 7,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "למילתיה הכי נמי - דגדולה היא וכדעולא: שתי הופעיות - דכתיב אל נקמות ה' אל נקמות הופיע ואיכא תרי נקמות וחדא הופעה בתרוייהו ודמי כמאן דאיכא אכל נקמה ונקמה חדא הופעה: חדא לטובה - של ישראל שסילק שכינתו מאו",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Makkot.23b",
+      "layer": "rashi",
+      "line_no": 6,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "מקרא מגילה - דחייבין על מקרא מגילה: ושאילת שלום בשם - דמותר לאדם לשאול בשלום חבירו בשם כגון ישים ה' עליך שלום ואין בו משום מוציא שם שמים לבטלה. מרבי. ל\"א שאילת שלום בשם דחייב אדם לשאול בשלום חבירו בשם",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Shevuot.44a",
+      "layer": "tosafot",
+      "line_no": 4,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 5,
+      "snippet": "שומר אבידה רב יוסף אמר כו' ורבה אמר כו'. פסק ר\"ח דהלכה כרב יוסף דאמר בפרק אין בין המודר (נדרים דף לג:) דכ\"ע אית להו פרוטה דרב יוסף ואין נראה ראיה משם כלל דרבה נמי מודה דאי אתי עניא דלא בעי למיתב ליה ד",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Zevachim.73b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "ונכבשינהו דניניידן ונימא דכל דפריש מרובא פריש - וכגון שלא בפנינו פירשו ממקום קבוע דאי היתה הפרישה בפנינו היו אסורין כאילו לקחן במקום קביעות וכן מוכח בפרק קמא דפסחים (דף ט:) דתשע צבורין של חמץ ואחת של ",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Zevachim.73b",
+      "layer": "tosafot",
+      "line_no": 2,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "אלא אמר רבא משום קבוע - מדגזור משום קבוע היה נראה דאי שקיל חד מן הקבוע אסור מדאורייתא ולא אמרי' מרובא פריש דכיון דדבר חשוב הוא ולא בטל היכא דה\"ל קבוע כמחצה על מחצה דמי אבל א\"א לומר כן מדאמר רב בסמוך ט",
+      "note": "Censor acronym — patch candidate"
+    },
+    {
+      "ref": "Zevachim.98b",
+      "layer": "tosafot",
+      "line_no": 1,
+      "pattern_id": "akum_ascii",
+      "pattern": "עכו\"ם",
+      "count": 1,
+      "snippet": "מתני' טבול יום ומחוסר כיפורים אינם חולקים בקדשים לאכול לערב - משמע הכא דמחוסרי כיפורים שהביאו כפרתן בעו עדיין טבילה והערב שמש וכן משמע פרק בכל מערבין (עירובין דף לב.) דמייתי הא מתניתא האשה שיש עליה לי",
+      "note": "Censor acronym — patch candidate"
+    }
+  ],
+  "all_hits_sample": [
+    {
+      "ref": "Berakhot.12a",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Berakhot.18a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Berakhot.24a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Berakhot.32b",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Berakhot.33a",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 2
+    },
+    {
+      "ref": "Berakhot.33b",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Berakhot.36b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Berakhot.39b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Berakhot.45a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Berakhot.47a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Berakhot.51b",
+      "layer": "rashi",
+      "pattern_id": "akum_hebrew",
+      "count": 1
+    },
+    {
+      "ref": "Berakhot.53a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Berakhot.53a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 4
+    },
+    {
+      "ref": "Berakhot.53a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Berakhot.53a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Berakhot.53a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 6
+    },
+    {
+      "ref": "Berakhot.54a",
+      "layer": "tosafot",
+      "pattern_id": "akum_ascii",
+      "count": 2
+    },
+    {
+      "ref": "Berakhot.57b",
+      "layer": "tosafot",
+      "pattern_id": "akum_ascii",
+      "count": 5
+    },
+    {
+      "ref": "Shabbat.3a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 5
+    },
+    {
+      "ref": "Shabbat.11a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.14b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.15b",
+      "layer": "tosafot",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.15b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.15b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.16b",
+      "layer": "tosafot",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.17b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.17b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 10
+    },
+    {
+      "ref": "Shabbat.18a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Shabbat.18b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.18b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.19a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.19a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 10
+    },
+    {
+      "ref": "Shabbat.20a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.21b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.27a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.29b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.32a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.32a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.33b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.42b",
+      "layer": "tosafot",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.44b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.47a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.51a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.55a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.55b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.56a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.57b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Shabbat.64b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.68a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.68b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.70a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.70b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.72b",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.72b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.72b",
+      "layer": "tosafot",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.74b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.77a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.80b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.81b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.82b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.83a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 4
+    },
+    {
+      "ref": "Shabbat.83a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 4
+    },
+    {
+      "ref": "Shabbat.83a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 20
+    },
+    {
+      "ref": "Shabbat.83b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.85b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.88b",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.89a",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.93a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.94a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.94a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.94a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.116a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.119a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.121a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Shabbat.121a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.121a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.121a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.122a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.122a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.122a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.122a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.122a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 7
+    },
+    {
+      "ref": "Shabbat.122a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.122b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.127b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.127b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.129a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.135a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.139a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.139a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.139b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Shabbat.145b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.150a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.150a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.150a",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.150a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.151a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.151a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.151a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 5
+    },
+    {
+      "ref": "Shabbat.151a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.151a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.151a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.153a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.153a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.153b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Shabbat.153b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Shabbat.153b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Shabbat.156b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.4b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.11b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.17b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.32a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.36b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.36b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.36b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.39b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.39b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.39b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 7
+    },
+    {
+      "ref": "Eruvin.40a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.40a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Eruvin.41b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.41b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.41b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Eruvin.41b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.42a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.42a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 4
+    },
+    {
+      "ref": "Eruvin.42a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 4
+    },
+    {
+      "ref": "Eruvin.42a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.42b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.42b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.42b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.43a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.45a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.45a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.47a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.47b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.47b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Eruvin.47b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.47b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.47b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.47b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Eruvin.47b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.48a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.61b",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.61b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.61b",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.61b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.61b",
+      "layer": "tosafot",
+      "pattern_id": "akum_ascii",
+      "count": 7
+    },
+    {
+      "ref": "Eruvin.61b",
+      "layer": "tosafot",
+      "pattern_id": "akum_ascii",
+      "count": 10
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 3
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 6
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "tosafot",
+      "pattern_id": "akum_ascii",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "tosafot",
+      "pattern_id": "akum_ascii",
+      "count": 3
+    },
+    {
+      "ref": "Eruvin.62a",
+      "layer": "tosafot",
+      "pattern_id": "akum_ascii",
+      "count": 10
+    },
+    {
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.62b",
+      "layer": "rashi",
+      "pattern_id": "akum_ascii",
+      "count": 3
+    },
+    {
+      "ref": "Eruvin.63b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 5
+    },
+    {
+      "ref": "Eruvin.64a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 5
+    },
+    {
+      "ref": "Eruvin.64a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.64a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.64b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.64b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 4
+    },
+    {
+      "ref": "Eruvin.64b",
+      "layer": "tosafot",
+      "pattern_id": "akum_ascii",
+      "count": 7
+    },
+    {
+      "ref": "Eruvin.64b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.65b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.65b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.65b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.65b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.65b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 5
+    },
+    {
+      "ref": "Eruvin.65b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Eruvin.65b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.65b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Eruvin.65b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 17
+    },
+    {
+      "ref": "Eruvin.66a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Eruvin.66a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.66a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.66a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.66a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.66a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 7
+    },
+    {
+      "ref": "Eruvin.66a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 7
+    },
+    {
+      "ref": "Eruvin.66a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Eruvin.66b",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 2
+    },
+    {
+      "ref": "Eruvin.67a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.67a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 3
+    },
+    {
+      "ref": "Eruvin.67a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.67a",
+      "layer": "tosafot",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 8
+    },
+    {
+      "ref": "Eruvin.67b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.67b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.67b",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    },
+    {
+      "ref": "Eruvin.68a",
+      "layer": "rashi",
+      "pattern_id": "nokhri_as_euphemism",
+      "count": 1
+    }
+  ]
+}

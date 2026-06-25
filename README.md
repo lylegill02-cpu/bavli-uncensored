@@ -7,21 +7,36 @@ One file. Full Shas. Pre-censorship readings restored where Vilna print and Chri
 ## Quick start
 
 ```bash
-# Build the unified source (~2 min; downloads Sefaria export once per tractate)
-python scripts/build_bavli.py --compact
+pip install -r requirements.txt
 
-# Look up any daf
-python scripts/query.py Sanhedrin.43a
-python scripts/query.py Sanhedrin.43a --layer gemara --json
+# Build the unified source (~2 min)
+python scripts/build_bavli.py --compact --index
 
-# Search (build index once)
-python scripts/build_index.py
+# Web UI + API (open http://127.0.0.1:8765)
+python scripts/serve.py
+
+# CLI search
 python scripts/search.py "יֵשׁוּ"
-python scripts/search.py "גוים" --tractate "Avodah Zarah" --layer rashi
-python scripts/search.py "סטָדָא" --layer gemara --json
 
-# Verify famous uncensored passages landed on the right daf
-python scripts/verify_loci.py
+# Censorship audit report
+python scripts/audit_censorship.py
+```
+
+**No rebuild?** Download prebuilt index from [GitHub Releases](https://github.com/lylegill02-cpu/bavli-uncensored/releases) → `bavli.db.gz` → gunzip to `data/bavli.db`.
+
+## Web API
+
+| Endpoint | Description |
+|----------|-------------|
+| `GET /` | Search UI (Hebrew RTL) |
+| `GET /search?q=…&tractate=…&layer=…` | Full-text search |
+| `GET /ref/Sanhedrin.43a` | Full daf (gemara + Rashi + Tosafot) |
+| `GET /tractates` | Tractate list |
+| `GET /health` | Status |
+
+```bash
+python scripts/serve.py
+# → http://127.0.0.1:8765
 ```
 
 ## File format
@@ -87,6 +102,25 @@ python scripts/search.py "ישו" --supabase --tractate Sanhedrin
 ```
 
 RPCs: `bavli_search(q, p_tractate, p_layer, p_limit)` and `bavli_get_daf(p_ref)`.
+
+## Censorship audit
+
+Prove what's still censored vs already restored:
+
+```bash
+python scripts/audit_censorship.py
+```
+
+Reports: `data/reports/censorship_audit.json` + `.md`
+
+Latest run: **0** remaining `עובדי כוכבים` in built text (substitution patches working). Remaining review queue is mainly **עכו"ם** acronym in Rashi/Tosafot (~100 likely censorship hits). Verify each against Munich/Bomberg before adding patches.
+
+## Publish release (maintainers)
+
+```bash
+python scripts/build_index.py
+python scripts/publish_release.py v1.0.0-search
+```
 
 ## What “uncensored” means here
 
