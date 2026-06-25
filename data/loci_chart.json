@@ -1,0 +1,543 @@
+{
+  "schema_version": 1,
+  "title": "Bavli loci — witness-backed index",
+  "description": "Curated passages: what witnesses show vs ikkar, machloket, maaseh, or aggadah in the record.",
+  "denial_scale": {
+    "0": "Fully present / uncensored in target layer",
+    "1": "Euphemism or minor alteration",
+    "2": "Partial omission or disputed restoration",
+    "3": "Removed or heavily censored in Vilna-era print"
+  },
+  "tradition_status": {
+    "ikkar": "Presented as settled halacha or consensus",
+    "machloket": "Explicit dispute between authorities in the text",
+    "maaseh": "Reported event / baraita / narrative in the record",
+    "aggadah": "Homiletical or non-legal teaching"
+  },
+  "loci": [
+    {
+      "id": "sanhedrin-43a-yeshu-trial",
+      "ref": "Sanhedrin.43a",
+      "corpus": "bavli",
+      "layer": "gemara",
+      "topic": {
+        "en": "Baraita on trial and execution of Yeshu ha-Notzri",
+        "he": "ברaita על דין ותליית יֵשׁוּ הַנּוֹצְרִי"
+      },
+      "tradition_status": "maaseh",
+      "tradition_note": "Historical-legal baraita inside a mesis/sanhedrin sugya. Gemara argues whether he had zechut — not Jewish creed about Christianity.",
+      "denial": {
+        "print_historical": 3,
+        "commentary_residue": 0,
+        "modern_digital": 1,
+        "in_build": 0
+      },
+      "needle": "יֵשׁוּ",
+      "witnesses": {
+        "uncensored": [
+          "Munich Cod. hebr. 95",
+          "Bomberg Venice"
+        ],
+        "censored": [
+          "Vilna print (historical)",
+          "many pre-digital editions"
+        ]
+      },
+      "sources": [
+        {
+          "label": "Instone-Brewer — Jesus' Trial in the Uncensored Talmud",
+          "url": "https://tyndalebulletin.org/article/29322-jesus-of-nazareth-s-trial-in-the-uncensored-talmud/"
+        }
+      ],
+      "related_refs": [
+        "Sanhedrin.67a",
+        "Gittin.57a"
+      ],
+      "tags": [
+        "christian_censorship",
+        "historical_narrative",
+        "interfaith"
+      ],
+      "verified": {
+        "present": true,
+        "ref": "Sanhedrin.43a",
+        "layer": "gemara",
+        "snippet": "״וּבְנֵי יִשְׂרָאֵל עָשׂוּ כַּאֲשֶׁר צִוָּה ה׳ אֶת מֹשֶׁה״. אֶלָּא מֵעַתָּה: ״וַיִּרְגְּמוּ אֹתוֹ אָבֶן״ מַאי עָבְדִי לֵיהּ? הָהוּא מִבְּעֵי לֵיהּ לְכִדְתַנְיָא: ״וַיִּרְגְּמוּ אֹתוֹ בָּאָבֶן״ – ״אֹתוֹ״ וְלֹא בִּכְסוּתוֹ, ״אָבֶן״ שֶׁאִם מֵת"
+      },
+      "suppression_index": 3,
+      "available_now": true
+    },
+    {
+      "id": "sanhedrin-67a-ben-stada",
+      "ref": "Sanhedrin.67a",
+      "corpus": "bavli",
+      "layer": "gemara",
+      "topic": {
+        "en": "ben Stada / ben Pandera — mesis execution report",
+        "he": "בן סטada / בן פndera — מעשה במesis"
+      },
+      "tradition_status": "maaseh",
+      "tradition_note": "Illustrative case in mesis procedure; amoraic wordplay on names — narrative within halachic framework.",
+      "denial": {
+        "print_historical": 3,
+        "commentary_residue": 0,
+        "modern_digital": 1,
+        "in_build": 0
+      },
+      "needle": "סָטָדָא",
+      "witnesses": {
+        "uncensored": [
+          "Munich 95"
+        ],
+        "censored": [
+          "Vilna print (historical)"
+        ]
+      },
+      "sources": [],
+      "related_refs": [
+        "Sanhedrin.43a",
+        "Shabbat.104b"
+      ],
+      "tags": [
+        "christian_censorship",
+        "historical_narrative"
+      ],
+      "verified": {
+        "present": true,
+        "ref": "Sanhedrin.67a",
+        "layer": "gemara",
+        "snippet": "סִימָנָא בְּעָלְמָא. מַתְנִי׳ הַמֵּסִית – זֶה הֶדְיוֹט, וְהַמֵּסִית אֶת הַהֶדְיוֹט. אָמַר: יֵשׁ יִרְאָה בְּמָקוֹם פְּלוֹנִי, כָּךְ אוֹכֶלֶת, כָּךְ שׁוֹתֶה, כָּךְ מְטִיבָה, כָּךְ מְרֵיעָה. כׇּל חַיָּיבֵי מִיתוֹת שֶׁבְּתוֹרָה, אֵין מַכְמִינִי"
+      },
+      "suppression_index": 3,
+      "available_now": true
+    },
+    {
+      "id": "gittin-57a-yeshu-gehinnom",
+      "ref": "Gittin.57a",
+      "corpus": "bavli",
+      "layer": "gemara",
+      "topic": {
+        "en": "Yeshu ha-Notzri in Gehinnom / Onkelos necromancy narrative",
+        "he": "יֵשׁוּ הַנּוֹצְרִי בגיהinnom — aggadah in destruction context"
+      },
+      "tradition_status": "aggadah",
+      "tradition_note": "Aggadic passage on Roman destruction era; not halachic ruling or ikkar emunah.",
+      "denial": {
+        "print_historical": 3,
+        "commentary_residue": 0,
+        "modern_digital": 1,
+        "in_build": 0
+      },
+      "needle": "יֵשׁוּ",
+      "witnesses": {
+        "uncensored": [
+          "Munich 95",
+          "Florence 1177 (partial witnesses)"
+        ],
+        "censored": [
+          "Vilna print (historical)"
+        ]
+      },
+      "sources": [],
+      "related_refs": [
+        "Sanhedrin.43a"
+      ],
+      "tags": [
+        "christian_censorship",
+        "aggadah",
+        "interfaith"
+      ],
+      "verified": {
+        "present": true,
+        "ref": "Gittin.57a",
+        "layer": "gemara",
+        "snippet": "בְּמַאי דִּפְסַיק אַנַּפְשֵׁיהּ – כֹּל יוֹמָא מְכַנְּשִׁי לֵיהּ לְקִיטְמֵיהּ וְדָיְינִי לֵיהּ, וְקָלוּ לֵיהּ וּמְבַדְּרוּ [לֵיהּ] אַשַּׁב יַמֵּי. אֲזַל אַסְּקֵיהּ לְבִלְעָם בִּנְגִידָא, אֲמַר לֵיהּ: מַאן חֲשִׁיב בְּהָהוּא עָלְמָא? אֲמַר לֵי"
+      },
+      "suppression_index": 3,
+      "available_now": true
+    },
+    {
+      "id": "sanhedrin-107b-yeshu-student",
+      "ref": "Sanhedrin.107b",
+      "corpus": "bavli",
+      "layer": "gemara",
+      "topic": {
+        "en": "Yeshu as student of R. Yehoshua ben Perahiah",
+        "he": "יֵשׁוּ תalmid של ר' יהושע בן פרחיה"
+      },
+      "tradition_status": "aggadah",
+      "tradition_note": "Aggadic biography linking Yeshu to a sage; debated historicity — story, not halacha.",
+      "denial": {
+        "print_historical": 3,
+        "commentary_residue": 1,
+        "modern_digital": 1,
+        "in_build": 0
+      },
+      "needle": "יֵשׁוּ",
+      "witnesses": {
+        "uncensored": [
+          "Munich 95"
+        ],
+        "censored": [
+          "Vilna print (historical)"
+        ]
+      },
+      "sources": [],
+      "related_refs": [
+        "Sotah.47a"
+      ],
+      "tags": [
+        "christian_censorship",
+        "aggadah",
+        "interfaith"
+      ],
+      "verified": {
+        "present": true,
+        "ref": "Sanhedrin.107b",
+        "layer": "gemara",
+        "snippet": "״בְּחֶבְרוֹן מָלַךְ שֶׁבַע שָׁנִים וּבִירוּשָׁלִַים מָלַךְ שְׁלֹשִׁים וְשָׁלֹשׁ שָׁנִים״, וּכְתִיב: ״בְּחֶבְרוֹן מָלַךְ עַל יְהוּדָה שֶׁבַע שָׁנִים וְשִׁשָּׁה חֳדָשִׁים וְגוֹ׳״, וְהָנֵי שִׁשָּׁה חֳדָשִׁים לָא קָחָשֵׁיב. שְׁמַע מִינַּהּ נִצְ"
+      },
+      "suppression_index": 3,
+      "available_now": true
+    },
+    {
+      "id": "sotah-47a-yeshu-student",
+      "ref": "Sotah.47a",
+      "corpus": "bavli",
+      "layer": "gemara",
+      "topic": {
+        "en": "Parallel: Yeshu and R. Yehoshua ben Perahiah",
+        "he": "גרסה מקבילה — יֵשׁוּ ור' יהושע בן פרחיה"
+      },
+      "tradition_status": "aggadah",
+      "tradition_note": "Parallel aggadic tradition to Sanhedrin 107b; same witness profile.",
+      "denial": {
+        "print_historical": 3,
+        "commentary_residue": 1,
+        "modern_digital": 1,
+        "in_build": 0
+      },
+      "needle": "יֵשׁוּ",
+      "witnesses": {
+        "uncensored": [
+          "Munich 95"
+        ],
+        "censored": [
+          "Vilna print (historical)"
+        ]
+      },
+      "sources": [],
+      "related_refs": [
+        "Sanhedrin.107b"
+      ],
+      "tags": [
+        "christian_censorship",
+        "aggadah",
+        "interfaith"
+      ],
+      "verified": {
+        "present": true,
+        "ref": "Sotah.47a",
+        "layer": "gemara",
+        "snippet": "רַב וּשְׁמוּאֵל, חַד אָמַר: נֵס. וְחַד אָמַר: נֵס בְּתוֹךְ נֵס. מַאן דְּאָמַר נֵס — יַעַר הֲוָה, דּוּבִּים לָא הֲווֹ. מַאן דְּאָמַר נֵס בְּתוֹךְ נֵס — לֹא יַעַר הֲוָה וְלָא דּוּבִּים הֲווֹ. וְלִיהְוֵי דּוּבִּים וְלָא לֶיהֱוֵי יַעַר! דִּבְעִ"
+      },
+      "suppression_index": 3,
+      "available_now": true
+    },
+    {
+      "id": "shabbat-104b-ben-stada",
+      "ref": "Shabbat.104b",
+      "corpus": "bavli",
+      "layer": "gemara",
+      "topic": {
+        "en": "ben Stada / ben Pandera — sorcery narrative",
+        "he": "בן סטada — נarrative in magic/sorcery context"
+      },
+      "tradition_status": "maaseh",
+      "tradition_note": "Reported case in sorcery sugya; linked by tradition to Sanhedrin 67a identities.",
+      "denial": {
+        "print_historical": 3,
+        "commentary_residue": 0,
+        "modern_digital": 2,
+        "in_build": 0
+      },
+      "needle": "סָטָדָא",
+      "witnesses": {
+        "uncensored": [
+          "Munich 95"
+        ],
+        "censored": [
+          "Vilna print (historical)"
+        ]
+      },
+      "sources": [],
+      "related_refs": [
+        "Sanhedrin.67a"
+      ],
+      "tags": [
+        "christian_censorship",
+        "historical_narrative"
+      ],
+      "verified": {
+        "present": true,
+        "ref": "Shabbat.104b",
+        "layer": "gemara",
+        "snippet": "מַתְנִי׳ הַכּוֹתֵב שְׁתֵּי אוֹתִיּוֹת בְּהֶעְלֵם אֶחָד — חַיָּיב. כָּתַב בִּדְיוֹ בְּסַם בְּסִיקְרָא בְּקוֹמוֹס וּבְקַנְקַנְתּוֹם וּבְכׇל דָּבָר שֶׁהוּא רוֹשֵׁם. עַל שְׁנֵי כּוֹתְלֵי זָוִיּוֹת וְעַל שְׁנֵי לוּחֵי פִינְקָס וְהֵן נֶהֱגִין זֶה"
+      },
+      "suppression_index": 3,
+      "available_now": true
+    },
+    {
+      "id": "avodah-zarah-2a-goyim-euphemism",
+      "ref": "Avodah Zarah.2a",
+      "corpus": "bavli",
+      "layer": "rashi",
+      "topic": {
+        "en": "גוים restored where Vilna Rashi read עובדי כוכבים",
+        "he": "החזרת גוים במקום עובדי כוכבים — רש\"י פתיחת מסכת"
+      },
+      "tradition_status": "machloket",
+      "tradition_note": "Opening mishnah on commerce before gentile festivals — legal argument; dispute here is censored *language*, not the halacha itself.",
+      "denial": {
+        "print_historical": 2,
+        "commentary_residue": 0,
+        "modern_digital": 1,
+        "in_build": 0
+      },
+      "needle": "גוים",
+      "witnesses": {
+        "uncensored": [
+          "Munich 95",
+          "Bomberg Venice"
+        ],
+        "censored": [
+          "Vilna Rashi/Tosafot (Wikisource base)"
+        ]
+      },
+      "sources": [
+        {
+          "label": "Waxman — Uncensored Printings for Avodah Zarah",
+          "url": "https://scribalerror.substack.com/p/uncensored-printings-for-avodah-zarah"
+        }
+      ],
+      "related_refs": [],
+      "tags": [
+        "language_censorship",
+        "commentary_layer"
+      ],
+      "verified": {
+        "present": true,
+        "ref": "Avodah Zarah.2a",
+        "layer": "rashi",
+        "snippet": "מתני' לפני אידיהן של גוים ג' ימים אסור לשאת ולתת עמהן - וכולהו משום דאזיל ומודה לעבודת כוכבים ביום אידו: שאלה במידי דהדר בעין כגון בהמה וכלים דכתיב (שמות כ״ב:י״ג) כי ישאל איש מעם רעהו וגו'. מלוה במידי דלא הדר בעין כגון מעות דכתיב (שם) אם כס"
+      },
+      "suppression_index": 2,
+      "available_now": true
+    },
+    {
+      "id": "berakhot-12a-akum-rashi",
+      "ref": "Berakhot.12a",
+      "corpus": "bavli",
+      "layer": "rashi",
+      "topic": {
+        "en": "עכו\"ם acronym in Rashi (should read גוים/מין)",
+        "he": "עכו\"ם בRashi — נfolem censor acronym"
+      },
+      "tradition_status": "machloket",
+      "tradition_note": "Rashi on Shema / minim — legal-exegetical point; עכו\"ם is post-censor acronym, not original Rashi vocabulary.",
+      "denial": {
+        "print_historical": 2,
+        "commentary_residue": 3,
+        "modern_digital": 2,
+        "in_build": 0
+      },
+      "needle": "עכו\"ם",
+      "witnesses": {
+        "uncensored": [
+          "Early manuscript Rashi where extant"
+        ],
+        "censored": [
+          "Vilna Edition Rashi"
+        ]
+      },
+      "sources": [],
+      "related_refs": [],
+      "tags": [
+        "language_censorship",
+        "commentary_layer",
+        "akum_acronym"
+      ],
+      "verified": {
+        "present": true,
+        "ref": "Berakhot.12a",
+        "layer": "rashi",
+        "snippet": "אלא אי אמרת – הך ברכה דקאמרי אהבה רבה היכי ש\"מ דאין מעכבות זו את זו דלמא האי דלא אמרי יוצר אור משום דלא מטא זמניה הוא וכי מטא זמניה אמרי לה ואע\"ג דקרו אינהו ק\"ש לא מטא זמניה כדאמרינן בעלמא (יומא לז:) הקורא את שמע עם אנשי משמר לא יצא שאנשי מ"
+      },
+      "suppression_index": 3,
+      "available_now": true
+    },
+    {
+      "id": "bava-metzia-59b-oven-of-achnai",
+      "ref": "Bava Metzia.59b",
+      "corpus": "bavli",
+      "layer": "gemara",
+      "topic": {
+        "en": "Oven of Akhnai — bat kol vs human majority",
+        "he": "תנור של עכnai — בat kol מול רב majority"
+      },
+      "tradition_status": "machloket",
+      "tradition_note": "Famous meta-dispute: halacha is not in heaven. Not censored — included as contrast (argument in text, not suppression).",
+      "denial": {
+        "print_historical": 0,
+        "commentary_residue": 0,
+        "modern_digital": 0,
+        "in_build": 0
+      },
+      "needle": "עַכְנַאי",
+      "witnesses": {
+        "uncensored": [
+          "All standard witnesses"
+        ],
+        "censored": []
+      },
+      "sources": [],
+      "related_refs": [],
+      "tags": [
+        "internal_machloket",
+        "meta_halacha"
+      ],
+      "verified": {
+        "present": true,
+        "ref": "Bava Metzia.59b",
+        "layer": "gemara",
+        "snippet": "וְזֶה הוּא תַּנּוּר שֶׁל עַכְנַאי. מַאי עַכְנַאי? אָמַר רַב יְהוּדָה אָמַר שְׁמוּאֵל: שֶׁהִקִּיפוּ[הוּ] דְּבָרִים כְּעַכְנָא זוֹ, וְטִמְּאוּהוּ. תָּנָא: בְּאוֹתוֹ הַיּוֹם הֵשִׁיב רַבִּי אֱלִיעֶזֶר כׇּל תְּשׁוּבוֹת שֶׁבָּעוֹלָם, וְלֹא קִיבְּ"
+      },
+      "suppression_index": 0,
+      "available_now": true
+    },
+    {
+      "id": "eruvin-13b-rabbi-meir",
+      "ref": "Eruvin.13b",
+      "corpus": "bavli",
+      "layer": "gemara",
+      "topic": {
+        "en": "Why halacha does not follow Rabbi Meir — dispute on record",
+        "he": "מחלוקת על הלכה כר' מאיר"
+      },
+      "tradition_status": "machloket",
+      "tradition_note": "Meta-dispute about following a sage whose full reasoning peers could not grasp. Not censored — shows argument in the text without suppression.",
+      "denial": {
+        "print_historical": 0,
+        "commentary_residue": 0,
+        "modern_digital": 0,
+        "in_build": 0
+      },
+      "needle": "רַבִּי מֵאִיר",
+      "witnesses": {
+        "uncensored": [
+          "All standard witnesses"
+        ],
+        "censored": []
+      },
+      "sources": [],
+      "related_refs": [],
+      "tags": [
+        "internal_machloket",
+        "meta_halacha"
+      ],
+      "verified": {
+        "present": true,
+        "ref": "Eruvin.13b",
+        "layer": "gemara",
+        "snippet": "וְנִמְלַךְ וּמְצָאוֹ בֶּן עִירוֹ וְאָמַר: שִׁמְךָ כִּשְׁמִי וְשֵׁם אִשְׁתְּךָ כְּשֵׁם אִשְׁתִּי — פָּסוּל לְגָרֵשׁ בּוֹ! הָכִי הַשְׁתָּא? הָתָם ״וְכָתַב לָהּ״ כְּתִיב — בָּעִינַן כְּתִיבָה לִשְׁמָהּ, הָכָא ״וְעָשָׂה לָהּ״ כְּתִיב — בָּעִינַ"
+      },
+      "suppression_index": 0,
+      "available_now": true
+    },
+    {
+      "id": "sanhedrin-37a-adam-single",
+      "ref": "Sanhedrin.37a",
+      "corpus": "bavli",
+      "layer": "gemara",
+      "topic": {
+        "en": "Adam created single — universal human dignity teaching",
+        "he": "לפיכך נברא אדם יחידי — כבוד הבריות"
+      },
+      "tradition_status": "aggadah",
+      "tradition_note": "Often cited in interfaith ethics; present everywhere — baseline row (not censored).",
+      "denial": {
+        "print_historical": 0,
+        "commentary_residue": 0,
+        "modern_digital": 0,
+        "in_build": 0
+      },
+      "needle": "לְפִיכָךְ נִבְרָא אָדָם יְחִידִי",
+      "witnesses": {
+        "uncensored": [
+          "All standard witnesses"
+        ],
+        "censored": []
+      },
+      "sources": [],
+      "related_refs": [],
+      "tags": [
+        "interfaith",
+        "baseline"
+      ],
+      "verified": {
+        "present": true,
+        "ref": "Sanhedrin.37a",
+        "layer": "gemara",
+        "snippet": "וְשָׁלֹשׁ שׁוּרוֹת שֶׁל תַּלְמִידֵי חֲכָמִים יוֹשְׁבִין לִפְנֵיהֶן, כׇּל אֶחָד וְאֶחָד מַכִּיר אֶת מְקוֹמוֹ. הוּצְרְכוּ לִסְמוֹךְ – סוֹמְכִין מִן הָרִאשׁוֹנָה. אֶחָד מִן הַשְּׁנִיָּה בָּא לוֹ לָרִאשׁוֹנָה, אֶחָד מִן הַשְּׁלִישִׁית בָּא לוֹ "
+      },
+      "suppression_index": 0,
+      "available_now": true
+    },
+    {
+      "id": "global-akum-commentary",
+      "ref": null,
+      "corpus": "bavli",
+      "layer": "rashi",
+      "topic": {
+        "en": "Corpus-wide: עכו\"ם in Rashi/Tosafot (~100 loci)",
+        "he": "עכו\"ם בפרsh commentary — ~100 מקומות"
+      },
+      "tradition_status": "machloket",
+      "tradition_note": "Pattern row — not one daf. Censor acronym replacing גוים across commentary; see censorship_audit.json.",
+      "denial": {
+        "print_historical": 2,
+        "commentary_residue": 3,
+        "modern_digital": 2,
+        "in_build": 3
+      },
+      "needle": "עכו\"ם",
+      "witnesses": {
+        "uncensored": [
+          "Munich 95 (gemara often)",
+          "Bomberg (select)"
+        ],
+        "censored": [
+          "Vilna Rashi/Tosafot export base"
+        ]
+      },
+      "sources": [],
+      "related_refs": [
+        "Berakhot.12a"
+      ],
+      "audit_ref": "data/reports/censorship_audit.json",
+      "tags": [
+        "language_censorship",
+        "commentary_layer",
+        "akum_acronym",
+        "pattern"
+      ],
+      "verified": {
+        "skipped": true,
+        "reason": "pattern or aggregate row"
+      },
+      "suppression_index": 3,
+      "available_now": false
+    }
+  ],
+  "verified_count": 11
+}

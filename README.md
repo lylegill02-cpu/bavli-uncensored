@@ -15,6 +15,9 @@ python scripts/build_bavli.py --compact --index
 # Web UI + API (open http://127.0.0.1:8765)
 python scripts/serve.py
 
+# Loci map (local)
+# → http://127.0.0.1:8765/loci
+
 # CLI search
 python scripts/search.py "יֵשׁוּ"
 
@@ -32,7 +35,8 @@ python scripts/audit_censorship.py
 | `GET /search?q=…&tractate=…&layer=…` | Full-text search |
 | `GET /ref/Sanhedrin.43a` | Full daf (gemara + Rashi + Tosafot) |
 | `GET /tractates` | Tractate list |
-| `GET /health` | Status |
+| `GET /loci` | Loci map (suppression vs tradition) |
+| `GET /api/loci` | Loci JSON |
 
 ```bash
 python scripts/serve.py
@@ -77,31 +81,26 @@ python scripts/build_bavli.py --index    # rebuild source + index together
 
 Each hit returns `ref`, `layer`, line number, and a text snippet. Use `--json` for programmatic use.
 
-Hebrew search **strips niqqud and normalizes final letters** — so `ישו` matches `יֵשׁוּ`.
+| `GET /health` | Status |
 
-### Supabase (g10be-overflow — your second project)
+### GitHub Pages (no Supabase)
 
-The corpus does **not** live on Supabase yet. To host search there:
+Search + loci map can run entirely on GitHub — UI on Pages, index from [Releases](https://github.com/lylegill02-cpu/bavli-uncensored/releases) (`bavli.db.gz`), search in the browser via sql.js.
+
+1. Push to `main`
+2. Repo **Settings → Pages → Build: GitHub Actions**
+3. Site: `https://lylegill02-cpu.github.io/bavli-uncensored/`
+
+First search downloads ~53 MB once per session; no database hosting cost.
+
+To remove a prior Supabase load (g10be-overflow):
 
 ```bash
-# 1. Apply migration (once)
-cd C:\Users\lyleg\projects\forge-aop
-supabase link --project-ref galhchvctvmtbykzzqqp
-supabase db push
-
-# 2. Load corpus (from bavli-uncensored)
-pip install "psycopg[binary]"
-set SUPABASE_DB_URL=postgresql://postgres.[ref]:[password]@aws-0-....supabase.co:5432/postgres
-cd C:\Users\lyleg\bavli-uncensored
-python scripts/load_supabase.py
-
-# 3. Search via API
-set SUPABASE_URL=https://galhchvctvmtbykzzqqp.supabase.co
-set SUPABASE_ANON_KEY=your-anon-key
-python scripts/search.py "ישו" --supabase --tractate Sanhedrin
+set SUPABASE_DB_URL=postgresql://...
+python scripts/clear_supabase.py
 ```
 
-RPCs: `bavli_search(q, p_tractate, p_layer, p_limit)` and `bavli_get_daf(p_ref)`.
+Or apply `forge-aop/supabase/migrations/20260625120000_drop_bavli_search.sql` via `supabase db push`.
 
 ## Censorship audit
 

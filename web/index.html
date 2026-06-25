@@ -124,6 +124,8 @@
   <header>
     <h1>בבלי — Bavli Uncensored</h1>
     <p>Full Shas search · gemara, Rashi, Tosafot · pre-censorship readings restored</p>
+    <nav style="margin-top:0.6rem;font-size:0.9rem"><a href="loci.html" style="color:var(--accent)">Loci map →</a></nav>
+    <p id="mode-hint" class="hidden" style="margin:0.4rem 0 0;font-size:0.82rem;color:var(--muted)"></p>
   </header>
   <main>
     <form id="search-form">
@@ -143,14 +145,20 @@
     <div id="results"></div>
     <div id="daf-panel" class="daf-view hidden"></div>
   </main>
-  <script>
+  <script type="module">
+    import { search, openDaf, loadTractates, useClientMode } from "./js/app.js";
+
     const $ = (id) => document.getElementById(id);
 
-    async function loadTractates() {
+    if (useClientMode()) {
+      $("mode-hint").classList.remove("hidden");
+      $("mode-hint").textContent =
+        "Static mode — first search downloads the index (~53 MB) from GitHub Releases, then runs in your browser. No server or database bill.";
+    }
+
+    async function initTractates() {
       try {
-        const r = await fetch("/tractates");
-        const data = await r.json();
-        for (const t of data.tractates || []) {
+        for (const t of await loadTractates()) {
           const opt = document.createElement("option");
           opt.value = t.tractate;
           opt.textContent = t.tractate;
@@ -159,82 +167,84 @@
       } catch (_) {}
     }
 
-    async function search(ev) {
+    async function doSearch(ev) {
       ev?.preventDefault();
       const q = $("q").value.trim();
       if (!q) return;
       $("status").textContent = "Searching…";
       $("daf-panel").classList.add("hidden");
-      const params = new URLSearchParams({ q, limit: "30" });
-      const tractate = $("tractate").value;
-      const layer = $("layer").value;
-      if (tractate) params.set("tractate", tractate);
-      if (layer) params.set("layer", layer);
-      const r = await fetch("/search?" + params);
-      if (!r.ok) {
-        $("status").textContent = "Error — is the server running with bavli.db?";
-        return;
-      }
-      const data = await r.json();
-      $("status").textContent = data.count ? `${data.count} result(s)` : "No results";
-      const box = $("results");
-      box.innerHTML = "";
-      for (const hit of data.results) {
-        const div = document.createElement("div");
-        div.className = "result";
-        div.innerHTML =
-          `<a href="#" data-ref="${hit.ref}">${hit.ref}</a>` +
-          `<span class="layer ${hit.layer}">${hit.layer}</span>` +
-          `<div class="snippet">${escapeHtml(hit.snippet || hit.text)}</div>`;
-        div.querySelector("a").addEventListener("click", (e) => {
-          e.preventDefault();
-          openDaf(hit.ref);
+      try {
+        const results = await search(q, {
+          tractate: $("tractate").value || null,
+          layer: $("layer").value || null,
+          limit: 30,
+          onProgress: (msg) => { $("status").textContent = msg; },
         });
-        box.appendChild(div);
+        $("status").textContent = results.length ? `${results.length} result(s)` : "No results";
+        const box = $("results");
+        box.innerHTML = "";
+        for (const hit of results) {
+          const div = document.createElement("div");
+          div.className = "result";
+          div.innerHTML =
+            `<a href="#" data-ref="${hit.ref}">${hit.ref}</a>` +
+            `<span class="layer ${hit.layer}">${hit.layer}</span>` +
+            `<div class="snippet">${escapeHtml(hit.snippet || hit.text)}</div>`;
+          div.querySelector("a").addEventListener("click", (e) => {
+            e.preventDefault();
+            showDaf(hit.ref);
+          });
+          box.appendChild(div);
+        }
+      } catch (err) {
+        $("status").textContent = err.message || "Search failed";
       }
     }
 
-    async function openDaf(ref) {
+    async function showDaf(ref) {
       $("status").textContent = `Loading ${ref}…`;
-      const r = await fetch("/ref/" + encodeURIComponent(ref));
-      if (!r.ok) {
-        $("status").textContent = "Daf not found";
-        return;
-      }
-      const daf = await r.json();
-      $("status").textContent = "";
-      const panel = $("daf-panel");
-      panel.classList.remove("hidden");
-      panel.innerHTML = `<h2>${daf.ref}</h2>`;
-      for (const layer of ["gemara", "rashi", "tosafot"]) {
-        const lines = daf[layer] || [];
-        if (!lines.length) continue;
-        const h = document.createElement("h3");
-        h.textContent = layer;
-        panel.appendChild(h);
-        for (const line of lines) {
-          const p = document.createElement("div");
-          p.className = "line";
-          p.textContent = line;
-          panel.appendChild(p);
+      try {
+        const daf = await openDaf(ref);
+        if (!daf) {
+          $("status").textContent = "Daf not found";
+          return;
         }
+        $("status").textContent = "";
+        const panel = $("daf-panel");
+        panel.classList.remove("hidden");
+        panel.innerHTML = `<h2>${daf.ref}</h2>`;
+        for (const layer of ["gemara", "rashi", "tosafot"]) {
+          const lines = daf[layer] || [];
+          if (!lines.length) continue;
+          const h = document.createElement("h3");
+          h.textContent = layer;
+          panel.appendChild(h);
+          for (const line of lines) {
+            const p = document.createElement("div");
+            p.className = "line";
+            p.textContent = line;
+            panel.appendChild(p);
+          }
+        }
+        panel.scrollIntoView({ behavior: "smooth" });
+      } catch (err) {
+        $("status").textContent = err.message || "Load failed";
       }
-      panel.scrollIntoView({ behavior: "smooth" });
     }
 
     function escapeHtml(s) {
       return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     }
 
-    $("search-form").addEventListener("submit", search);
-    loadTractates();
+    $("search-form").addEventListener("submit", doSearch);
+    initTractates();
 
     const params = new URLSearchParams(location.search);
     if (params.get("q")) {
       $("q").value = params.get("q");
-      search();
+      doSearch();
     }
-    if (params.get("ref")) openDaf(params.get("ref"));
+    if (params.get("ref")) showDaf(params.get("ref"));
   </script>
 </body>
 </html>

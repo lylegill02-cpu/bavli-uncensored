@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loci map — Bavli Uncensored</title>
+  <style>
+    :root {
+      --bg: #f4f0e8;
+      --ink: #1a1510;
+      --muted: #5c5348;
+      --accent: #8b2500;
+      --card: #fffdf8;
+      --border: #d4cbb8;
+      --ok: #2d5016;
+      --warn: #8b6914;
+      --bad: #8b2500;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    header {
+      padding: 1.25rem 1rem;
+      border-bottom: 2px solid var(--ink);
+      background: var(--card);
+    }
+    header h1 { margin: 0; font-size: 1.35rem; }
+    header p { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.9rem; }
+    nav { margin-top: 0.75rem; font-size: 0.9rem; }
+    nav a { color: var(--accent); margin-right: 1rem; }
+    main { max-width: 72rem; margin: 0 auto; padding: 1rem 1rem 3rem; }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    select, button {
+      font: inherit;
+      padding: 0.45rem 0.65rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: var(--card);
+    }
+    button { background: var(--ink); color: var(--card); border: none; cursor: pointer; }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      border: 1px solid var(--border);
+      font-size: 0.88rem;
+    }
+    th, td {
+      border-bottom: 1px solid var(--border);
+      padding: 0.55rem 0.5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #ebe4d8; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    tr:hover td { background: #faf7f0; }
+    .he { direction: rtl; font-family: "David Libre", "Noto Serif Hebrew", serif; }
+    .tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      background: #ebe4d8;
+      margin: 0.1rem 0.15rem 0.1rem 0;
+    }
+    .score { font-weight: 700; }
+    .score-0 { color: var(--ok); }
+    .score-1 { color: #4a6741; }
+    .score-2 { color: var(--warn); }
+    .score-3 { color: var(--bad); }
+    .status-ikkar { border-left: 3px solid #1a4a6e; }
+    .status-machloket { border-left: 3px solid #6b4423; }
+    .status-maaseh { border-left: 3px solid var(--accent); }
+    .status-aggadah { border-left: 3px solid #5c5348; }
+    a.ref { color: var(--accent); font-weight: 600; text-decoration: none; }
+    a.ref:hover { text-decoration: underline; }
+    .note { color: var(--muted); font-size: 0.82rem; max-width: 28rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Loci map</h1>
+    <p>Witness-backed passages · suppression in print vs ikkar / machloket / maaseh / aggadah</p>
+    <nav>
+      <a href="index.html">← Search</a>
+      <a href="/api/loci">JSON API</a>
+      <a href="data/loci_chart.json">JSON (static)</a>
+    </nav>
+  </header>
+  <main>
+    <div class="filters">
+      <select id="filter-status">
+        <option value="">All tradition types</option>
+        <option value="ikkar">Ikkar (settled)</option>
+        <option value="machloket">Machloket (dispute)</option>
+        <option value="maaseh">Maaseh (narrative)</option>
+        <option value="aggadah">Aggadah</option>
+      </select>
+      <select id="filter-tag">
+        <option value="">All tags</option>
+        <option value="christian_censorship">Print censorship</option>
+        <option value="language_censorship">Language censorship</option>
+        <option value="internal_machloket">Internal machloket</option>
+        <option value="commentary_layer">Commentary layer</option>
+      </select>
+      <select id="filter-available">
+        <option value="">Any availability</option>
+        <option value="yes">In build now</option>
+        <option value="no">Missing / pattern row</option>
+      </select>
+      <button type="button" id="reload">Refresh</button>
+    </div>
+    <div class="legend">
+      <span><strong>Suppression 0–3:</strong> 0 = present · 3 = removed/censored in print</span>
+      <span><strong>Columns:</strong> Print · Commentary · Modern · In build</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Ref</th>
+          <th>Topic</th>
+          <th>Tradition</th>
+          <th>Print</th>
+          <th>Rashi/Tos.</th>
+          <th>Modern</th>
+          <th>Now</th>
+          <th>Tags</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </main>
+  <script type="module">
+    import { basePath, lociChartUrl } from "./js/config.js";
+
+    let all = [];
+
+    function scoreClass(n) {
+      return `score score-${n}`;
+    }
+
+    function renderRows(items) {
+      const tbody = document.getElementById("rows");
+      tbody.innerHTML = "";
+      for (const loc of items) {
+        const tr = document.createElement("tr");
+        tr.className = `status-${loc.tradition_status}`;
+        const d = loc.denial || {};
+        const ref = loc.ref
+          ? `<a class="ref" href="index.html?ref=${encodeURIComponent(loc.ref)}">${loc.ref}</a>`
+          : `<em>pattern</em>`;
+        const tags = (loc.tags || loc.controversy_tags || [])
+          .map((t) => `<span class="tag">${t}</span>`)
+          .join("");
+        tr.innerHTML = `
+          <td>${ref}<br><small>${loc.layer || ""}</small></td>
+          <td>
+            <div>${loc.topic?.en || ""}</div>
+            <div class="he">${loc.topic?.he || ""}</div>
+            <div class="note">${loc.tradition_note || ""}</div>
+          </td>
+          <td><strong>${loc.tradition_status}</strong></td>
+          <td class="${scoreClass(d.print_historical)}">${d.print_historical ?? "—"}</td>
+          <td class="${scoreClass(d.commentary_residue)}">${d.commentary_residue ?? "—"}</td>
+          <td class="${scoreClass(d.modern_digital)}">${d.modern_digital ?? "—"}</td>
+          <td class="${scoreClass(d.in_build)}">${d.in_build ?? "—"}</td>
+          <td>${tags}</td>
+        `;
+        tbody.appendChild(tr);
+      }
+    }
+
+    function applyFilters() {
+      const st = document.getElementById("filter-status").value;
+      const tag = document.getElementById("filter-tag").value;
+      const av = document.getElementById("filter-available").value;
+      let items = all;
+      if (st) items = items.filter((x) => x.tradition_status === st);
+      if (tag) {
+        items = items.filter((x) =>
+          (x.tags || x.controversy_tags || []).includes(tag)
+        );
+      }
+      if (av === "yes") items = items.filter((x) => x.available_now);
+      if (av === "no") items = items.filter((x) => !x.available_now);
+      renderRows(items);
+    }
+
+    async function load() {
+      const urls = [`${basePath()}/api/loci`, lociChartUrl()];
+      let data = null;
+      for (const url of urls) {
+        try {
+          const r = await fetch(url);
+          if (r.ok) {
+            data = await r.json();
+            break;
+          }
+        } catch (_) {}
+      }
+      if (!data) return;
+      all = data.loci || [];
+      applyFilters();
+    }
+
+    ["filter-status", "filter-tag", "filter-available"].forEach((id) => {
+      document.getElementById(id).addEventListener("change", applyFilters);
+    });
+    document.getElementById("reload").addEventListener("click", load);
+    load();
+  </script>
+</body>
+</html>
